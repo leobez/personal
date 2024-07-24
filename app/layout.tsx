@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import { Providers } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
 export const metadata: Metadata = {
   title: "Personal Website",
@@ -14,9 +17,31 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
-    <html lang="pt-br">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="pt-br">
+
+        <body className={poppins.className}>
+          <Providers>
+            <div className="min-h-screen h-fit flex flex-col">
+
+              {/* HEADER */}
+              <Header/>
+
+              {/* MAIN */}
+              <div className="flex-grow w-full border-2 border-black p-1">
+                <div className="max-w-[1024px] h-full mx-auto border border-black">
+                    {children}
+                </div>
+              </div>
+
+              {/* FOOTER */}
+              <Footer/>
+
+            </div>
+          </Providers>
+        </body>
+
+      </html>
   );
 }
