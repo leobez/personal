@@ -1,3 +1,6 @@
+FIX THEME
+
+
 Pages:
     -> Home (Personal, social media, education, courses)
     -> Projects (Easily expandable section with more projects)

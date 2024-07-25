@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slateDark {
+    --color01: '#374151';
+    --color02: '#1e293b';
+    --color03: '#0f172a';
+    --color04: '#020617';
+    --colorText: '#ffffff';
+}
+
+.slateLight {
+    --color01: '#f1f5f9';
+    --color02: '#e2e8f0';
+    --color03: '#cbd5e1';
+    --color04: '#94a3b8';
+    --colorText: '#000000';
+}

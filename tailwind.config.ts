@@ -13,11 +13,28 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors: {
+        color01: {
+          DEFAULT: 'var(--color01)'
+        },
+        color02: {
+          DEFAULT: 'var(--color02)'
+        },
+        color03: {
+          DEFAULT: 'var(--color03)'
+        },
+        color04: {
+          DEFAULT: 'var(--color04)'
+        },
+        colorText: {
+          DEFAULT: 'var(--colorText)'
+        },
+      }
     },
   },
 
   safelist: [
-
+ 
     // Basic
     'text-white', 'text-black',
 

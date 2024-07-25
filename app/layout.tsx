@@ -3,7 +3,6 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { Providers } from "./provider";
 
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
@@ -19,10 +18,9 @@ export default function RootLayout({
 }>) {
 
   return (
-      <html lang="pt-br">
+      <html lang="pt-br" suppressHydrationWarning>
 
-        <body className={poppins.className}>
-          <Providers>
+        <body className={`${poppins.className} slateLight`} id="root">
             <div className="min-h-screen h-fit flex flex-col">
 
               {/* HEADER */}
@@ -39,7 +37,6 @@ export default function RootLayout({
               <Footer/>
 
             </div>
-          </Providers>
         </body>
 
       </html>
