@@ -2,21 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --color01: '#000000';
-    --color02: '#000000';
-    --color03: '#000000';
-    --color04: '#000000';
-    --color04: '#000000';
-    --colorText: '#000000';
-}
+@layer base {
+    .slateDark {
+      --color01: 55 65 81;
+      --color02: 30 41 59;
+      --color03: 15 23 42;
+      --color04: 2 6 23;
+      --colorText: 255 255 255;
+    }
+
+    .slateLight {
+        --color01: 241 245 249;
+        --color02: 226 232 240;
+        --color03: 203 213 225;
+        --color04: 148 163 184;
+        --colorText: 0 0 0;
+      }
+  }
+
+
 
 /* .slateDark {
     --color01: '#374151';
     --color02: '#1e293b';
     --color03: '#0f172a';
     --color04: '#020617';
-    --color04: '#ffffff';
     --colorText: '#ffffff';
 }
 

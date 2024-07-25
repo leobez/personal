@@ -27,7 +27,7 @@ export default function RootLayout({
               <Header/>
 
               {/* MAIN */}
-              <div className="flex-grow w-full border-2 border-black p-1 bg-color04">
+              <div className="flex-grow w-full border-2 border-black p-1 bg-color04 text-colorText">
                 <div className="max-w-[1024px] h-full mx-auto border border-black">
                     {children}
                 </div>

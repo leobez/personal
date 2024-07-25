@@ -15,24 +15,15 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      colors: {
-        color01: {
-          DEFAULT: 'var(--color01)'
-        },
-        color02: {
-          DEFAULT: 'var(--color02)'
-        },
-        color03: {
-          DEFAULT: 'var(--color03)'
-        },
-        color04: {
-          DEFAULT: 'var(--color04)'
-        },
-        colorText: {
-          DEFAULT: 'var(--colorText)'
-        },
-      }
     },
+    colors: {
+      // Using modern `rgb`
+      color01: 'rgb(var(--color01) / <alpha-value>)',
+      color02: 'rgb(var(--color02) / <alpha-value>)',
+      color03: 'rgb(var(--color03) / <alpha-value>)',
+      color04: 'rgb(var(--color04) / <alpha-value>)',
+      colorText: 'rgb(var(--colorText) / <alpha-value>)',
+    }
   },
 
   safelist: [
