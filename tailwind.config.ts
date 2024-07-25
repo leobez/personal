@@ -1,10 +1,12 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
+
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -34,9 +36,15 @@ const config: Config = {
   },
 
   safelist: [
- 
+    
     // Basic
-    'text-white', 'text-black',
+    'bg-[#374151]','bg-[#1e293b]','bg-[#0f172a]','bg-[#020617]',
+    'bg-[#f1f5f9]','bg-[#e2e8f0]','bg-[#cbd5e1]','bg-[#94a3b8]',
+
+    'bg-[--color01]','bg-[--color02]','bg-[--color03]','bg-[--color04]',
+    'bg-color01','bg-color02','bg-color03','bg-color04',
+
+    'color01','color02','color03','color04',
 
     // bg, text, border, hover:bg, hover:text, hover:border
     // Stone

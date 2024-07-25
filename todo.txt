@@ -6,3 +6,4 @@ Pages:
     -> Projects (Easily expandable section with more projects)
     -> Contact (email api)
     -> Theme switch
+    -> Language selector (ENG or BRA)

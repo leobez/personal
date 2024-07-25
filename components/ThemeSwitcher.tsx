@@ -18,7 +18,7 @@ export default function ThemeSwitcher() {
         const selectedTheme = e.target.id
         if (!selectedTheme) return;
 
-        const ROOT  = document.querySelector("body#root")
+        const ROOT  = document.querySelector("#root")
         if (!ROOT) return;
 
         // Remove all others themes
