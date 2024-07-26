@@ -1,9 +1,22 @@
-FIX THEME
+Content:
+    -> Header:
+        -> Language switcher (ENG or BRA)
+        -> More themes to switch
+        -> Social media
+        -> Fixed
 
+    -> Footer 
+        -> Same with header
 
-Pages:
-    -> Home (Personal, social media, education, courses)
-    -> Projects (Easily expandable section with more projects)
-    -> Contact (email api)
-    -> Theme switch
-    -> Language selector (ENG or BRA)
+    -> Page
+        -> Introduction with photo (with social media small icon at bottom)
+        -> Tech stack
+        -> Education (school and courses with link to certificates)
+        -> Experiences
+        -> Projects
+        -> Contact form
+        -> Put some gaming refs (gifs animation)
+
+    -> Sidebar summary
+        -> Links to take to section
+    

@@ -3,9 +3,12 @@ import ThemeSwitcher from "./ThemeSwitcher";
 export default function Header() {
 
     return (
-        <header className="h-24 w-full p-1 bg-color04">
-            <div className="max-w-[1024px] h-full mx-auto">
-                Header
+        <header className="h-24 w-full bg-[#000]">
+            <div className="max-w-[1024px] h-full mx-auto bg-[#000] text-[#fff] p-3 flex items-center justify-between">
+                <div>
+                    <p className="font-bold text-lg">Leonardo de Souza Bezerra</p>
+                    <p className="font-light">Personal Website</p>
+                </div>
                 <ThemeSwitcher/>
             </div>
         </header>

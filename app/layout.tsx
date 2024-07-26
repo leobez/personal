@@ -20,15 +20,15 @@ export default function RootLayout({
   return (
       <html lang="pt-br" suppressHydrationWarning >
 
-        <body className={`${poppins.className}`}>
-            <div className="min-h-screen h-fit flex flex-col slateDark" id="root">
+        <body className={`${poppins.className} slateLight`} id="root">
+            <div className="min-h-screen h-fit flex flex-col">
 
               {/* HEADER */}
               <Header/>
 
               {/* MAIN */}
-              <div className="flex-grow w-full border-2 border-black p-1 bg-color04 text-colorText">
-                <div className="max-w-[1024px] h-full mx-auto border border-black">
+              <div className="flex-grow w-full p-1 bg-color02 text-colorText">
+                <div className="max-w-[1024px] h-full mx-auto">
                     {children}
                 </div>
               </div>
