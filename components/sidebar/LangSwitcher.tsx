@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import { FaRegMoon } from "react-icons/fa";
-import { FaRegSun } from "react-icons/fa";
+import { FaCloudSunRain } from "react-icons/fa";
 
-export default function ThemeSwitcher() {
+export default function LangSwitcher() {
 
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentTheme, setCurrentTheme] = useState<string|null>('slateLight')
@@ -50,7 +50,7 @@ export default function ThemeSwitcher() {
             {currentTheme === 'slateDark' && 
                 <div className="flex border-2 border-white rounded-3xl">
                     <button onClick={(e) => updateTheme(e)} id="slateLight" className="flex py-2 px-3 items-center">
-                        <FaRegSun fill="white" size={20} id="slateLight" pointerEvents={'none'}/>
+                        <FaCloudSunRain fill="white" size={20} id="slateLight" pointerEvents={'none'}/>
                     </button>
                     <button className="flex py-2 px-3 items-center bg-[#fff] rounded-r-2xl" disabled>
                         <FaRegMoon fill="black" size={20}/>
@@ -61,7 +61,7 @@ export default function ThemeSwitcher() {
             {currentTheme === 'slateLight' && 
                 <div className="flex border-2 border-white rounded-3xl">
                     <button className="flex py-2 px-3 items-center bg-[#fff] rounded-l-2xl" disabled>
-                        <FaRegSun fill="black" size={20}/>
+                        <FaCloudSunRain fill="black" size={20}/>
                     </button>
                     <button onClick={(e) => updateTheme(e)} id="slateDark" className="flex py-2 px-3 items-center">
                         <FaRegMoon fill="white" size={20} id="slateDark" pointerEvents={'none'}/>

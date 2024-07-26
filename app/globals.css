@@ -3,8 +3,14 @@
 @tailwind utilities;
 
 @layer base {
+
+    /* 
+      DARK: 700, 800, 900, 950
+      DARK: 100, 200, 300, 400
+    */
+
     .slateDark {
-      --color01: 55 65 81;
+      --color01: 55 65 81;            
       --color02: 30 41 59;
       --color03: 15 23 42;
       --color04: 2 6 23;
@@ -17,23 +23,85 @@
         --color03: 203 213 225;
         --color04: 148 163 184;
         --colorText: 0 0 0;
-      }
-  }
+    }
 
+    .limeDark {
+      --color01: 77 124 15;
+      --color02: 63 98 18;
+      --color03: 54 83 20;
+      --color04: 26 46 5;
+      --colorText: 255 255 255;
+    }
 
+    .limeLight {
+      --color01: 236 252 203;
+      --color02: 217 249 157;
+      --color03: 190 242 100;
+      --color04: 163 230 53;
+      --colorText: 0 0 0;
+    }
 
-/* .slateDark {
-    --color01: '#374151';
-    --color02: '#1e293b';
-    --color03: '#0f172a';
-    --color04: '#020617';
-    --colorText: '#ffffff';
+    .amberDark {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 255 255 255;
+    }
+
+    .amberLight {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 0 0 0;
+    }
+
+    .roseDark {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 255 255 255;
+    }
+
+    .roseLight {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 0 0 0;
+    }
+
+    .skyDark {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 255 255 255;
+    }
+
+    .skyLight {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 0 0 0;
+    }
+
+    .neutralDark {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 255 255 255;
+    }
+
+    .neutralLight {
+      --color01: 0;
+      --color02: 0;
+      --color03: 0;
+      --color04: 0;
+      --colorText: 0 0 0;
+    }
 }
-
-.slateLight {
-    --color01: '#f1f5f9';
-    --color02: '#e2e8f0';
-    --color03: '#cbd5e1';
-    --color04: '#94a3b8';
-    --colorText: '#000000';
-} */

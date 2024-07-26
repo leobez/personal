@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Sidebar from "@/components/sidebar/Sidebar";
 
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
@@ -27,11 +28,16 @@ export default function RootLayout({
               <Header/>
 
               {/* MAIN */}
-              <div className="flex-grow w-full p-1 bg-color02 text-colorText">
-                <div className="max-w-[1024px] h-full mx-auto">
-                    {children}
+              <main className="flex-grow w-full p-1 bg-color02 text-colorTextrelative ">
+                <div className="flex max-w-[1024px] gap-1 h-full w-fit mx-auto">
+                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 p-5 sticky h-fit top-24">
+                    <Sidebar/>
+                  </div>
+                  <div className="w-3/4 text-colorText">
+                      {children}
+                  </div>
                 </div>
-              </div>
+              </main>
 
               {/* FOOTER */}
               <Footer/>

@@ -1,14 +1,15 @@
+-> Finish color scheme
+
 Content:
     -> Header:
         -> Language switcher (ENG or BRA)
         -> More themes to switch
         -> Social media
-        -> Fixed
 
     -> Footer 
         -> Same with header
 
-    -> Page
+    -> Page <<
         -> Introduction with photo (with social media small icon at bottom)
         -> Tech stack
         -> Education (school and courses with link to certificates)
@@ -17,6 +18,6 @@ Content:
         -> Contact form
         -> Put some gaming refs (gifs animation)
 
-    -> Sidebar summary
+    -> Sidebar summary <<
         -> Links to take to section
     
