@@ -1,3 +1,7 @@
+-> Resp with sidebar
+-> Try animated background: waves or lines that uses colors (01 -> 04)
+
+
 Content:
 
     -> Responsivity with sidebar
