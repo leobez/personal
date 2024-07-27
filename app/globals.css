@@ -9,6 +9,22 @@
       DARK: 100, 200, 300, 400
     */
 
+    .neutralDark {
+      --color01: 64 64 64;
+      --color02: 38 38 38;
+      --color03: 23 23 23;
+      --color04: 10 10 10;
+      --colorText: 255 255 255;
+    }
+
+    .neutralLight {
+      --color01: 245 245 245;
+      --color02: 229 229 229;
+      --color03: 212 212 212;
+      --color04: 163 163 163;
+      --colorText: 0 0 0;
+    }
+
     .slateDark {
       --color01: 55 65 81;            
       --color02: 30 41 59;
@@ -42,66 +58,51 @@
     }
 
     .amberDark {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 180 83 9;
+      --color02: 146 64 14;
+      --color03: 120 53 15;
+      --color04: 69 26 3;
       --colorText: 255 255 255;
     }
 
     .amberLight {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 254 243 199;
+      --color02: 254 215 170;
+      --color03: 252 211 77;
+      --color04: 251 191 36;
       --colorText: 0 0 0;
     }
 
     .roseDark {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 190 18 60;
+      --color02: 159 18 57;
+      --color03: 136 19 55;
+      --color04: 76 5 25;
       --colorText: 255 255 255;
     }
 
     .roseLight {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 255 228 230;
+      --color02: 254 205 211;
+      --color03: 253 164 175;
+      --color04: 251 113 133;
       --colorText: 0 0 0;
     }
 
     .skyDark {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 3 105 161;
+      --color02: 7 89 133;
+      --color03: 12 74 110;
+      --color04: 8 47 73;
       --colorText: 255 255 255;
     }
 
     .skyLight {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
+      --color01: 224 242 254;
+      --color02: 186 230 253;
+      --color03: 125 211 252;
+      --color04: 96 165 250;
       --colorText: 0 0 0;
     }
 
-    .neutralDark {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
-      --colorText: 255 255 255;
-    }
-
-    .neutralLight {
-      --color01: 0;
-      --color02: 0;
-      --color03: 0;
-      --color04: 0;
-      --colorText: 0 0 0;
-    }
 }

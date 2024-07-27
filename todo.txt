@@ -1,4 +1,5 @@
--> Finish color scheme
+-> Finish color scheme, layout and overall components/content
+
 
 Content:
     -> Header:

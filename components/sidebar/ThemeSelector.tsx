@@ -24,6 +24,9 @@ export default function ThemeSelector() {
 
         // Remove all others themes
         const possibleThemes:string[] = [
+            'neutralDark',
+            'neutralLight',
+
             'slateDark',
             'slateLight',
 
@@ -38,9 +41,6 @@ export default function ThemeSelector() {
 
             'skyDark',
             'skyLight',
-
-            'neutralDark',
-            'neutralLight',
         ]
 
         possibleThemes.map((possibleTheme:string) => {
@@ -59,6 +59,9 @@ export default function ThemeSelector() {
 
     return (
         <div className="flex flex-col gap-2">
+            <button onClick={(e) => updateTheme(e)} id="neutralDark">neutralDark</button>
+            <button onClick={(e) => updateTheme(e)} id="neutralLight">neutralLight</button>
+            
             <button onClick={(e) => updateTheme(e)} id="slateDark">slateDark</button>
             <button onClick={(e) => updateTheme(e)} id="slateLight">slateLight</button>
 
@@ -74,8 +77,7 @@ export default function ThemeSelector() {
             <button onClick={(e) => updateTheme(e)} id="skyDark">skyDark</button>
             <button onClick={(e) => updateTheme(e)} id="skyLight">skyLight</button>
 
-            <button onClick={(e) => updateTheme(e)} id="neutralDark">neutralDark</button>
-            <button onClick={(e) => updateTheme(e)} id="neutralLight">neutralLight</button>
+
         </div>
     )
 }
