@@ -20,11 +20,15 @@ export default function Sidebar() {
         themeSelectorRef.current.classList.toggle('hidden')
      }
 
-    /* TODO: ADD GHOST COMPONENT FOR CLS */
-    if (!mounted) return;
+
+     if (!mounted) {
+        return (
+            <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg h-[calc(100vh-250px)]"/>
+        );
+    }
 
     return (
-        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg animate-fade-left animate-duration-300">
+        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg">
             
             <div className="flex gap-3 w-full">
 
@@ -35,7 +39,7 @@ export default function Sidebar() {
                         <IoColorPaletteOutline size={30}/>
                     </button>
 
-                    <div className="absolute flex flex-col gap-5 bg-color03 p-5 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 border-2 border-color04 hidden" ref={themeSelectorRef}>
+                    <div className="absolute flex flex-col gap-5 bg-color04 p-5 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 hidden" ref={themeSelectorRef}>
                         <p className="font-bold text-md">
                             Select a color theme
                         </p>

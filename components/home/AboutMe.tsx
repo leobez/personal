@@ -1,10 +1,10 @@
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 
-export default function PersonalInfo() {
+export default function AboutMe() {
 
     return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg flex gap-5">
+        <section className="bg-color01 p-5 rounded-lg shadow-lg flex gap-5 h-[500px] scroll-mt-[100px]" id="about_me">
 
             <div className="w-2/3 flex flex-col gap-5">
                 <h1 className="text-xl">

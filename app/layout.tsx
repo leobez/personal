@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
       <html lang="pt-br" suppressHydrationWarning >
 
-        <body className={`${poppins.className} neutralLight`} id="root">
+        <body className={`${poppins.className} slateLight`} id="root">
 
             <div className="min-h-screen h-fit flex flex-col">
 
@@ -29,12 +29,12 @@ export default function RootLayout({
               <Header/>
 
               {/* MAIN */}
-              <main className="flex-grow w-full p-1 bg-color01 text-colorText">
+              <main className="flex-grow w-full p-1 bg-color01 text-colorText" id="main">
                 
                 <div className="flex max-w-[1300px] gap-2 h-full w-fit mx-auto">
 
                   {/* SIDEBAR */}
-                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 sticky h-fit top-[100px]">
+                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 sticky h-fit top-[100px] max-h-[calc(100vh-250px)] z-10">
                     <Sidebar/>
                   </div>
 
