@@ -2,10 +2,28 @@
 
 import { useEffect, useState } from "react";
 
+const darkColors:string[] = [
+    'neutralDark',
+    'slateDark',
+    'skyDark',
+    'amberDark',
+    'roseDark',
+    'limeDark',
+]
+
+const lightColors:string[] = [
+    'neutralLight',
+    'slateLight',
+    'skyLight',
+    'amberLight',
+    'roseLight',
+    'limeLight',
+]
+
 export default function ThemeSelector() {
 
     const [mounted, setMounted] = useState<boolean>(false)
-    const [currentTheme, setCurrentTheme] = useState<string|null>('slateLight')
+    const [currentTheme, setCurrentTheme] = useState<string|null>('neutralLight')
 
     useEffect(() => {
         setMounted(true)
@@ -23,29 +41,9 @@ export default function ThemeSelector() {
         if (!ROOT) return;
 
         // Remove all others themes
-        const possibleThemes:string[] = [
-            'neutralDark',
-            'neutralLight',
-
-            'slateDark',
-            'slateLight',
-
-            'limeDark',
-            'limeLight',
-
-            'amberDark',
-            'amberLight',
-
-            'roseDark',
-            'roseLight',
-
-            'skyDark',
-            'skyLight',
-        ]
-
-        possibleThemes.map((possibleTheme:string) => {
+        [...darkColors, ...lightColors].map((color:string) => {
             Object.values(ROOT.classList).map((currentTheme:string) => {
-                if (possibleTheme === currentTheme) {
+                if (color === currentTheme) {
                     ROOT.classList.remove(currentTheme)
                 }
             })
@@ -58,25 +56,23 @@ export default function ThemeSelector() {
     if (!mounted) return;
 
     return (
-        <div className="flex flex-col gap-2">
-            <button onClick={(e) => updateTheme(e)} id="neutralDark">neutralDark</button>
-            <button onClick={(e) => updateTheme(e)} id="neutralLight">neutralLight</button>
+        <div className="flex flex-col gap-5">
             
-            <button onClick={(e) => updateTheme(e)} id="slateDark">slateDark</button>
-            <button onClick={(e) => updateTheme(e)} id="slateLight">slateLight</button>
-
-            <button onClick={(e) => updateTheme(e)} id="limeDark">limeDark</button>
-            <button onClick={(e) => updateTheme(e)} id="limeLight">limeLight</button>
-
-            <button onClick={(e) => updateTheme(e)} id="amberDark">amberDark</button>
-            <button onClick={(e) => updateTheme(e)} id="amberLight">amberLight</button>
-
-            <button onClick={(e) => updateTheme(e)} id="roseDark">roseDark</button>
-            <button onClick={(e) => updateTheme(e)} id="roseLight">roseLight</button>
-
-            <button onClick={(e) => updateTheme(e)} id="skyDark">skyDark</button>
-            <button onClick={(e) => updateTheme(e)} id="skyLight">skyLight</button>
-
+            <div className="flex gap-1">
+                {darkColors.map((color:string, index:number) => (
+                    <button key={index} onClick={(e) => updateTheme(e)}>
+                        <span className={`h-6 w-6 block shadow-lg rounded-full ${color}02 hover:opacity-70 duration-300`} id={color} title={color}/>
+                    </button>
+                ))}
+            </div>
+            
+            <div className="flex gap-1">
+                {lightColors.map((color:string, index:number) => (
+                    <button key={index} onClick={(e) => updateTheme(e)}>
+                        <span className={`h-6 w-6 block shadow-lg rounded-full ${color}02 hover:opacity-70 duration-300`} id={color} title={color}/>
+                    </button>
+                ))}
+            </div>
 
         </div>
     )

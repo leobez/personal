@@ -21,22 +21,30 @@ export default function RootLayout({
   return (
       <html lang="pt-br" suppressHydrationWarning >
 
-        <body className={`${poppins.className} slateLight`} id="root">
+        <body className={`${poppins.className} neutralLight`} id="root">
+
             <div className="min-h-screen h-fit flex flex-col">
 
               {/* HEADER */}
               <Header/>
 
               {/* MAIN */}
-              <main className="flex-grow w-full p-1 bg-color02 text-colorTextrelative ">
-                <div className="flex max-w-[1024px] gap-1 h-full w-fit mx-auto">
-                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 p-5 sticky h-fit top-24">
+              <main className="flex-grow w-full p-1 bg-color01 text-colorText">
+                
+                <div className="flex max-w-[1300px] gap-2 h-full w-fit mx-auto">
+
+                  {/* SIDEBAR */}
+                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 sticky h-fit top-[100px]">
                     <Sidebar/>
                   </div>
-                  <div className="w-3/4 text-colorText">
+
+                  {/* MAIN CONTENT */}
+                  <div className="w-3/4">
                       {children}
                   </div>
+
                 </div>
+
               </main>
 
               {/* FOOTER */}

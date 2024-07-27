@@ -106,3 +106,64 @@
     }
 
 }
+
+/* 
+  Dark: 800
+  Light: 200
+*/
+.neutralDark02 {
+  background-color: #262626;
+  /*border: 2px solid #e5e5e5;*/
+}
+
+.neutralLight02 {
+  background-color: #d4d4d4;
+  /*border: 2px solid #262626;*/
+}
+
+.slateDark02 {
+  background-color: #1e293b;
+  /*border: 2px solid #e2e8f0;*/
+}
+
+.slateLight02 {
+  background-color: #cbd5e1;
+  /*border: 2px solid #1e293b;*/
+}
+
+.limeDark02 {
+  background-color: #3f6212;
+  /*border: 2px solid #d9f99d;*/
+}
+
+.limeLight02 {
+  background-color: #bef264;
+  /*border: 2px solid #3f6212;*/
+
+}
+
+.amberDark02 {
+  background-color: #92400e;
+  /*border: 2px solid #fde68a;*/
+}
+
+.amberLight02 {
+  background-color: #fcd34d;
+  /*border: 2px solid #92400e;*/
+}
+
+.roseDark02 {
+  background-color: #9f1239;
+}
+
+.roseLight02 {
+  background-color: #fda4af;
+}
+
+.skyDark02 {
+  background-color: #075985;
+}
+
+.skyLight02 {
+  background-color: #7dd3fc;
+}

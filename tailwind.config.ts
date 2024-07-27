@@ -28,15 +28,6 @@ const config: Config = {
 
   safelist: [
     
-    // Basic
-    'bg-[#374151]','bg-[#1e293b]','bg-[#0f172a]','bg-[#020617]',
-    'bg-[#f1f5f9]','bg-[#e2e8f0]','bg-[#cbd5e1]','bg-[#94a3b8]',
-
-    'bg-[--color01]','bg-[--color02]','bg-[--color03]','bg-[--color04]',
-    'bg-color01','bg-color02','bg-color03','bg-color04',
-
-    'color01','color02','color03','color04',
-
     // bg, text, border, hover:bg, hover:text, hover:border
     // Stone
     'bg-stone-100', 'bg-stone-200', 'bg-stone-300', 'bg-stone-400', 'bg-stone-500', 'bg-stone-600', 'bg-stone-700', 'bg-stone-800', 'bg-stone-900', 'bg-stone-950',
@@ -64,5 +55,9 @@ const config: Config = {
 
     'hover:border-slate-100', 'hover:border-slate-200', 'hover:border-slate-300', 'hover:border-slate-400', 'hover:border-slate-500', 'hover:border-slate-600', 'hover:border-slate-700', 'hover:border-slate-800', 'hover:border-slate-900', 'hover:border-slate-950',
   ],
+
+  plugins: [
+    require('tailwindcss-animated')
+  ]
 };
 export default config;
