@@ -65,12 +65,12 @@ export default function Summary() {
     if (!mounted) return;
 
     return (
-        <div className="flex flex-col gap-5 bg-color01 p-5 rounded-lg shadow-lg">
+        <div className="flex flex-col gap-5 bg-color01 p-5 rounded-lg shadow-lg w-full">
             <p className="text-lg font-bold">Sumário</p>
             <div className="flex flex-col gap-3">
                 {sectionsLinks.map((link:string, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${link===currentSection ? 'bg-color04' : ''}`} key={index}>
-                        <button className="p-4 px-10 h-full w-full flex justify-between items-center" onClick={handleClick} id={`button_${link}`}>
+                        <button className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" onClick={handleClick} id={`button_${link}`}>
                             {sectionsNames[index]}
                             {sectionsIcons[index]}
                         </button>

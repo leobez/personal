@@ -1,30 +1,18 @@
-'use client'
-
 import { useEffect, useRef, useState } from "react";
 import LangSwitcher from "./LangSwitcher";
 import ThemeSelector from "./ThemeSelector";
 import { IoColorPaletteOutline } from "react-icons/io5";
 import Summary from "./Summary";
+import Sidebar from "./Sidebar";
 
 export default function HiddenSidebar() {
 
-    const [mounted, setMounted] = useState<boolean>(false)
-
-    useEffect(() => {
-        setMounted(true)
-    }, [])
-
-    const themeSelectorRef:any = useRef()
-
-    const toggleThemeSelector = ():void => {
-        themeSelectorRef.current.classList.toggle('hidden')
-    }
-
-    if (!mounted) return;
-
     return (
-        <div className="lg:hidden bg-red absolute left-0 h-12 w-12">
+        <div className="xl:hidden hidden bg-color03 fixed top-0 left-0 h-screen w-[300px] z-30 animate-fade-right animate-duration-100 overflow-y-auto" id="hiddenSidebar">
+            
+            <span className="h-[100px] block"/>
 
+            <Sidebar/>
 
         </div>
     )

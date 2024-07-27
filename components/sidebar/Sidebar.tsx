@@ -25,7 +25,7 @@ export default function Sidebar() {
   
 
     return (
-        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg">
+        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg h-full">
             
             <div className="flex gap-3 w-full">
 
@@ -52,7 +52,7 @@ export default function Sidebar() {
 
             </div>
             
-            <div>
+            <div className="w-full">
                 <Summary/>
             </div>
 

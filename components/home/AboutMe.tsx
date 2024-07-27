@@ -10,7 +10,7 @@ export default function AboutMe() {
                 <h1 className="text-xl">
                     Olá, Me chamo Leonardo!
                 </h1>
-                <p className="text-justify font-light">
+                <p className="text-justify font-light text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consectetur reprehenderit. Non, ipsum aut? Eaque quas incidunt, cum necessitatibus commodi ex officiis ipsum pariatur deserunt minima animi delectus perferendis error! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora quasi eaque sed veritatis ratione magnam rem ducimus labore unde necessitatibus, temporibus fugiat perferendis adipisci culpa quos error aperiam eum? Minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, similique id officiis tempore dolorem facere sunt eos quaerat quidem? Officia distinctio, numquam delectus excepturi repudiandae corrupti harum nam. Fugiat, id. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ratione ducimus dignissimos, et cumque saepe labore consequatur assumenda distinctio minima quae soluta asperiores aperiam provident ab at beatae cupiditate! Facere.
                 </p>
             </div>

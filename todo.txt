@@ -1,10 +1,5 @@
--> Resp with sidebar
--> Try animated background: waves or lines that uses colors (01 -> 04)
-
-
 Content:
-
-    -> Responsivity with sidebar
+    -> Responsivity
 
     -> Page 
         -> Introduction: title, text, favorite games, social media
@@ -13,3 +8,7 @@ Content:
         -> Experiences
         -> Projects
         -> Contact form    
+    
+    -> Save things on local storage
+    -> Responsivity
+    -> Animation by: https://codepen.io/baarbaracrr/pen/KKovmGb
