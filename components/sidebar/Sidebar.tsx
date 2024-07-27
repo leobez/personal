@@ -24,7 +24,7 @@ export default function Sidebar() {
     if (!mounted) return;
 
     return (
-        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg">
+        <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg animate-fade-left animate-duration-300">
             
             <div className="flex gap-3 w-full">
 

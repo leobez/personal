@@ -1,23 +1,17 @@
--> Finish color scheme, layout and overall components/content
-
-
 Content:
     -> Header:
-        -> Language switcher (ENG or BRA)
-        -> More themes to switch
         -> Social media
 
     -> Footer 
         -> Same with header
 
     -> Page <<
-        -> Introduction with photo (with social media small icon at bottom)
+        -> Introduction: title, text, favorite games, social media
         -> Tech stack
         -> Education (school and courses with link to certificates)
         -> Experiences
         -> Projects
         -> Contact form
-        -> Put some gaming refs (gifs animation)
 
     -> Sidebar summary <<
         -> Links to take to section
