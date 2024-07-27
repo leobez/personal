@@ -2,6 +2,14 @@
 
 import { useEffect, useState } from "react";
 
+import { IoPersonOutline } from "react-icons/io5";
+import { IoSchoolOutline } from "react-icons/io5";
+import { RiComputerLine } from "react-icons/ri";
+import { IoBriefcaseOutline } from "react-icons/io5";
+import { SlSocialGithub } from "react-icons/sl";
+import { IoDocumentOutline } from "react-icons/io5";
+import { IoMailOutline } from "react-icons/io5";
+
 const sectionsLinks:string[] = [
     'about_me', 'education', 'technology', 'experience', 'projects', 'curriculum', 'contact'
 ]
@@ -9,6 +17,9 @@ const sectionsNames:string[] = [
     'Sobre mim', 'Educação', 'Tecnologias', 'Experiência', 'Projetos', 'Curriculum', 'Contato'
 ]
 
+const sectionsIcons:any[] = [
+    <IoPersonOutline size={25}/>, <IoSchoolOutline size={25}/>, <RiComputerLine size={25}/>, <IoBriefcaseOutline size={25}/>,<SlSocialGithub size={25}/>,<IoDocumentOutline size={25}/>,<IoMailOutline size={25}/>
+]
 
 export default function Summary() {
 
@@ -59,8 +70,9 @@ export default function Summary() {
             <div className="flex flex-col gap-3">
                 {sectionsLinks.map((link:string, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${link===currentSection ? 'bg-color04' : ''}`} key={index}>
-                        <button className="p-4 h-full w-full" onClick={handleClick} id={`button_${link}`}>
+                        <button className="p-4 px-10 h-full w-full flex justify-between items-center" onClick={handleClick} id={`button_${link}`}>
                             {sectionsNames[index]}
+                            {sectionsIcons[index]}
                         </button>
                     </div>
                 ))}

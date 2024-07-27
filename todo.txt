@@ -1,18 +1,11 @@
 Content:
-    -> Header:
-        -> Social media
 
-    -> Footer 
-        -> Same with header
+    -> Responsivity with sidebar
 
-    -> Page <<
+    -> Page 
         -> Introduction: title, text, favorite games, social media
         -> Tech stack
         -> Education (school and courses with link to certificates)
         -> Experiences
         -> Projects
-        -> Contact form
-
-    -> Sidebar summary <<
-        -> Links to take to section
-    
+        -> Contact form    

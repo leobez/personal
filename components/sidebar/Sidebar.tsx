@@ -21,11 +21,8 @@ export default function Sidebar() {
      }
 
 
-     if (!mounted) {
-        return (
-            <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg h-[calc(100vh-250px)]"/>
-        );
-    }
+    if (!mounted) return;
+  
 
     return (
         <div className="flex flex-col gap-3 bg-color02 p-5 rounded-lg">
@@ -35,7 +32,7 @@ export default function Sidebar() {
                 {/* THEME SELECTOR */}
                 <div className="shadow-lg rounded-lg bg-color01 p-5 w-1/3">
 
-                    <button className="rounded-xl p-2 border-2 border-color04 bg-color04 hover:opacity-60 duration-300" onClick={toggleThemeSelector}>
+                    <button className="rounded-lg shadow-lg p-2 bg-color03 duration-300 hover:bg-color04" onClick={toggleThemeSelector}>
                         <IoColorPaletteOutline size={30}/>
                     </button>
 
@@ -59,7 +56,6 @@ export default function Sidebar() {
                 <Summary/>
             </div>
 
-            {/* SUMMARY */}
         </div>
     )
 }

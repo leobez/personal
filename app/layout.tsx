@@ -4,6 +4,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Sidebar from "@/components/sidebar/Sidebar";
+import HiddenSidebar from "@/components/sidebar/HiddenSidebar";
 
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
@@ -31,10 +32,12 @@ export default function RootLayout({
               {/* MAIN */}
               <main className="flex-grow w-full p-1 bg-color01 text-colorText" id="main">
                 
-                <div className="flex max-w-[1300px] gap-2 h-full w-fit mx-auto">
+                <div className="flex max-w-[1300px] gap-1 h-full w-fit mx-auto">
+
+                  <HiddenSidebar/>
 
                   {/* SIDEBAR */}
-                  <div className="w-1/4 rounded-lg shadow-lg bg-color01 sticky h-fit top-[100px] max-h-[calc(100vh-250px)] z-10">
+                  <div className="w-1/4 rounded-lg bg-color01 sticky h-fit top-[100px] max-h-[calc(100vh-250px)] z-10 hidden xl:block">
                     <Sidebar/>
                   </div>
 
