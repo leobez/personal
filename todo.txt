@@ -10,7 +10,7 @@ Content:
         -> Contact form    
     
 
-    -> Save things on local storage
+    -> Save things on local storage (theme, lang)
     -> Lang switcher
     -> Responsivity
     -> Animation by: https://codepen.io/baarbaracrr/pen/KKovmGb

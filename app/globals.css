@@ -239,3 +239,25 @@
       transform: translateX(1);
   }
 }
+
+
+/* Competence animation */
+.competence {
+  animation: sideToSide 4s linear infinite;
+}
+
+@keyframes sideToSide {
+
+  0% {
+      left: 10px;
+  }
+
+  50% {
+      left: calc(100% - 50px);
+  }
+
+  100% {
+      left: 10px;
+  }
+
+}

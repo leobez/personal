@@ -54,6 +54,7 @@ const config: Config = {
     'hover:text-slate-100', 'hover:text-slate-200', 'hover:text-slate-300', 'hover:text-slate-400', 'hover:text-slate-500', 'hover:text-slate-600', 'hover:text-slate-700', 'hover:text-slate-800', 'hover:text-slate-900', 'hover:text-slate-950',
 
     'hover:border-slate-100', 'hover:border-slate-200', 'hover:border-slate-300', 'hover:border-slate-400', 'hover:border-slate-500', 'hover:border-slate-600', 'hover:border-slate-700', 'hover:border-slate-800', 'hover:border-slate-900', 'hover:border-slate-950',
+
   ],
 
   plugins: [

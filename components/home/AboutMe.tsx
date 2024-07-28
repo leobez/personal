@@ -17,7 +17,7 @@ export default function AboutMe() {
                     text="Olá, me chamo Leonardo!" 
                     classNames="font-bold text-lg" 
                     preHeight='28px' 
-                    ms={20}
+                    ms={50}
                 />
                 
                 <p className="text-justify font-light">
