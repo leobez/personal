@@ -10,15 +10,42 @@ import { SlSocialGithub } from "react-icons/sl";
 import { IoDocumentOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 
-const sectionsLinks:string[] = [
-    'about_me', 'education', 'technology', 'experience', 'projects', 'curriculum', 'contact'
-]
-const sectionsNames:string[] = [
-    'Sobre mim', 'Educação', 'Tecnologias', 'Experiência', 'Projetos', 'Curriculum', 'Contato'
-]
-
-const sectionsIcons:any[] = [
-    <IoPersonOutline size={25}/>, <IoSchoolOutline size={25}/>, <RiComputerLine size={25}/>, <IoBriefcaseOutline size={25}/>,<SlSocialGithub size={25}/>,<IoDocumentOutline size={25}/>,<IoMailOutline size={25}/>
+const sectionsElements = [
+    {
+        link: 'about_me',
+        name: 'Sobre mim',
+        icon: <IoPersonOutline size={25}/>
+    },
+    {
+        link: 'competence',
+        name: 'Competências',
+        icon: <RiComputerLine size={25}/>
+    },
+    {
+        link: 'education',
+        name: 'Educação',
+        icon: <IoSchoolOutline size={25}/>
+    },
+    {
+        link: 'experience',
+        name: 'Experiência',
+        icon: <IoBriefcaseOutline size={25}/>
+    },
+    {
+        link: 'projects',
+        name: 'Projetos',
+        icon: <SlSocialGithub size={25}/>
+    },
+    {
+        link: 'curriculum',
+        name: 'Curriculum',
+        icon: <IoDocumentOutline size={25}/>
+    },
+    {
+        link: 'contact',
+        name: 'Contato',
+        icon: <IoMailOutline size={25}/>
+    },
 ]
 
 export default function Summary() {
@@ -30,14 +57,15 @@ export default function Summary() {
     useEffect(() => {
 
         let options = {
-            rootMargin: "10px",
-            threshold: 1,
+            rootMargin: "0px",
+            threshold: 0.9,
         };
           
         let observer = new IntersectionObserver((entries:any) => {
             entries.forEach((entry:IntersectionObserverEntry) => {
                 if (entry.isIntersecting) {
                     const idOfVisibleElement = entry.target.id
+                    //console.log('current visible section: ', idOfVisibleElement)
                     setCurrentSection(idOfVisibleElement)
                 }
             });
@@ -45,10 +73,13 @@ export default function Summary() {
         
         const sectionsToObserve:any = document.getElementsByTagName('section')
 
+        //console.log('sectionsToObserve: ', sectionsToObserve)
+
         if (!sectionsToObserve) return;
 
         Object.values(sectionsToObserve).forEach((section:any) => {
             observer.observe(section)
+            //console.log('observing section: ', section)
         });
 
         setMounted(true)
@@ -68,11 +99,11 @@ export default function Summary() {
         <div className="flex flex-col gap-5 bg-color01 p-5 rounded-lg shadow-lg w-full">
             <p className="text-lg font-bold">Sumário</p>
             <div className="flex flex-col gap-3">
-                {sectionsLinks.map((link:string, index:number) => (
-                    <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${link===currentSection ? 'bg-color04' : ''}`} key={index}>
-                        <button className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" onClick={handleClick} id={`button_${link}`}>
-                            {sectionsNames[index]}
-                            {sectionsIcons[index]}
+                {sectionsElements.map((element:any, index:number) => (
+                    <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>
+                        <button className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" onClick={handleClick} id={`button_${element.link}`}>
+                            {element.name}
+                            {element.icon}
                         </button>
                     </div>
                 ))}

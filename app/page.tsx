@@ -4,7 +4,7 @@ import Curriculum from "@/components/home/Curriculum";
 import Education from "@/components/home/Education";
 import Experience from "@/components/home/Experience";
 import Projects from "@/components/home/Projects";
-import Technologies from "@/components/home/Technologies";
+import Competences from "@/components/home/Competences";
 
 export default function Home() {
 
@@ -12,9 +12,9 @@ export default function Home() {
     <div className="bg-color02 p-5 rounded-lg shadow-lg min-h-screen flex flex-col gap-5">
       <AboutMe/>
 
-      <Education/>
+      <Competences/>
 
-      <Technologies/>
+      <Education/>
 
       <Experience/>
 

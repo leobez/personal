@@ -37,7 +37,7 @@ export default function RootLayout({
               {/* MAIN */}
               <main className="flex-grow w-full p-1 bg-color01 text-colorText" id="main">
                 
-                <div className="flex max-w-[1300px] gap-1 h-full w-fit mx-auto">
+                <div className="flex w-[1300px] gap-1 h-full mx-auto">
                   
                   <HiddenSidebar/>
                   <Overlay/>
