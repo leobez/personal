@@ -11,19 +11,33 @@ export default function Home() {
   return (
     <div className="bg-color02 p-5 rounded-lg shadow-lg min-h-screen flex flex-col gap-5">
 
-      <AboutMe/>
+      <div className="animate-fade-right">
+        <AboutMe/>
+      </div>
 
-      <Competences/>
+      <div className="animate-fade-left">
+        <Competences/>
+      </div>
 
-      <Education/>
+      <div>
+        <Education/>
+      </div>
 
-      <Experience/>
+      <div>
+        <Experience/>
+      </div>
 
-      <Projects/>
+      <div>
+        <Projects/>
+      </div>
 
-      <Curriculum/>
+      <div>
+        <Curriculum/>
+      </div>
 
-      <Contact/>
+      <div>
+        <Contact/>
+      </div>
 
     </div>
   ); 

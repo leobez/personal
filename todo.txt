@@ -1,15 +1,12 @@
--> sidebar link does not work when clicks above icon 
--> Fix initial width problem
+-> Fix sidebar (not work when click icon)
+-> Observer -> Also changes section elements from hidden, so it has fade animation.
 
 Content:
     -> Page 
-        -> Introduction: title, text, favorite games, social media
-        -> Tech stack
-        -> Experiences
         -> Projects
+        -> Download curriculum
         -> Contact form    
     
-
     -> Save things on local storage (theme, lang)
     -> Lang switcher
     -> Responsivity

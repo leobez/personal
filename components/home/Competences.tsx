@@ -4,7 +4,7 @@ import AnimatedPool from "./AnimatedPool";
 export default function Competences() {
 
     return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg flex flex-col gap-5 scroll-mt-[100px]" id="competence">
+        <section className="bg-color01 p-5 rounded-lg shadow-lg flex flex-col gap-5 scroll-mt-[100px] max-w-full" id="competence">
 
             <div>
                 <p className="font-bold text-lg">Competências</p>

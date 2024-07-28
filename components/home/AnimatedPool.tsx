@@ -39,8 +39,8 @@ export default function AnimatedPool() {
 
     return (
 
-        <div className="w-1/2 rounded-lg p-5">
-            <div className="relative overflow-hidden h-full w-full">
+        <div className="w-1/2 p-5">
+            <div className="relative overflow-hidden h-full w-full shadow-lg rounded-lg">
                 {elements.map((element:any, index:number) => (
                     <div key={index} className={`w-fit competence absolute`} style={{top: `${index}0%`, animationDelay: `${index}000ms`}}>
                         {element}
