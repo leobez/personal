@@ -26,7 +26,7 @@ export default function AboutMe() {
                 
                 <div className="h-full w-full flex justify-center items-end relative bg-color03 p-5 rounded-lg shadow-lg">
                     <div className="relative h-40 w-full">
-                        <Image src={`/bonfire.gif`} alt='bonfire.gif' fill={true} style={{objectFit: "contain"}}/>
+                        <Image src={`/bonfire.gif`} unoptimized={true} alt='bonfire.gif' fill={true} style={{objectFit: "contain"}}/>
                     </div>
                 </div>
 

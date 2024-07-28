@@ -1,10 +1,13 @@
+-> Save things on local storage (theme, lang)
+
+
 Content:
     -> Page 
-        -> Projects: when clicked
-        -> Download curriculum
-        -> Contact form    
-    
-    -> Save things on local storage (theme, lang)
+        -> Projects     : finish when clicked
+        -> Curriculum   : Button to download curriculum
+        -> Contact      : Make it work     
+
+    -> See what <Image> does before prod. 
+
     -> Lang switcher
     -> Responsivity
-    -> Animation by: https://codepen.io/baarbaracrr/pen/KKovmGb
