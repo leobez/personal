@@ -18,10 +18,10 @@ const elements = [
     <FaCss3Alt size={50}/>,
     <IoLogoJavascript size={50}/>,
     <FaReact size={50}/>,
-    <FaNodeJs size={50}/>,
-    <SiExpress size={50}/>,
     <RiTailwindCssLine size={50}/>,
+    <FaNodeJs size={50}/>,
     <RiNextjsLine size={50}/>,
+    <SiExpress size={50}/>,
     <SiMysql size={50}/>,
     <TbBrandMongodb size={50}/>,
     <FaGithub size={50}/>,
@@ -42,7 +42,10 @@ export default function AnimatedPool() {
         <div className="w-1/2 p-5">
             <div className="relative overflow-hidden h-full w-full shadow-lg rounded-lg">
                 {elements.map((element:any, index:number) => (
-                    <div key={index} className={`w-fit competence absolute`} style={{top: `${index}0%`, animationDelay: `${index}000ms`}}>
+                    <div key={index} 
+                        className={`w-fit competence absolute`} 
+                        style={{top: `${index}0%`, animationDelay: `${index}000ms`}}
+                        >
                         {element}
                     </div>
                 ))}

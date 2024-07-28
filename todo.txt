@@ -1,11 +1,6 @@
-Projects:
-    -> link to repo
-    -> Each square has a link and opens a modal with more details
-    
-
 Content:
     -> Page 
-        -> Projects
+        -> Projects: when clicked
         -> Download curriculum
         -> Contact form    
     

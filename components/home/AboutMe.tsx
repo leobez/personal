@@ -24,7 +24,7 @@ export default function AboutMe() {
                     Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Posso atuar tanto no setor de desenvolvimento quanto de analise de sistemas. Minha tecnologia favorita é JavaScript!
                 </p>
                 
-                <div className="h-full w-full flex justify-center items-end relative">
+                <div className="h-full w-full flex justify-center items-end relative bg-color03 p-5 rounded-lg shadow-lg">
                     <div className="relative h-40 w-full">
                         <Image src={`/bonfire.gif`} alt='bonfire.gif' fill={true} style={{objectFit: "contain"}}/>
                     </div>

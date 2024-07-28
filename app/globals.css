@@ -197,7 +197,7 @@
   border-radius: 1000% 1000% 0 0;
   position: fixed;
   width: 200%;
-  height: 33%;
+  height: 40%;
   animation: wave 10s -3s linear infinite;
   transform: translate3d(0, 0, 0);
   opacity: 0.8;
@@ -243,7 +243,7 @@
 
 /* Competence animation */
 .competence {
-  animation: sideToSide 4s linear infinite;
+  animation: sideToSide 8s linear infinite;
 }
 
 @keyframes sideToSide {
@@ -260,4 +260,46 @@
       left: 10px;
   }
 
+}
+
+/* Projects cards */
+.projects_cards {
+  opacity: 50%;
+  transition: 200ms;
+}
+.projects_cards::after {
+  content: ' ';
+
+}
+
+/* Projects animation */
+.projects_details_in {
+  animation: slideInFromLeft 300ms ease-in forwards;
+}
+
+@keyframes slideInFromLeft {
+
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.projects_details_out {
+  animation: slideOutToRight 300ms ease-in forwards;
+}
+
+@keyframes slideOutToRight {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+    display: hidden;
+  }
 }

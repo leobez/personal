@@ -24,7 +24,7 @@ export default function RootLayout({
   return (
       <html lang="pt-br" suppressHydrationWarning >
 
-        <body className={`${poppins.className} slateLight`} id="root">
+        <body className={`${poppins.className} neutralDark`} id="root">
 
             {/* ANIMATION */}
             <Animation/>
