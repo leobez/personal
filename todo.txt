@@ -1,6 +1,3 @@
--> Fix sidebar (not work when click icon)
--> Observer -> Also changes section elements from hidden, so it has fade animation.
-
 Content:
     -> Page 
         -> Projects

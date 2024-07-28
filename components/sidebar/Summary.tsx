@@ -14,37 +14,37 @@ const sectionsElements = [
     {
         link: 'about_me',
         name: 'Sobre mim',
-        icon: <IoPersonOutline size={25}/>
+        icon: <IoPersonOutline size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'competence',
         name: 'Competências',
-        icon: <RiComputerLine size={25}/>
+        icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'education',
         name: 'Educação',
-        icon: <IoSchoolOutline size={25}/>
+        icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'experience',
         name: 'Experiência',
-        icon: <IoBriefcaseOutline size={25}/>
+        icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'projects',
         name: 'Projetos',
-        icon: <SlSocialGithub size={25}/>
+        icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'curriculum',
         name: 'Curriculum',
-        icon: <IoDocumentOutline size={25}/>
+        icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
     },
     {
         link: 'contact',
         name: 'Contato',
-        icon: <IoMailOutline size={25}/>
+        icon: <IoMailOutline size={25} style={{pointerEvents: 'none'}}/>
     },
 ]
 
@@ -101,7 +101,11 @@ export default function Summary() {
             <div className="flex flex-col gap-3">
                 {sectionsElements.map((element:any, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>
-                        <button className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" onClick={handleClick} id={`button_${element.link}`}>
+                        <button 
+                            className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" 
+                            onClick={handleClick} 
+                            id={`button_${element.link}`}
+                        >
                             {element.name}
                             {element.icon}
                         </button>
