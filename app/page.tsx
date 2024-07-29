@@ -1,17 +1,17 @@
-import AboutMe from "@/components/home/AboutMe";
+import AboutMe from "@/components/home/AboutMe/AboutMe";
 import Contact from "@/components/home/Contact";
 import Curriculum from "@/components/home/Curriculum";
 import Education from "@/components/home/Education";
 import Experience from "@/components/home/Experience";
-import Projects from "@/components/home/Projects";
-import Competences from "@/components/home/Competences";
+import Projects from "@/components/home/Projects/Projects";
+import Competences from "@/components/home/Competences/Competences";
 
 export default function Home() {
 
   return (
     <div className="bg-color02 p-5 rounded-lg shadow-lg min-h-screen flex flex-col gap-5">
 
-      <div className="animate-fade-right">
+{/*       <div className="animate-fade-right">
         <AboutMe/>
       </div>
 
@@ -25,19 +25,19 @@ export default function Home() {
 
       <div>
         <Experience/>
-      </div>
+      </div> */}
 
       <div>
         <Projects/>
       </div>
 
-      <div>
+{/*       <div>
         <Curriculum/>
       </div>
 
       <div>
         <Contact/>
-      </div>
+      </div> */}
 
     </div>
   ); 

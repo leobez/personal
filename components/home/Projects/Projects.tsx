@@ -3,9 +3,12 @@
 import { useEffect, useState } from "react"
 import Image from 'next/image'
 
+import { AllProjects } from "./AllProjects"
+
 export default function Projects() {
 
     const [mounted, setMounted] = useState<boolean>(false)
+    const [currentProject, setCurrentProject] = useState<any>(null)
 
     useEffect(() => {
         setMounted(true)
@@ -17,9 +20,10 @@ export default function Projects() {
         const currentElement = e.currentTarget
         const copy = currentElement.cloneNode(true)
         const id = e.currentTarget.id
-        console.log(id)
-
+        const numberId = id.replace('project_', '')
         if (!id) return;
+
+        setCurrentProject(AllProjects[numberId-1])
 
         const projectDetail = document.querySelector('#project_detail')
         projectDetail?.classList.remove("projects_details_out")
@@ -34,6 +38,7 @@ export default function Projects() {
         const projectDetailSelectedCard = document.querySelector('#project_detail_selected_card')
         if (!projectDetailSelectedCard) return;
         projectDetailSelectedCard.innerHTML = ''
+        setCurrentProject(null)
 
         const projectDetail = document.querySelector('#project_detail')
         projectDetail?.classList.add("projects_details_out")
@@ -50,7 +55,7 @@ export default function Projects() {
             </div>
             
             <div className="relative overflow-clip">
-
+            
                 {/* SELECTION */}
                 <div className="flex flex-wrap relative">
 
@@ -109,22 +114,7 @@ export default function Projects() {
                         </div>
                         <div className="h-12 w-full px-3 bg-color02 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
-                                medidas-dispersao
-                            </p>
-                        </div>
-                    </div>
-
-                    <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 w-1/3 duration-200 cursor-pointer flex flex-col" 
-                    onClick={handleClick} 
-                    id="project_05"
-                    >
-                        <div className="h-full w-full relative">
-                            <Image src={`/chat-mqtt.png`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
-                        </div>
-                        <div className="h-12 w-full px-3 bg-color02 flex items-center">
-                            <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
-                                chat-mqtt
+                                ads-projects
                             </p>
                         </div>
                     </div>
@@ -132,28 +122,51 @@ export default function Projects() {
                 </div>
                 
                 {/* RESULT */}
-                <div className="h-[600px] bg-color01 rounded-lg w-full border-2 border-color04 flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
+                <div className="h-full bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
 
                     {/* Close button */}
                     <div className="w-full p-5 flex justify-end items-center bg-color04">
-                        <button className="h-12 w-12 bg-color01 rounded-lg hover:opacity-50 duration-200" onClick={handleClose}>
+                        <button className="h-12 w-12 bg-color01 rounded-lg hover:opacity-50 duration-200 text-lg font-bold" onClick={handleClose}>
                             X
                         </button>
                     </div>
 
-                    <div className="flex gap-5 p-5 h-full w-full">
-                        {/* Information about project - readme from github? */}
-                        <div className="w-3/5 bg-color02 rounded-lg p-5">
-                            Info
+                    {/* Information about project */}
+                    <div className="flex gap-5 p-5 h-96 w-full">
+                        <div className="w-1/2 h-full bg-color02 rounded-lg p-5 overflow-y-scroll">
+                            {currentProject && 
+                                <>
+                                    <p className="font-bold text-lg py-3">
+                                        {currentProject.name}
+                                    </p>
+                                    <p className="font-light text-justify py-3">
+                                        {currentProject.description}
+                                    </p>
+
+                                    <p className="flex flex-col gap-1 pt-5">
+                                        <span>Link para o repositório:</span>
+                                        <a href={`${currentProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
+                                            {currentProject.repo_link}
+                                        </a>
+                                    </p>
+
+                                    {currentProject.project_link && 
+                                    <p className="flex flex-col gap-1 pt-5">
+                                        Link para o projeto hospedado:
+                                        <a href={`${currentProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
+                                            {currentProject.project_link}
+                                        </a>
+                                    </p>
+                                    }
+                                </>
+                            }
                         </div>
                         {/* Project card */}
-                        <div className="w-2/5 bg-color02 rounded-lg p-5" id="project_detail_selected_card">
-                        </div>
+                        <div className="w-1/2 bg-color02 rounded-lg p-5 grid place-items-center" id="project_detail_selected_card"/>
+
                     </div>
-
             
-            </div>
-
+                </div>
 
             </div>
 
