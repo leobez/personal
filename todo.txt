@@ -4,7 +4,6 @@
 Content:
     -> Page 
         -> Projects     : finish when clicked
-        -> Curriculum   : Button to download curriculum
         -> Contact      : Make it work     
 
     -> See what <Image> does before prod. 
