@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-color02 p-5 rounded-lg shadow-lg min-h-screen flex flex-col gap-5">
 
-{/*       <div className="animate-fade-right">
+      <div className="animate-fade-right">
         <AboutMe/>
       </div>
 
@@ -23,7 +23,7 @@ export default function Home() {
         <Education/>
       </div>
 
-      <div>
+{/*       <div>
         <Experience/>
       </div> */}
 
@@ -31,13 +31,13 @@ export default function Home() {
         <Projects/>
       </div>
 
-{/*       <div>
+      <div>
         <Curriculum/>
       </div>
 
       <div>
         <Contact/>
-      </div> */}
+      </div>
 
     </div>
   ); 

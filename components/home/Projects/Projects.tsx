@@ -55,7 +55,7 @@ export default function Projects() {
             </div>
             
             <div className="relative overflow-clip">
-            
+
                 {/* SELECTION */}
                 <div className="flex flex-wrap relative">
 
@@ -65,7 +65,12 @@ export default function Projects() {
                     id="project_01"
                     >
                         <div className="h-full w-full relative">
-                            <Image src={`/media-collection.png`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
+                            <Image 
+                                src={`/media-collection.png`} 
+                                alt='photo' 
+                                fill={true} 
+                                style={{objectFit: "cover", objectPosition: 'center'}}
+                            />
                         </div>
                         <div className="h-12 w-full px-3 bg-color02 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
@@ -80,7 +85,12 @@ export default function Projects() {
                     id="project_02"
                     >
                         <div className="h-full w-full relative">
-                            <Image src={`/divulgacampo.png`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
+                            <Image 
+                                src={`/divulgacampo.png`} 
+                                alt='photo' 
+                                fill={true} 
+                                style={{objectFit: "cover", objectPosition: 'center'}}
+                            />
                         </div>
                         <div className="h-12 w-full px-3 bg-color02 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
@@ -95,7 +105,12 @@ export default function Projects() {
                     id="project_03"
                     >
                         <div className="h-full w-full relative">
-                            <Image src={`/seo-comparison.png`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
+                            <Image 
+                                src={`/seo-comparison.png`} 
+                                alt='photo' 
+                                fill={true} 
+                                style={{objectFit: "cover", objectPosition: 'center'}}
+                            />
                         </div>
                         <div className="h-12 w-full px-3 bg-color02 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
@@ -110,7 +125,12 @@ export default function Projects() {
                     id="project_04"
                     >
                         <div className="h-full w-full relative">
-                            <Image src={`/medidas-dispersao.png`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
+                            <Image 
+                                src={`/medidas-dispersao.png`} 
+                                alt='photo' 
+                                fill={true} 
+                                style={{objectFit: "cover", objectPosition: 'center'}}
+                            />
                         </div>
                         <div className="h-12 w-full px-3 bg-color02 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">

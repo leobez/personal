@@ -30,23 +30,26 @@ export default function Sidebar() {
             <div className="flex gap-3 w-full">
 
                 {/* THEME SELECTOR */}
-                <div className="shadow-lg rounded-lg bg-color01 p-5 w-1/3">
+                <div className="shadow-lg rounded-lg bg-color01 p-3 w-1/3 flex flex-col items-center justify-center">
 
-                    <button className="rounded-lg shadow-lg p-2 bg-color03 duration-300 hover:bg-color04" onClick={toggleThemeSelector}>
+                    <button className="rounded-lg shadow-lg p-2 bg-color03 duration-200 hover:bg-color04" onClick={toggleThemeSelector}>
                         <IoColorPaletteOutline size={30}/>
                     </button>
 
-                    <div className="absolute flex flex-col gap-5 bg-color04 p-5 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 hidden" ref={themeSelectorRef}>
-                        <p className="font-bold text-md">
-                            Select a color theme
-                        </p>
-                        <ThemeSelector/>
+                    <div className="relative self-start">
+                        <div className="absolute w-fit top-0 left-0 flex flex-col gap-5 bg-color04 p-5 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 hidden" ref={themeSelectorRef}>
+                            <p className="font-bold text-sm">
+                                Select a color theme
+                            </p>
+                            <ThemeSelector/>
+                        </div>
                     </div>
+
 
                 </div>
 
                 {/* LANG SELECTOR */}
-                <div className="shadow-lg rounded-lg bg-color01 p-5 w-2/3 grid place-items-center">
+                <div className="shadow-lg rounded-lg bg-color01 p-3 w-2/3 grid place-items-center">
                     <LangSwitcher/>
                 </div>
 

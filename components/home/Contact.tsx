@@ -14,9 +14,7 @@ export default function Contact() {
                 </div>
                 
                 <div>
-                    <textarea name="message" id="message" className="h-80 w-full">
-
-                    </textarea>
+                    <textarea name="message" id="message" className="h-80 w-full resize-none" />
                 </div>
 
                 <div className="flex gap-1">

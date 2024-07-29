@@ -1,13 +1,7 @@
 -> Save things on local storage (theme, lang)
-
 -> Add size property to <Image> that have fill
 
-
 Content:
-    -> Page 
-        -> Contact      : Make it work     
-
-    -> See what <Image> does before prod. 
-
+    -> Page -> Contact      : Make it work     
     -> Lang switcher
     -> Responsivity

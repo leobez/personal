@@ -26,11 +26,11 @@ const sectionsElements = [
         name: 'Educação',
         icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
     },
-    {
+/*     {
         link: 'experience',
         name: 'Experiência',
         icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
-    },
+    }, */
     {
         link: 'projects',
         name: 'Projetos',
@@ -102,7 +102,7 @@ export default function Summary() {
                 {sectionsElements.map((element:any, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>
                         <button 
-                            className="p-4 px-10 h-full w-full flex justify-between items-center text-sm" 
+                            className="py-4 px-3 h-full w-full flex justify-between items-center text-sm" 
                             onClick={handleClick} 
                             id={`button_${element.link}`}
                         >

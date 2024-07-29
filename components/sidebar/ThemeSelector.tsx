@@ -23,19 +23,11 @@ const lightColors:string[] = [
 export default function ThemeSelector() {
 
     const [mounted, setMounted] = useState<boolean>(false)
-    const [currentTheme, setCurrentTheme] = useState<string|null>('neutralLight')
+    const [currentTheme, setCurrentTheme] = useState<string|null>('')
 
     useEffect(() => {
-        setMounted(true)
-    }, [])
 
-    const updateTheme = (e:any):void => {
-        e.preventDefault()
-        //console.log('chamou')
-
-        const selectedTheme = e.target.id
-        //console.log('selectedTheme: ', e.target)
-        if (!selectedTheme) return;
+        if (!currentTheme || !currentTheme.length) return;
 
         const ROOT  = document.querySelector("#root")
         if (!ROOT) return;
@@ -49,8 +41,38 @@ export default function ThemeSelector() {
             })
         })
 
+        // Insert new theme 
+        ROOT.classList.add(currentTheme)
+        
+        // Save new theme on local storage
+        localStorage.setItem('theme', currentTheme)
+
+    }, [currentTheme])
+
+    useEffect(() => {
+        setMounted(true)
+        
+        // Get theme from local storage
+        const localStorageTheme = localStorage.getItem('theme')
+
+        if (localStorageTheme) {
+            setCurrentTheme(localStorageTheme)
+        } else {
+            // Default theme
+            setCurrentTheme('slateLight')
+        }
+
+    }, [])
+
+    const updateTheme = (e:any):void => {
+        e.preventDefault()
+        //console.log('chamou')
+
+        const selectedTheme = e.target.id
+        //console.log('selectedTheme: ', e.target)
+        if (!selectedTheme) return;
+
         setCurrentTheme(selectedTheme)
-        ROOT.classList.add(selectedTheme) 
     }
 
     if (!mounted) return;
