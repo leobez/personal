@@ -21,20 +21,20 @@ export default function AboutMe() {
                 />
                 
                 <p className="text-justify font-light">
-                    Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Posso atuar tanto no setor de desenvolvimento quanto de analise de sistemas. Minha tecnologia favorita é JavaScript!
+                    Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Minha tecnologia favorita é JavaScript!
                 </p>
                 
-                <div className="h-full w-full flex justify-center items-end relative bg-color03 p-3 rounded-lg shadow-lg">
-                    <div className="relative h-40 w-full">
-                        <Image src={`/bonfire.gif`} unoptimized={true} alt='bonfire.gif' fill={true} style={{objectFit: "contain"}}/>
+                <div className="w-full flex items-end justify-end relative h-full rounded-lg">
+                    <div className="relative w-full p-6 bg-color03 rounded-lg grid place-items-center">
+                        <Image src={`/bonfire.gif`} unoptimized={true} alt='bonfire.gif' height={160} width={160} style={{objectFit: "contain"}}/>
                     </div>
                 </div>
 
             </div>
 
-            <div className="bg-color03 rounded-lg flex flex-col justify-between md:h-full md:w-1/2 min-h-[500px] h-full w-full">
+            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 h-fit w-full gap-3">
 
-                <div className="relative h-full w-full">
+                <div className="relative h-80 w-full rounded-lg">
                     <Image 
                         src={`/photo.jpg`} 
                         alt='photo' 

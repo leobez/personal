@@ -1,6 +1,6 @@
 Content:
-    -> Overlay: disable scroll? and close when click
-    -> Add size property to <Image> that have fill + (look into next sharp package) + Fix images
+    -> All Images: size, fill, sharp package
     
     -> Lang switcher (+ save on local storage)
     -> Page -> Contact      : Make it work     
+    -> Overlay: close sidebar when clicked

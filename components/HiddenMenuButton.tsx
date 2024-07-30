@@ -25,7 +25,7 @@ export default function HiddenMenuButton() {
 
         <>
             {/* HIDDEN MENU BUTTON */}
-            <button className="h-12 w-12 bg-color02 rounded-lg shadow-lg xl:hidden grid place-items-center hover:bg-color03 duration-200 cursor-pointer z-50" onClick={handleClick}>
+            <button className="h-12 w-12 bg-color01 rounded-lg shadow-lg xl:hidden grid place-items-center hover:bg-color02 duration-200 cursor-pointer z-50" onClick={handleClick}>
                 <CiMenuBurger size={30}/>
             </button> 
         </>
