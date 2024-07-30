@@ -274,7 +274,7 @@
 
 /* Projects animation */
 .projects_details_in {
-  animation: slideInFromLeft 300ms ease-in forwards;
+  animation: slideInFromLeft 200ms ease-in forwards;
 }
 
 @keyframes slideInFromLeft {
@@ -289,7 +289,7 @@
 }
 
 .projects_details_out {
-  animation: slideOutToRight 300ms ease-in forwards;
+  animation: slideOutToRight 200ms ease-in forwards;
 }
 
 @keyframes slideOutToRight {

@@ -47,7 +47,7 @@ export default function Projects() {
     if (!mounted) return;
 
     return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg flex flex-col gap-5 scroll-mt-[100px]" id='projects'>
+        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]" id='projects'>
 
             <div>
                 <p className="font-bold text-lg">Projetos</p>
@@ -57,10 +57,10 @@ export default function Projects() {
             <div className="relative overflow-clip">
 
                 {/* SELECTION */}
-                <div className="flex flex-wrap relative">
+                <div className="md:flex md:flex-wrap grid sm:grid-cols-2 grid-cols-1 relative">
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 w-1/3 duration-200 cursor-pointer flex flex-col" 
+                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_01"
                     >
@@ -72,7 +72,7 @@ export default function Projects() {
                                 style={{objectFit: "cover", objectPosition: 'center'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color02 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 media-collection
                             </p>
@@ -80,7 +80,7 @@ export default function Projects() {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 w-1/3 duration-200 cursor-pointer flex flex-col" 
+                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_02"
                     >
@@ -92,7 +92,7 @@ export default function Projects() {
                                 style={{objectFit: "cover", objectPosition: 'center'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color02 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 divulgacampo
                             </p>
@@ -100,7 +100,7 @@ export default function Projects() {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 w-1/3 duration-200 cursor-pointer flex flex-col" 
+                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_03"
                     >
@@ -112,7 +112,7 @@ export default function Projects() {
                                 style={{objectFit: "cover", objectPosition: 'center'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color02 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 seo-comparison
                             </p>
@@ -120,7 +120,7 @@ export default function Projects() {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 w-1/3 duration-200 cursor-pointer flex flex-col" 
+                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_04"
                     >
@@ -132,7 +132,7 @@ export default function Projects() {
                                 style={{objectFit: "cover", objectPosition: 'center'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color02 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 ads-projects
                             </p>
@@ -145,15 +145,15 @@ export default function Projects() {
                 <div className="h-full bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
 
                     {/* Close button */}
-                    <div className="w-full p-5 flex justify-end items-center bg-color04">
+                    <div className="w-full p-3 flex justify-end items-center bg-color04">
                         <button className="h-12 w-12 bg-color01 rounded-lg hover:opacity-50 duration-200 text-lg font-bold" onClick={handleClose}>
                             X
                         </button>
                     </div>
 
                     {/* Information about project */}
-                    <div className="flex gap-5 p-5 h-96 w-full">
-                        <div className="w-1/2 h-full bg-color02 rounded-lg p-5 overflow-y-scroll">
+                    <div className="flex gap-3 p-3 h-96 w-full">
+                        <div className="w-1/2 h-full bg-color02 rounded-lg p-3 overflow-y-scroll">
                             {currentProject && 
                                 <>
                                     <p className="font-bold text-lg py-3">
@@ -182,7 +182,7 @@ export default function Projects() {
                             }
                         </div>
                         {/* Project card */}
-                        <div className="w-1/2 bg-color02 rounded-lg p-5 grid place-items-center" id="project_detail_selected_card"/>
+                        <div className="w-1/2 bg-color02 rounded-lg p-3 grid place-items-center" id="project_detail_selected_card"/>
 
                     </div>
             

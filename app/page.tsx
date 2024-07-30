@@ -9,7 +9,7 @@ import Competences from "@/components/home/Competences/Competences";
 export default function Home() {
 
   return (
-    <div className="bg-color02 p-5 rounded-lg shadow-lg min-h-screen flex flex-col gap-5">
+    <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3">
 
       <div className="animate-fade-right">
         <AboutMe/>
@@ -35,9 +35,9 @@ export default function Home() {
         <Curriculum/>
       </div>
 
-      <div>
+{/*       <div>
         <Contact/>
-      </div>
+      </div> */}
 
     </div>
   ); 

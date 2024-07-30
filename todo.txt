@@ -1,7 +1,6 @@
--> Save things on local storage (theme, lang)
--> Add size property to <Image> that have fill
-
 Content:
-    -> Page -> Contact      : Make it work     
-    -> Lang switcher
     -> Responsivity
+    -> Overlay: disable scroll? and close when click
+    -> Add size property to <Image> that have fill + (look into next sharp package)
+    -> Lang switcher (+ save on local storage)
+    -> Page -> Contact      : Make it work     

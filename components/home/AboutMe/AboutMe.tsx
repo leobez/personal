@@ -9,9 +9,9 @@ import Image from 'next/image'
 export default function AboutMe() {
 
     return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg flex gap-5 scroll-mt-[100px] max-w-full" id="about_me">
+        <section className="bg-color01 p-3 rounded-lg shadow-lg gap-3 scroll-mt-[100px] max-w-full flex md:flex-row flex-col-reverse" id="about_me">
 
-            <div className="w-1/2 flex flex-col gap-5">
+            <div className="flex flex-col gap-3 md:w-1/2 w-full">
                 
                 <GradualText 
                     text="Olá, me chamo Leonardo!" 
@@ -24,7 +24,7 @@ export default function AboutMe() {
                     Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Posso atuar tanto no setor de desenvolvimento quanto de analise de sistemas. Minha tecnologia favorita é JavaScript!
                 </p>
                 
-                <div className="h-full w-full flex justify-center items-end relative bg-color03 p-5 rounded-lg shadow-lg">
+                <div className="h-full w-full flex justify-center items-end relative bg-color03 p-3 rounded-lg shadow-lg">
                     <div className="relative h-40 w-full">
                         <Image src={`/bonfire.gif`} unoptimized={true} alt='bonfire.gif' fill={true} style={{objectFit: "contain"}}/>
                     </div>
@@ -32,20 +32,37 @@ export default function AboutMe() {
 
             </div>
 
-            <div className="border-2 border-color04 w-1/2 h-[450px] flex flex-col justify-between">
+            <div className="bg-color03 rounded-lg flex flex-col justify-between md:h-full md:w-1/2 min-h-[500px] h-full w-full">
 
                 <div className="relative h-full w-full">
-                    <Image src={`/photo.jpg`} alt='photo' fill={true} style={{objectFit: "cover", objectPosition: 'center'}}/>
+                    <Image 
+                        src={`/photo.jpg`} 
+                        alt='photo' 
+                        fill={true} 
+                        style={{objectFit: "cover", objectPosition: 'center'}}
+                    />
                 </div>
 
-                <div className="border-t-2 border-color04 w-full p-2 flex items-center justify-between">
+                <div className="border-t-2 border-color04 p-2 flex items-center justify-between w-full">
                     <div className="w-fit flex flex-col">
-                        <a href="https://www.linkedin.com/in/leosouz/" target="_blank" className="p-2 text-xs flex items-center gap-1"><FaLinkedin size={30}/>linkedin.com/leosouz</a>
-                        <a href="https://github.com/leobez" target="_blank" className="p-2 text-xs flex items-center gap-1"><FaGithub size={30}/>github.com/leobez</a>
+                        <a href="https://www.linkedin.com/in/leosouz/" target="_blank" className="p-2 text-xs flex-col items-start gap-1">
+                            <FaLinkedin size={30}/>
+                            <span className="block">linkedin.com/leosouz</span>
+                        </a>
+                        <a href="https://github.com/leobez" target="_blank" className="p-2 text-xs flex-col items-start gap-1">
+                            <FaGithub size={30}/>
+                            <span className="block">github.com/leobez</span>
+                        </a>
                     </div>
                     <div className="w-fit flex flex-col">
-                        <p className="p-2 text-xs flex items-center gap-1"><IoMailOutline size={30}/>leosbezerra@outlook.com</p>
-                        <p className="p-2 text-xs flex items-center gap-1"><CiPhone size={30}/>+55 (19) 99825-0343</p>
+                        <p className="p-2 text-xs flex flex-col items-start gap-1">
+                            <IoMailOutline size={30}/>
+                            <span className="block">leosbezerra@outlook.com</span>
+                        </p>
+                        <p className="p-2 text-xs flex flex-col items-start gap-1">
+                            <CiPhone size={30}/>
+                            <span className="block">+55 (19) 99825-0343</span>
+                        </p>
                     </div>
                 </div>
 

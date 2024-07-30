@@ -37,7 +37,7 @@ export default function RootLayout({
               {/* MAIN */}
               <main className="flex-grow w-full p-1 bg-color01 text-colorText" id="main">
                 
-                <div className="flex w-full 2xl:w-[1300px] gap-1 h-full mx-auto">
+                <div className="flex w-full xl:w-[1250px] gap-1 h-full mx-auto">
                   
                   <HiddenSidebar/>
                   <Overlay/>
@@ -48,7 +48,7 @@ export default function RootLayout({
                   </div>
 
                   {/* MAIN CONTENT */}
-                  <div className="2xl:w-3/4 w-11/12 z-10 mx-auto">
+                  <div className="2xl:w-3/4 lg:w-11/12 w-full z-10 mx-auto">
                       {children}
                   </div>
 

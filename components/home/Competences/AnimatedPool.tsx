@@ -39,7 +39,7 @@ export default function AnimatedPool() {
 
     return (
 
-        <div className="w-1/2 p-5">
+        <div className="w-1/2 p-3">
             <div className="relative overflow-hidden h-full w-full shadow-lg rounded-lg">
                 {elements.map((element:any, index:number) => (
                     <div key={index} 

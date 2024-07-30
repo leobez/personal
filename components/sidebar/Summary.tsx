@@ -41,11 +41,11 @@ const sectionsElements = [
         name: 'Curriculum',
         icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
     },
-    {
+/*     {
         link: 'contact',
         name: 'Contato',
         icon: <IoMailOutline size={25} style={{pointerEvents: 'none'}}/>
-    },
+    }, */
 ]
 
 export default function Summary() {
@@ -96,7 +96,7 @@ export default function Summary() {
     if (!mounted) return;
 
     return (
-        <div className="flex flex-col gap-5 bg-color01 p-5 rounded-lg shadow-lg w-full">
+        <div className="flex flex-col gap-3 bg-color01 p-3 rounded-lg shadow-lg w-full">
             <p className="text-lg font-bold">Sumário</p>
             <div className="flex flex-col gap-3">
                 {sectionsElements.map((element:any, index:number) => (

@@ -78,7 +78,7 @@ export default function ThemeSelector() {
     if (!mounted) return;
 
     return (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-3">
             
             <div className="flex gap-1">
                 {darkColors.map((color:string, index:number) => (
