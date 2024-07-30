@@ -3,10 +3,9 @@ import { FaGithub } from "react-icons/fa";
 import GradualText from "./GradualText";
 import { IoMailOutline } from "react-icons/io5";
 import { CiPhone } from "react-icons/ci";
-
 import Image from 'next/image'
 
-export default function AboutMe() {
+export default async function AboutMe() {
 
     return (
         <section className="bg-color01 p-3 rounded-lg shadow-lg gap-3 scroll-mt-[100px] max-w-full flex md:flex-row flex-col-reverse" id="about_me">
@@ -20,6 +19,10 @@ export default function AboutMe() {
                     ms={50}
                 />
                 
+                <p className="h-12 w-fit text-[#000]">
+                    {/* DICT */}
+                </p>
+
                 <p className="text-justify font-light">
                     Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Minha tecnologia favorita é JavaScript!
                 </p>

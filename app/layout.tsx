@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, NextPage } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -15,15 +15,10 @@ export const metadata: Metadata = {
   description: "Website pessoal com Next.js",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-
+function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
       <html lang="pt-br" suppressHydrationWarning >
-
+      
         <body className={`${poppins.className}`} id="root">
 
             {/* ANIMATION */}
@@ -62,7 +57,9 @@ export default function RootLayout({
             </div>
 
         </body>
-
+        
       </html>
   );
 }
+
+export default RootLayout;

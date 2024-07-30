@@ -1,11 +1,11 @@
 'use client'
 
-import { ThemeProvider } from "next-themes"
+import { LangContextProvider } from "@/context/LangContext"
 
 export function Providers({children}:{children:React.ReactNode}) {
     return (
-        <ThemeProvider attribute="class">
+        <LangContextProvider>
             {children}
-        </ThemeProvider>
+        </LangContextProvider>
     )
 }
