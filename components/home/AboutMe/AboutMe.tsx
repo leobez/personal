@@ -32,7 +32,7 @@ export default function AboutMe() {
 
             </div>
 
-            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 h-fit w-full gap-3">
+            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 h-fit w-full ">
 
                 <div className="relative h-80 w-full rounded-lg">
                     <Image 

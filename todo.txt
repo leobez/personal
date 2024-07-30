@@ -1,6 +1,7 @@
 Content:
     -> All Images: size, fill, sharp package
     
+    
     -> Lang switcher (+ save on local storage)
-    -> Page -> Contact      : Make it work     
+    -> Page -> Contact page     
     -> Overlay: close sidebar when clicked
