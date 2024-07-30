@@ -142,7 +142,7 @@ export default function Projects() {
                 </div>
                 
                 {/* RESULT */}
-                <div className="h-full bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
+                <div className="h-[700px] bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
 
                     {/* Close button */}
                     <div className="w-full p-3 flex justify-end items-center bg-color04">

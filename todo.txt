@@ -1,6 +1,8 @@
 Content:
-    -> Responsivity
+    -> Responsivity: projects: width for images, use a unique img component for it
     -> Overlay: disable scroll? and close when click
-    -> Add size property to <Image> that have fill + (look into next sharp package)
+    -> Add size property to <Image> that have fill + (look into next sharp package) + Fix images
+
+    
     -> Lang switcher (+ save on local storage)
     -> Page -> Contact      : Make it work     
