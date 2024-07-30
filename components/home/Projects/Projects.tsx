@@ -17,8 +17,6 @@ export default function Projects() {
     const handleClick = (e:any):void => {
         e.preventDefault()
 
-        const currentElement = e.currentTarget
-        const copy = currentElement.cloneNode(true)
         const id = e.currentTarget.id
         const numberId = id.replace('project_', '')
         if (!id) return;
@@ -28,16 +26,11 @@ export default function Projects() {
         const projectDetail = document.querySelector('#project_detail')
         projectDetail?.classList.remove("projects_details_out")
         projectDetail?.classList.remove("hidden")
-
-        const projectDetailSelectedCard = document.querySelector('#project_detail_selected_card')
-        copy.classList.add('w-full')
-        projectDetailSelectedCard?.appendChild(copy)
     }
 
     const handleClose = ():void => {
         const projectDetailSelectedCard = document.querySelector('#project_detail_selected_card')
         if (!projectDetailSelectedCard) return;
-        projectDetailSelectedCard.innerHTML = ''
         setCurrentProject(null)
 
         const projectDetail = document.querySelector('#project_detail')
@@ -142,54 +135,71 @@ export default function Projects() {
                 </div>
                 
                 {/* RESULT */}
-                <div className="h-[700px] bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
+                <div className="h-full bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
 
                     {/* Close button */}
-                    <div className="w-full p-3 flex justify-end items-center bg-color04">
+                    <div className="w-full p-3 flex justify-end items-center bg-color04 rounded-t-lg">
                         <button className="h-12 w-12 bg-color01 rounded-lg hover:opacity-50 duration-200 text-lg font-bold" onClick={handleClose}>
                             X
                         </button>
                     </div>
 
                     {/* Information about project */}
-                    <div className="flex gap-3 p-3 h-96 w-full">
-                        <div className="w-1/2 h-full bg-color02 rounded-lg p-3 overflow-y-scroll">
-                            {currentProject && 
-                                <>
-                                    <p className="font-bold text-lg py-3">
-                                        {currentProject.name}
-                                    </p>
-                                    <p className="font-light text-justify py-3">
-                                        {currentProject.description}
-                                    </p>
+                    {currentProject && 
+                        <div className="flex md:flex-row flex-col-reverse gap-3 p-3 h-full w-full overflow-y-scroll">
 
-                                    <p className="flex flex-col gap-1 pt-5">
-                                        <span>Link para o repositório:</span>
-                                        <a href={`${currentProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
-                                            {currentProject.repo_link}
-                                        </a>
-                                    </p>
+                            <div className="md:w-1/2 w-full h-full bg-color02 rounded-lg p-3">
+                                <p className="font-bold text-lg py-3">
+                                    {currentProject.name}
+                                </p>
+                                <p className="font-light text-justify py-3">
+                                    {currentProject.description}
+                                </p>
 
-                                    {currentProject.project_link && 
-                                    <p className="flex flex-col gap-1 pt-5">
-                                        Link para o projeto hospedado:
-                                        <a href={`${currentProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
-                                            {currentProject.project_link}
-                                        </a>
-                                    </p>
-                                    }
-                                </>
-                            }
+                                <p className="flex flex-col gap-1 pt-5">
+                                    <span>Link para o repositório:</span>
+                                    <a href={`${currentProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
+                                        {currentProject.repo_link}
+                                    </a>
+                                </p>
+
+                                {currentProject.project_link && 
+                                <p className="flex flex-col gap-1 pt-5">
+                                    Link para o projeto hospedado:
+                                    <a href={`${currentProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
+                                        {currentProject.project_link}
+                                    </a>
+                                </p>
+                                }
+                            </div>
+    
+                            {/* Project card */}
+                            <div className="md:w-1/2 w-full h-full bg-color02 rounded-lg p-3 grid place-items-center" id="project_detail_selected_card">
+                                <div 
+                                    className="bg-color03 border-2 border-color04 md:h-64 h-96 w-full flex flex-col" 
+                                    id="project_01"
+                                    >
+                                    <div className="h-full w-full relative">
+                                        <Image 
+                                            src={`${currentProject.image_src}`} 
+                                            alt='photo' 
+                                            fill={true} 
+                                            style={{objectFit: "cover", objectPosition: 'center'}}
+                                        />
+                                    </div>
+                                    <div className="h-12 w-full px-3 bg-color03 flex items-center">
+                                        <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
+                                            {currentProject.name}
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                        {/* Project card */}
-                        <div className="w-1/2 bg-color02 rounded-lg p-3 grid place-items-center" id="project_detail_selected_card"/>
+                    }
 
-                    </div>
-            
                 </div>
-
             </div>
-
         </section>
     )
 }

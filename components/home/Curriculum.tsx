@@ -11,7 +11,7 @@ export default function Curriculum() {
 
                 <div className="h-fit w-fit flex flex-col bg-color03 shadow-lg rounded-lg hover:opacity-50 duration-200 cursor-pointer">   
                     <a href="/Curriculum.pdf" download={'Leob-CV'} className="p-3">
-                        Donwload CV
+                        Download CV
                     </a>
                 </div>
 
