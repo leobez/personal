@@ -72,7 +72,7 @@ export default function Projects({content}:Props) {
     if (!mounted) return;
 
     return (
-        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]" id='projects'>
+        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]:" id='projects'>
 
             <div>
                 <p className="font-bold text-lg">{content.title}</p>
@@ -85,19 +85,19 @@ export default function Projects({content}:Props) {
                 <div className="md:flex md:flex-wrap grid sm:grid-cols-2 grid-cols-1 relative">
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                    className="rounded-lg bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_01"
                     >
-                        <div className="h-full w-full relative">
+                        <div className="h-full w-full relative rounded-lg">
                             <Image 
                                 src={`/images/media-collection.png`} 
                                 alt='photo' 
                                 fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center'}}
+                                style={{objectFit: "cover", objectPosition: 'center', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center rounded-b-lg">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 media-collection
                             </p>
@@ -105,7 +105,7 @@ export default function Projects({content}:Props) {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                    className="rounded-lg bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_02"
                     >
@@ -114,10 +114,10 @@ export default function Projects({content}:Props) {
                                 src={`/images/divulgacampo.png`} 
                                 alt='photo' 
                                 fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center'}}
+                                style={{objectFit: "cover", objectPosition: 'center', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center rounded-b-lg">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 divulgacampo
                             </p>
@@ -125,7 +125,7 @@ export default function Projects({content}:Props) {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                    className="rounded-lg bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_03"
                     >
@@ -134,10 +134,10 @@ export default function Projects({content}:Props) {
                                 src={`/images/seo-comparison.png`} 
                                 alt='photo' 
                                 fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center'}}
+                                style={{objectFit: "cover", objectPosition: 'center', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center rounded-b-lg">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 seo-comparison
                             </p>
@@ -145,7 +145,7 @@ export default function Projects({content}:Props) {
                     </div>
 
                     <div 
-                    className="bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                    className="rounded-lg bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                     onClick={handleClick} 
                     id="project_04"
                     >
@@ -154,10 +154,10 @@ export default function Projects({content}:Props) {
                                 src={`/images/medidas-dispersao.png`} 
                                 alt='photo' 
                                 fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center'}}
+                                style={{objectFit: "cover", objectPosition: 'center', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem'}}
                             />
                         </div>
-                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
+                        <div className="h-12 w-full px-3 bg-color03 flex items-center rounded-b-lg">
                             <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
                                 ads-projects
                             </p>

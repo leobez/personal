@@ -1,7 +1,6 @@
-Content:    
-    -> Lang: create 'en' version
-    -> Final responsiv test
-
+TODO:    
     -> Way to detect theme on req, then send to user with corret theme
-    -> Page -> Contact page     
+    -> Sidebar auto dark not working when small screen
     -> Overlay: close sidebar when clicked
+    -> Page -> Contact page     
+    

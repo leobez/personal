@@ -65,9 +65,15 @@ export default function Summary({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
 
+    useEffect(() => {
+        setMounted(true)
+    }, [])
+
     const [currentSection, setCurrentSection] = useState<string>('')
 
     useEffect(() => {
+
+        if (!mounted) return;
 
         let options = {
             rootMargin: "0px",
@@ -95,9 +101,8 @@ export default function Summary({content}:Props) {
             //console.log('observing section: ', section)
         });
 
-        setMounted(true)
 
-    }, [])
+    }, [mounted])
 
     const handleClick = (e:any):void => {
         e.preventDefault()

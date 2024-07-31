@@ -5,8 +5,6 @@ export default function ProjectsEntry() {
 
     const t = useTranslations('Projects')
 
-    console.log('t: ', t)
-
     return (
         <>
             <Projects content={
