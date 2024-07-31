@@ -1,4 +1,6 @@
 Content:    
+    -> Lang: sidebar (theme, summary) and projects
+
     -> Way to detect theme on req, then send to user with corret theme
     
     -> Page -> Contact page     

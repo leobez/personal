@@ -1,5 +1,40 @@
 {
     "AboutMe": {
-      "title": "Olá, me chamo Leonardo!"
+      "title": "Olá, me chamo Leonardo!",
+      "description": "Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Minha tecnologia favorita é JavaScript!"
+    },
+    "ThemeSelector": {
+      "title": "Selecione um tema:"
+    },
+    "Competences": {
+      "title": "Competências",
+      "bd": "Banco de dados",
+      "tools": "Ferramentas",
+      "langs": {
+        "title": "Idiomas",
+        "lang1": "Português (Fluente)",
+        "lang2": "Inglês (Avançado)"
+      }
+    },
+    "Education": {
+      "title": "Educação",
+      "educations": {
+        "education1": {
+          "desc": "Técnico de informática"
+        },
+        "education2": {
+          "desc": "Técnologo em análise e desenvolvimento de sistemas"
+        },
+        "education3": {
+          "desc": "Capacitação em informática [80 horas]"
+        },
+        "education4": {
+          "desc": "Inglês [70 horas]"
+        },
+        "education5": {
+          "desc": "React.js [40 horas] e Node.js [40 horas]"
+        }
+      },
+      "title2": "Cursos"
     }
 }

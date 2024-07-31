@@ -23,7 +23,7 @@ export default function AboutMe() {
                 />
 
                 <p className="text-justify font-light">
-                    Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Minha tecnologia favorita é JavaScript!
+                    {t('description')}
                 </p>
                 
                 <div className="w-full flex items-end justify-center relative h-full rounded-lg">

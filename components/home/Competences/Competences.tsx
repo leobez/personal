@@ -1,12 +1,15 @@
 import AnimatedPool from "./AnimatedPool";
+import { useTranslations } from "next-intl";
 
 export default function Competences() {
+
+    const t = useTranslations('Competences')
 
     return (
         <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px] max-w-full" id="competence">
 
             <div>
-                <p className="font-bold text-lg">Competências</p>
+                <p className="font-bold text-lg">{t('title')}</p>
             </div>
 
             <div className="flex md:flex-row flex-col">
@@ -34,7 +37,7 @@ export default function Competences() {
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">Banco de dados</p>
+                        <p className="font-bold">{t('bd')}</p>
                         <ul className="list-disc pl-6">
                             <li>MySQL</li>
                             <li>MongoDB</li>
@@ -43,7 +46,7 @@ export default function Competences() {
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">Ferramentas</p>
+                        <p className="font-bold">{t('tools')}</p>
                         <ul className="list-disc pl-6">
                             <li>Git</li>
                             <li>Github</li>
@@ -52,10 +55,10 @@ export default function Competences() {
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">Idiomas</p>
+                        <p className="font-bold">{t('langs.title')}</p>
                         <ul className="list-disc pl-6">
-                            <li>Português (Fluente)</li>
-                            <li>Inglês (Avançado)</li>
+                            <li>{t('langs.lang1')}</li>
+                            <li>{t('langs.lang2')}</li>
                         </ul>
                     </div>
 

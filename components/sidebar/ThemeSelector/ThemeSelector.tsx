@@ -1,5 +1,6 @@
 'use client'
 
+import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { IoColorPaletteOutline } from "react-icons/io5";
 
@@ -90,6 +91,7 @@ export default function ThemeSelector() {
 
     return (
         <div className="shadow-lg rounded-lg bg-color01 p-3 w-1/3 flex flex-col items-center justify-center">
+            
             <button className="rounded-lg shadow-lg p-2 bg-color03 duration-200 hover:bg-color04" onClick={toggleThemeSelector}>
                 <IoColorPaletteOutline size={30}/>
             </button>
@@ -97,7 +99,7 @@ export default function ThemeSelector() {
             <div className="relative self-start">
                 <div className="absolute w-fit top-0 left-0 flex flex-col gap-3 bg-color04 p-3 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 hidden" ref={themeSelectorRef}>
                     <p className="font-bold text-sm">
-                        Select a color theme
+                        Color theme
                     </p>
                     <div className="flex flex-col gap-3">
             

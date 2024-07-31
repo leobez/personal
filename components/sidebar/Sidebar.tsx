@@ -1,5 +1,5 @@
 import LocaleSwitcher from "./LocaleSwitcher/LocaleSwitcher";
-import ThemeSelector from "./ThemeSelector";
+import ThemeSelector from "./ThemeSelector/ThemeSelector";
 import Summary from "./Summary";
 
 export default function Sidebar() {  
