@@ -27,7 +27,7 @@ export default function AboutMe() {
                 </p>
                 
                 <div className="w-full flex items-end justify-center relative h-full rounded-lg">
-                    <div className="relative w-full h-52 bg-color03 rounded-lg grid place-items-center">
+                    <div className="relative w-full h-72 bg-color03 rounded-lg grid place-items-center">
                         <Image 
                             src={`/gifs/darksouls.gif`} 
                             unoptimized={true} 
