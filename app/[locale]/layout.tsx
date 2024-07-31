@@ -8,6 +8,8 @@ import HiddenSidebar from "../../components/sidebar/HiddenSidebar";
 import Animation from "../../components/Animation";
 import Overlay from "../../components/Overlay";
 import { Providers } from "../provider";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
 
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
@@ -22,6 +24,8 @@ type Props = {
 }
 
 async function RootLayout({children, params:{locale}}: Props) {
+
+  const messages = await getMessages();
 
   return (
       <html lang={locale} suppressHydrationWarning >
@@ -51,9 +55,9 @@ async function RootLayout({children, params:{locale}}: Props) {
 
                   {/* MAIN CONTENT */}
                   <div className="2xl:w-3/4 lg:w-11/12 w-full z-10 mx-auto">
-                      <Providers>
-                        {children}
-                      </Providers>
+                    <NextIntlClientProvider messages={messages}>
+                      {children}
+                    </NextIntlClientProvider>
                   </div>
 
                 </div>
