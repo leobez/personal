@@ -82,7 +82,11 @@ export default function ThemeSelector() {
         setCurrentTheme(selectedTheme)
     }
 
-    if (!mounted) return;
+    if (!mounted) {
+        return (
+            <div className="w-1/3 bg-color01 rounded-lg"/>
+        );
+    }
 
     return (
         <div className="shadow-lg rounded-lg bg-color01 p-3 w-1/3 flex flex-col items-center justify-center">

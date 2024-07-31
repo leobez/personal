@@ -11,11 +11,11 @@ export default function Home() {
   return (
     <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3">
 
-      <div className="animate-fade-right">
+      <div>
         <AboutMe/>
       </div>
 
-      <div className="animate-fade-left">
+      <div>
         <Competences/>
       </div>
 

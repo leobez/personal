@@ -59,7 +59,7 @@ export default function Projects() {
                     >
                         <div className="h-full w-full relative">
                             <Image 
-                                src={`/media-collection.png`} 
+                                src={`/images/media-collection.png`} 
                                 alt='photo' 
                                 fill={true} 
                                 style={{objectFit: "cover", objectPosition: 'center'}}
@@ -79,7 +79,7 @@ export default function Projects() {
                     >
                         <div className="h-full w-full relative">
                             <Image 
-                                src={`/divulgacampo.png`} 
+                                src={`/images/divulgacampo.png`} 
                                 alt='photo' 
                                 fill={true} 
                                 style={{objectFit: "cover", objectPosition: 'center'}}
@@ -99,7 +99,7 @@ export default function Projects() {
                     >
                         <div className="h-full w-full relative">
                             <Image 
-                                src={`/seo-comparison.png`} 
+                                src={`/images/seo-comparison.png`} 
                                 alt='photo' 
                                 fill={true} 
                                 style={{objectFit: "cover", objectPosition: 'center'}}
@@ -119,7 +119,7 @@ export default function Projects() {
                     >
                         <div className="h-full w-full relative">
                             <Image 
-                                src={`/medidas-dispersao.png`} 
+                                src={`/images/medidas-dispersao.png`} 
                                 alt='photo' 
                                 fill={true} 
                                 style={{objectFit: "cover", objectPosition: 'center'}}

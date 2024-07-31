@@ -1,5 +1,5 @@
 Content:    
-    -> Lang switcher (+ save on local storage)
+    -> Way to detect theme on req, then send to user with corret theme
     
     -> Page -> Contact page     
     -> Overlay: close sidebar when clicked

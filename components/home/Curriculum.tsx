@@ -10,14 +10,14 @@ export default function Curriculum() {
             <div className="flex flex-col gap-3">
 
                 <div className="h-fit w-fit flex flex-col bg-color03 shadow-lg rounded-lg hover:opacity-50 duration-200 cursor-pointer">   
-                    <a href="/Curriculum.pdf" download={'Leob-CV'} className="p-3">
+                    <a href="/pdf/Curriculum.pdf" download={'Leob-CV'} className="p-3">
                         Download CV
                     </a>
                 </div>
 
                 <div className="md:h-[700px] h-[500px] w-full">
                     <embed
-                        src="Curriculum.pdf"
+                        src="/pdf/Curriculum.pdf"
                         type="application/pdf"
                         width="100%"
                         height="100%"

@@ -1,6 +1,5 @@
 import AnimatedPool from "./AnimatedPool";
 
-
 export default function Competences() {
 
     return (

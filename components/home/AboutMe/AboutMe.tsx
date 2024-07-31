@@ -1,5 +1,3 @@
-'use client'
-
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import GradualText from "./GradualText";
@@ -28,22 +26,28 @@ export default function AboutMe() {
                     Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Busco oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Minha tecnologia favorita é JavaScript!
                 </p>
                 
-                <div className="w-full flex items-end justify-end relative h-full rounded-lg">
-                    <div className="relative w-full p-6 bg-color03 rounded-lg grid place-items-center">
-                        <Image src={`/bonfire.gif`} unoptimized={true} alt='bonfire.gif' height={160} width={160} style={{objectFit: "contain"}}/>
+                <div className="w-full flex items-end justify-center relative h-full rounded-lg">
+                    <div className="relative w-full h-52 bg-color03 rounded-lg grid place-items-center">
+                        <Image 
+                            src={`/gifs/darksouls.gif`} 
+                            unoptimized={true} 
+                            alt='darksouls.gif' 
+                            fill={true} 
+                            style={{objectFit: "cover", borderRadius: "0.5rem"}}
+                        />
                     </div>
                 </div>
 
             </div>
 
-            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 h-fit w-full ">
+            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 h-fit w-full">
 
                 <div className="relative h-80 w-full rounded-lg">
                     <Image 
-                        src={`/photo.jpg`} 
+                        src={`/images/photo.jpg`} 
                         alt='photo' 
                         fill={true} 
-                        style={{objectFit: "cover", objectPosition: 'center'}}
+                        style={{objectFit: "cover", objectPosition: 'center', opacity: '0.8', borderTopRightRadius: '0.5rem', borderTopLeftRadius: '0.5rem'}}
                     />
                 </div>
 

@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.4.6",
+    "clsx": "^2.1.1",
     "i18next": "^23.12.2",
     "negotiator": "^0.6.3",
     "next": "14.2.5",

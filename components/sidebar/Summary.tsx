@@ -93,7 +93,11 @@ export default function Summary() {
         elementToTakeTo?.scrollIntoView({behavior: 'smooth'})
     }
 
-    if (!mounted) return;
+    if (!mounted) {
+        return (
+            <div className="w-full  h-[400px] bg-color01 rounded-lg"/>
+        );
+    }
 
     return (
         <div className="flex flex-col gap-3 bg-color01 p-3 rounded-lg shadow-lg w-full">

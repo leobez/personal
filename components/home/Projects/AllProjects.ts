@@ -6,7 +6,7 @@ export const AllProjects = [
         topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
         repo_link: 'https://github.com/leobez/media-collection',
         project_link: 'https://media-collection.vercel.app/',
-        image_src: '/media-collection.png' 
+        image_src: '/images/media-collection.png' 
     },
     {
         id: 2,
@@ -15,7 +15,7 @@ export const AllProjects = [
         topics: ['React.js', 'CSS', 'Firebase', 'Context API'],
         repo_link: 'https://github.com/leobez/divulgacampo',
         project_link: 'https://divulgacampo.web.app/',
-        image_src: '/divulgacampo.png'
+        image_src: '/images/divulgacampo.png'
     },
     {
         id: 3, 
@@ -24,7 +24,7 @@ export const AllProjects = [
         topics: ['React.js', 'Next.js', 'Tailwind CSS', 'Web Vitals', 'SSR', 'CSR', 'SEO'],
         repo_link: 'https://github.com/leobez/seo-comparison',
         project_link: 'https://ric.cps.sp.gov.br/handle/123456789/21533',
-        image_src: '/seo-comparison.png' 
+        image_src: '/images/seo-comparison.png' 
     },
     {
         id: 4,
@@ -33,7 +33,7 @@ export const AllProjects = [
         topics: ['Various'],
         repo_link: 'https://github.com/leobez/ads-content',
         project_link: '',
-        image_src: '/medidas-dispersao.png'
+        image_src: '/images/medidas-dispersao.png'
     },
     
 ]
