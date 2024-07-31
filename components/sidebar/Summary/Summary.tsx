@@ -10,45 +10,58 @@ import { SlSocialGithub } from "react-icons/sl";
 import { IoDocumentOutline } from "react-icons/io5";
 import { IoMailOutline } from "react-icons/io5";
 
-const sectionsElements = [
-    {
-        link: 'about_me',
-        name: 'Sobre mim',
-        icon: <IoPersonOutline size={25} style={{pointerEvents: 'none'}}/>
-    },
-    {
-        link: 'competence',
-        name: 'Competências',
-        icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
-    },
-    {
-        link: 'education',
-        name: 'Educação',
-        icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
-    },
-/*     {
-        link: 'experience',
-        name: 'Experiência',
-        icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
-    }, */
-    {
-        link: 'projects',
-        name: 'Projetos',
-        icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
-    },
-    {
-        link: 'curriculum',
-        name: 'Curriculum',
-        icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
-    },
-/*     {
-        link: 'contact',
-        name: 'Contato',
-        icon: <IoMailOutline size={25} style={{pointerEvents: 'none'}}/>
-    }, */
-]
+type Props = {
+    content: {
+        title:string,
+        name1:string,
+        name2:string,
+        name3:string,
+        name4:string,
+        name5:string,
+        name6:string,
+        name7:string,
+    }
+}
 
-export default function Summary() {
+export default function Summary({content}:Props) {
+
+    const sectionsElements = [
+        {
+            link: 'about_me',
+            name: content.name1,
+            icon: <IoPersonOutline size={25} style={{pointerEvents: 'none'}}/>
+        },
+        {
+            link: 'competence',
+            name: content.name2,
+            icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
+        },
+        {
+            link: 'education',
+            name: content.name3,
+            icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
+        },
+    /*     {
+            link: 'experience',
+            name: content.name4,
+            icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
+        }, */
+        {
+            link: 'projects',
+            name: content.name5,
+            icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
+        },
+        {
+            link: 'curriculum',
+            name: content.name6,
+            icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
+        },
+    /*     {
+            link: 'contact',
+            name: content.name7,
+            icon: <IoMailOutline size={25} style={{pointerEvents: 'none'}}/>
+        }, */
+    ]
 
     const [mounted, setMounted] = useState<boolean>(false)
 
@@ -101,7 +114,7 @@ export default function Summary() {
 
     return (
         <div className="flex flex-col gap-3 bg-color01 p-3 rounded-lg shadow-lg w-full">
-            <p className="text-lg font-bold">Sumário</p>
+            <p className="text-lg font-bold">{content.title}</p>
             <div className="flex flex-col gap-3">
                 {sectionsElements.map((element:any, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>

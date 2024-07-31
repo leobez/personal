@@ -5,10 +5,42 @@ import Image from 'next/image'
 
 import { AllProjects } from "./AllProjects"
 
-export default function Projects() {
+type Props = {
+    content: {
+        title:string,
+        subtitle:string,
+        projects: {
+            1: {
+                desc: string
+            },
+            2: {
+                desc: string
+            },
+            3: {
+                desc: string
+            },
+            4: {
+                desc: string
+            }
+        },
+        linkRepo:string,
+        linkProject:string
+    } 
+}
+
+export default function Projects({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
-    const [currentProject, setCurrentProject] = useState<any>(null)
+    
+    const [currentProject, setCurrentProject] = useState<{
+        id: number,
+        name: string,
+        description: string,
+        topics: string[],
+        repo_link: string,
+        project_link: string,
+        image_src: string,
+    }|null>(null)
 
     useEffect(() => {
         setMounted(true)
@@ -43,8 +75,8 @@ export default function Projects() {
         <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]" id='projects'>
 
             <div>
-                <p className="font-bold text-lg">Projetos</p>
-                <p className="font-light"><a href="https://github.com/leobez?tab=repositories" target="_blank" className="hover:text-color04 duration-200">Repositórios do github</a></p> 
+                <p className="font-bold text-lg">{content.title}</p>
+                <p className="font-light"><a href="https://github.com/leobez?tab=repositories" target="_blank" className="hover:text-color04 duration-200">{content.subtitle}</a></p> 
             </div>
             
             <div className="relative overflow-clip">
@@ -153,11 +185,11 @@ export default function Projects() {
                                     {currentProject.name}
                                 </p>
                                 <p className="font-light text-justify py-3">
-                                    {currentProject.description}
+                                    {content.projects[1].desc}
                                 </p>
 
                                 <p className="flex flex-col gap-1 pt-5">
-                                    <span>Link para o repositório:</span>
+                                    <span>{content.linkRepo}</span>
                                     <a href={`${currentProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
                                         {currentProject.repo_link}
                                     </a>
@@ -165,7 +197,7 @@ export default function Projects() {
 
                                 {currentProject.project_link && 
                                 <p className="flex flex-col gap-1 pt-5">
-                                    Link para o projeto hospedado:
+                                    <span>{content.linkProject}</span>
                                     <a href={`${currentProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
                                         {currentProject.project_link}
                                     </a>

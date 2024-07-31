@@ -1,6 +1,6 @@
 import LocaleSwitcher from "./LocaleSwitcher/LocaleSwitcher";
-import ThemeSelector from "./ThemeSelector/ThemeSelector";
-import Summary from "./Summary";
+import ThemeSelectorEntry from "./ThemeSelector/ThemeSelectorEntry";
+import SummaryEntry from "./Summary/SummaryEntry";
 
 export default function Sidebar() {  
 
@@ -10,7 +10,7 @@ export default function Sidebar() {
             <div className="flex gap-3 w-full">
 
                 {/* THEME SELECTOR */}
-                <ThemeSelector/>
+                <ThemeSelectorEntry/>
 
                 {/* LANG SELECTOR */}
                 <div className="shadow-lg rounded-lg bg-color01 p-3 w-2/3 grid place-items-center">
@@ -20,7 +20,7 @@ export default function Sidebar() {
             </div>
             
             <div className="w-full">
-                <Summary/>
+                <SummaryEntry/>
             </div>
 
         </div>

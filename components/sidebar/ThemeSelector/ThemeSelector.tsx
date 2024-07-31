@@ -1,6 +1,5 @@
 'use client'
 
-import { useTranslations } from "next-intl";
 import { useEffect, useRef, useState } from "react";
 import { IoColorPaletteOutline } from "react-icons/io5";
 
@@ -22,7 +21,11 @@ const lightColors:string[] = [
     'limeLight',
 ]
 
-export default function ThemeSelector() {
+type Props = {
+    content: any
+}
+
+export default function ThemeSelector({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentTheme, setCurrentTheme] = useState<string|null>('')
@@ -99,7 +102,7 @@ export default function ThemeSelector() {
             <div className="relative self-start">
                 <div className="absolute w-fit top-0 left-0 flex flex-col gap-3 bg-color04 p-3 rounded-lg shadow-lg mt-1 animate-fade-right animate-duration-200 hidden" ref={themeSelectorRef}>
                     <p className="font-bold text-sm">
-                        Color theme
+                        {content}
                     </p>
                     <div className="flex flex-col gap-3">
             
