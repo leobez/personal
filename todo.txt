@@ -1,7 +1,7 @@
 Content:    
-    -> Lang: projects + make it work + fix fixed number
+    -> Lang: create 'en' version
+    -> Final responsiv test
+
     -> Way to detect theme on req, then send to user with corret theme
-    
-    
     -> Page -> Contact page     
     -> Overlay: close sidebar when clicked

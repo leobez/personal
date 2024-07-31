@@ -15,16 +15,16 @@ export default function ProjectsEntry() {
                     subtitle: t('subtitle'),
                     projects: {
                         1: {
-                            desc: t('projects.mediacollection.desc')
+                            desc: t('projects.mediacollection.description')
                         },
                         2: {
-                            desc: t('projects.divulgacampo.desc')
+                            desc: t('projects.divulgacampo.description')
                         },
                         3: {
-                            desc: t('projects.seocomparison.desc')
+                            desc: t('projects.seocomparison.description')
                         },
                         4: {
-                            desc: t('projects.adsprojects.desc')
+                            desc: t('projects.adsprojects.description')
                         },
                     } ,
                     linkRepo: t("linkRepo"),  

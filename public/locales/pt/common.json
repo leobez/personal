@@ -54,7 +54,7 @@
       "subtitle": "Projetos do github",
       "projects": {
         "mediacollection" : {
-          "description": "Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem."
+          "description": "Site que usa uma API pública para exibir filmes com alguns recursos de busca/filtragem."
         },
         "divulgacampo" : {
           "description": "Site para divulgação de pesquisas de campo."

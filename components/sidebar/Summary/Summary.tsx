@@ -114,7 +114,6 @@ export default function Summary({content}:Props) {
 
     return (
         <div className="flex flex-col gap-3 bg-color01 p-3 rounded-lg shadow-lg w-full">
-            <p className="text-lg font-bold">{content.title}</p>
             <div className="flex flex-col gap-3">
                 {sectionsElements.map((element:any, index:number) => (
                     <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>

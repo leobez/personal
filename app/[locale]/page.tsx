@@ -3,8 +3,8 @@ import Contact from "@/components/home/Contact";
 import Curriculum from "@/components/home/Curriculum";
 import Education from "@/components/home/Education";
 import Experience from "@/components/home/Experience";
-import Projects from "@/components/home/Projects/Projects";
 import Competences from "@/components/home/Competences/Competences";
+import ProjectsEntry from "@/components/home/Projects/ProjectsEntry";
 
 export default function Home() {
 
@@ -28,7 +28,7 @@ export default function Home() {
       </div> */}
 
       <div>
-        <Projects/>
+        <ProjectsEntry/>
       </div>
 
       <div>

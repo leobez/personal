@@ -1,5 +1,72 @@
 {
-    "AboutMe": {
-      "title": "Hello, I'm Leo!"
+  "AboutMe": {
+    "title": "Hello, i'm Leo!",
+    "description": "I am a computer technician and (almost) graduated in systems analysis and development. I am looking for opportunities in the IT market that allow me to contribute to the development of software solutions. My favorite technology is JavaScript!"
+  },
+  "ThemeSelector": {
+    "title": "Select a theme:"
+  },
+  "Summary": {
+    "title": "Summary",
+    "names": {
+      "name1": "About me",
+      "name2": "Competences",
+      "name3": "Education",
+      "name4": "Experience",
+      "name5": "Projects",
+      "name6": "Curriculum",
+      "name7": "Contact"
     }
+  },
+  "Competences": {
+    "title": "Competences",
+    "bd": "Database",
+    "tools": "Tools",
+    "langs": {
+      "title": "Languages",
+      "lang1": "Portuguese (Native)",
+      "lang2": "English (Advanced)"
+    }
+  },
+  "Education": {
+    "title": "Education",
+    "educations": {
+      "education1": {
+        "desc": "Technician in informatics"
+      },
+      "education2": {
+        "desc": "Graduation in system development and analysis"
+      },
+      "education3": {
+        "desc": "Informatics basics [80 hours]"
+      },
+      "education4": {
+        "desc": "English [70 hours]"
+      },
+      "education5": {
+        "desc": "React.js [40 hours] and Node.js [40 hours]"
+      }
+    },
+    "title2": "Courses"
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "Github projects",
+    "projects": {
+      "mediacollection" : {
+        "description": "Site that uses a public API to display movies with some search/filtering capabilities."
+      },
+      "divulgacampo" : {
+        "description": "Website for sharing field research."
+      },
+      "seocomparison" : {
+        "description": "Research about the impact on SEO of the SSR and CSR website rendering approaches."
+      },
+      "adsprojects" : {
+        "description": "Set of projects carried out at the ADS university."
+      }
+    },
+    "linkRepo": "Link to repository:",
+    "linkProject": "Link to projeto:"
+  }
 }

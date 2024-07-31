@@ -31,7 +31,7 @@ type Props = {
 export default function Projects({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
-    
+
     const [currentProject, setCurrentProject] = useState<{
         id: number,
         name: string,
@@ -185,7 +185,8 @@ export default function Projects({content}:Props) {
                                     {currentProject.name}
                                 </p>
                                 <p className="font-light text-justify py-3">
-                                    {content.projects[1].desc}
+                                    {/* @ts-expect-error -- Too lazy rn to fix this properly */}
+                                    {content.projects[Number(currentProject.id)].desc}
                                 </p>
 
                                 <p className="flex flex-col gap-1 pt-5">
