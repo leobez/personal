@@ -1,11 +1,13 @@
-'use client'
+import { NextIntlClientProvider } from "next-intl"
+import { getMessages } from "next-intl/server"
 
-import { LangContextProvider } from "@/context/LangContext"
+export async function Providers({children}:{children:React.ReactNode}) {
 
-export function Providers({children}:{children:React.ReactNode}) {
+    const messages = await getMessages()
+ 
     return (
-        <LangContextProvider>
+        <NextIntlClientProvider messages={messages}>
             {children}
-        </LangContextProvider>
+        </NextIntlClientProvider>
     )
 }

@@ -1,12 +1,13 @@
-import type { Metadata, NextPage } from "next";
+import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
-import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import Sidebar from "@/components/sidebar/Sidebar";
-import HiddenSidebar from "@/components/sidebar/HiddenSidebar";
-import Animation from "@/components/Animation";
-import Overlay from "@/components/Overlay";
+import "../globals.css";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
+import Sidebar from "../../components/sidebar/Sidebar";
+import HiddenSidebar from "../../components/sidebar/HiddenSidebar";
+import Animation from "../../components/Animation";
+import Overlay from "../../components/Overlay";
+import { Providers } from "../provider";
 
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
@@ -15,9 +16,15 @@ export const metadata: Metadata = {
   description: "Website pessoal com Next.js",
 };
 
-function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
+type Props = {
+  children: React.ReactNode;
+  params: {locale:string},
+}
+
+async function RootLayout({children, params:{locale}}: Props) {
+
   return (
-      <html lang="pt-br" suppressHydrationWarning >
+      <html lang={locale} suppressHydrationWarning >
       
         <body className={`${poppins.className}`} id="root">
 
@@ -44,7 +51,9 @@ function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
 
                   {/* MAIN CONTENT */}
                   <div className="2xl:w-3/4 lg:w-11/12 w-full z-10 mx-auto">
-                      {children}
+                      <Providers>
+                        {children}
+                      </Providers>
                   </div>
 
                 </div>

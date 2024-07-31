@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from "react";
-import LangSwitcher from "./LangSwitcher";
+import LangSwitcher from "./LocaleSwitcher/LocaleSwitcher";
 import ThemeSelector from "./ThemeSelector";
 import { IoColorPaletteOutline } from "react-icons/io5";
 import Summary from "./Summary";
