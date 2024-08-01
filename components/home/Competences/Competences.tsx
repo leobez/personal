@@ -19,38 +19,33 @@ export default function Competences() {
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">Front-end</p>
                         <ul className="list-disc pl-6">
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>JavaScript</li>
-                            <li>React.js</li>
-                            <li>Tailwind CSS</li>
+                            <li>HTML/CSS/JS;</li>
+                            <li>React.js;</li>
+                            <li>Tailwind CSS.</li>
                         </ul>
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">Back-end</p>
                         <ul className="list-disc pl-6">
-                            <li>Node.js</li>
-                            <li>Next.js</li>
-                            <li>Express.js</li>
+                            <li>Node.js;</li>
+                            <li>Next.js.</li>
                         </ul>
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">{t('bd')}</p>
                         <ul className="list-disc pl-6">
-                            <li>MySQL</li>
-                            <li>MongoDB</li>
-                            <li>Express.js</li>
+                            <li>MySQL;</li>
+                            <li>MongoDB.</li>
                         </ul>
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">{t('tools')}</p>
                         <ul className="list-disc pl-6">
-                            <li>Git</li>
-                            <li>Github</li>
-                            <li>Office 365</li>
+                            <li>Git && Github;</li>
+                            <li>Office 365.</li>
                         </ul>
                     </div>
 

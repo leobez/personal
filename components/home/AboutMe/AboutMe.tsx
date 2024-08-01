@@ -19,7 +19,7 @@ export default function AboutMe() {
                     text={t('title')}
                     classNames="font-bold text-lg" 
                     preHeight='28px' 
-                    ms={50}
+                    ms={25}
                 />
 
                 <p className="text-justify font-light">
@@ -27,7 +27,7 @@ export default function AboutMe() {
                 </p>
                 
                 <div className="w-full flex items-end justify-center relative h-full rounded-lg">
-                    <div className="relative w-full h-72 bg-color03 rounded-lg grid place-items-center">
+                    <div className="relative w-full h-[280px] bg-color03 rounded-lg grid place-items-center">
                         <Image 
                             src={`/gifs/darksouls.gif`} 
                             unoptimized={true} 
