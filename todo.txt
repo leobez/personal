@@ -1,6 +1,5 @@
 TODO:    
     -> Way to detect theme on req, then send to user with corret theme
     -> Sidebar auto dark not working when small screen
-    -> Overlay: close sidebar when clicked
     -> Page -> Contact page     
     

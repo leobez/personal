@@ -24,7 +24,7 @@ type Props = {
 async function RootLayout({children, params:{locale}}: Props) {
 
   return (
-      <html lang={locale} suppressHydrationWarning >
+      <html lang={locale} suppressHydrationWarning>
       
         <body className={`${poppins.className}`} id="root">
 

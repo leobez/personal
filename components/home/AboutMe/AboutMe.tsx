@@ -14,7 +14,7 @@ export default function AboutMe() {
         <section className="bg-color01 p-3 rounded-lg shadow-lg gap-3 scroll-mt-[100px] max-w-full flex md:flex-row flex-col-reverse" id="about_me">
 
             <div className="flex flex-col gap-3 md:w-1/2 w-full">
-                
+
                 <GradualText 
                     text={t('title')}
                     classNames="font-bold text-lg" 
@@ -27,7 +27,7 @@ export default function AboutMe() {
                 </p>
                 
                 <div className="w-full flex items-end justify-center relative h-full rounded-lg">
-                    <div className="relative w-full h-[280px] bg-color03 rounded-lg grid place-items-center">
+                    <div className="relative w-full h-[260px] bg-color03 rounded-lg grid place-items-center">
                         <Image 
                             src={`/gifs/darksouls.gif`} 
                             unoptimized={true} 

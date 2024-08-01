@@ -43,14 +43,10 @@ export default function Projects({content}:Props) {
     const [mounted, setMounted] = useState<boolean>(false)
 
     const [currentProject, setCurrentProject] = useState<Project|null>(null)
-    useEffect(() => {
-        console.log('currentProject: ', currentProject)
-    }, [currentProject])  
 
     useEffect(() => {
         setMounted(true)
     }, [])  
-
 
     const handleClick = (e:any):void => {
         e.preventDefault()
@@ -60,12 +56,12 @@ export default function Projects({content}:Props) {
 
         const numberId = id.replace('project_', '')
         
-        console.log('numberId: ', numberId)
+        //console.log('numberId: ', numberId)
 
         setCurrentProject(AllProjects[numberId-1])
 
         const projectDetail = document.querySelector('#project_detail')
-        console.log('projectDetail: ', projectDetail)
+        //console.log('projectDetail: ', projectDetail)
         projectDetail?.classList.remove("projects_details_out")
         projectDetail?.classList.remove("hidden")
     }
