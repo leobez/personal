@@ -1,4 +1,5 @@
-TODO:    
+TODO:  
+    -> EN Curriculum
     -> Way to detect theme on req, then send to user with corret theme
     -> Sidebar auto dark not working when small screen
     -> Page -> Contact page     
