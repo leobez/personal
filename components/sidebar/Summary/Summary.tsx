@@ -84,14 +84,14 @@ export default function Summary({content}:Props) {
             entries.forEach((entry:IntersectionObserverEntry) => {
                 if (entry.isIntersecting) {
                     const idOfVisibleElement = entry.target.id
-                    console.log('current visible section: ', idOfVisibleElement)
+                    //console.log('current visible section: ', idOfVisibleElement)
                     setCurrentSection(idOfVisibleElement)
                 }
             });
         }, options);
         
         const sectionsToObserve:any = document.getElementsByTagName('section')
-        console.log('sectionsToObserve: ', sectionsToObserve)
+        //console.log('sectionsToObserve: ', sectionsToObserve)
 
         if (!sectionsToObserve) return;
 
