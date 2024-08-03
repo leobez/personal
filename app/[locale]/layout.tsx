@@ -12,8 +12,8 @@ import { Providers } from "../provider";
 const poppins = Poppins({subsets: ["latin"], weight: ["100","200","300","400","500","600","700","800","900"]})
 
 export const metadata: Metadata = {
-  title: "Personal Website",
-  description: "Website pessoal com Next.js",
+  title: "Leo B.",
+  description: "Personal portfolio",
 };
 
 type Props = {
@@ -28,7 +28,7 @@ async function RootLayout({children, params:{locale}}: Props) {
       
         <body className={`${poppins.className}`} id="root">
 
-            {/* ANIMATION */}
+            {/* BG ANIMATION */}
             <Animation/>
 
             <div className="min-h-screen h-fit flex flex-col">

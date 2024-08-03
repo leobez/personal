@@ -1,11 +1,11 @@
 export const AllProjects = [
     {
         id: 1,
-        name: 'media-collection',
+        name: 'cinelog',
         description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
         topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
-        repo_link: 'https://github.com/leobez/media-collection',
-        project_link: 'https://media-collection.vercel.app/',
+        repo_link: 'https://github.com/leobez/cinelog',
+        project_link: 'https://cinelogleob.vercel.app/',
         image_src: '/images/media-collection.png' 
     },
     {

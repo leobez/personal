@@ -101,7 +101,7 @@ export default function Projects({content}:Props) {
                     <ProjectComponent
                         clickFunc={handleClick}
                         imgSrc="/images/media-collection.png"
-                        name="media-collection"
+                        name="cinelog"
                         id="project_01"
                     />
                     <ProjectComponent
