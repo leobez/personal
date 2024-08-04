@@ -19,9 +19,25 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                 </button>
             </div>
 
-            <div className="flex md:flex-row flex-col-reverse gap-3 p-3 h-full w-full overflow-y-scroll">
+            <div className="flex md:flex-row flex-col gap-3 p-3 h-full w-full overflow-y-scroll">
 
-                <div className="md:w-1/2 w-full h-full bg-color02 rounded-lg p-3">
+                <div className="md:w-1/2 w-full md:h-full bg-color02 rounded-lg shadow-lg p-3 grid place-items-center" id="project_detail_selected_card">
+                    <div 
+                        className="bg-color03 md:h-full h-96 w-full flex flex-col" 
+                        id="project_01"
+                        >
+                        <div className="h-full w-full relative">
+                            <Image 
+                                src={`${selectedProject.image_src}`} 
+                                alt='photo' 
+                                fill={true} 
+                                style={{objectFit: "cover", objectPosition: 'center', borderRadius: '0.5rem'}}
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="md:w-1/2 w-full bg-color02 rounded-lg p-3">
 
                     <p className="font-bold text-lg py-3">
                         {selectedProject.name}
@@ -56,28 +72,7 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                     }
                     
                 </div>
-    
-                {/* Project card */}
-                <div className="md:w-1/2 w-full h-full bg-color02 rounded-lg shadow-lg p-3 grid place-items-center" id="project_detail_selected_card">
-                    <div 
-                        className="bg-color03 md:h-64 h-96 w-full flex flex-col" 
-                        id="project_01"
-                        >
-                        <div className="h-full w-full relative">
-                            <Image 
-                                src={`${selectedProject.image_src}`} 
-                                alt='photo' 
-                                fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center'}}
-                            />
-                        </div>
-                        <div className="h-12 w-full px-3 bg-color03 flex items-center">
-                            <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
-                                {selectedProject.name}
-                            </p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </>
     )

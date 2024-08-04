@@ -274,17 +274,19 @@
 
 /* Projects animation */
 .projects_details_in {
-  animation: slideInFromLeft 200ms ease-in forwards;
+  animation: scaleIn 200ms ease-in forwards;
 }
 
-@keyframes slideInFromLeft {
+@keyframes scaleIn {
 
   0% {
-    transform: translateX(-100%);
+    opacity: 0;
+    scale: 0;
   }
 
   100% {
-    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
   }
 }
 
@@ -295,11 +297,13 @@
 @keyframes slideOutToRight {
 
   0% {
-    transform: translateX(0);
+    opacity: 1;
+    scale: 1;
   }
 
   100% {
-    transform: translateX(100%);
+    opacity: 0;
+    scale: 0;    
     display: hidden;
   }
 }

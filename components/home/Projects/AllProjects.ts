@@ -28,12 +28,12 @@ export const AllProjects = [
     },
     {
         id: 4,
-        name: 'ads-projects',
+        name: 'ads-content',
         description: 'Conjunto de projetos feitos na faculdade de ADS.',
         topics: ['Various'],
         repo_link: 'https://github.com/leobez/ads-content',
         project_link: '',
-        image_src: '/images/medidas-dispersao.png'
+        image_src: '/images/ads-content.png'
     },
     
 ]

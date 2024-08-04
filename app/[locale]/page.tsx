@@ -11,29 +11,29 @@ export default function Home() {
   return (
     <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3">
 
-      <div>
+{/* <div>
         <AboutMe/>
-      </div>
+      </div> */}
 
       <div>
         <Competences/>
       </div>
 
-      <div>
+{/*       <div>
         <Education/>
-      </div>
+      </div> */}
 
 {/*       <div>
         <Experience/>
       </div> */}
 
-      <div>
+{/*       <div>
         <ProjectsEntry/>
-      </div>
+      </div> */}
 
-      <div>
+{/*       <div>
         <Curriculum/>
-      </div>
+      </div> */}
 
 {/*       <div>
         <Contact/>

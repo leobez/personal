@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react"
 import { AllProjects } from "./AllProjects"
 import ProjectComponent from "./ProjectComponent"
 import SelectedProject from "./SelectedProject"
+import { motion } from "framer-motion"
 
 type Props = {
     content: {
@@ -42,7 +43,16 @@ export default function Projects({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
 
-    const [currentProject, setCurrentProject] = useState<Project|null>(null)
+    const [currentProject, setCurrentProject] = useState<Project|null>({
+    id: 1,
+    name: 'cinelog',
+    description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
+    topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
+    repo_link: 'https://github.com/leobez/cinelog',
+    project_link: 'https://cinelogleob.vercel.app/',
+    image_src: '/images/media-collection.png' 
+        
+    })
 
     useEffect(() => {
         setMounted(true)
@@ -79,7 +89,7 @@ export default function Projects({content}:Props) {
 
     return (
 
-        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]:" id='projects'>
+        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px] overflow-clip" id='projects'>
 
             <div>
                 <p className="font-bold text-lg">
@@ -93,7 +103,7 @@ export default function Projects({content}:Props) {
                 </p> 
             </div>
             
-            <div className="relative overflow-clip">
+            <div>
 
                 {/* Projects cards */}
                 <div className="md:flex md:flex-wrap grid sm:grid-cols-2 grid-cols-1 relative">
@@ -118,14 +128,14 @@ export default function Projects({content}:Props) {
                     />
                     <ProjectComponent
                         clickFunc={handleClick}
-                        imgSrc="/images/medidas-dispersao.png"
+                        imgSrc="/images/ads-content.png"
                         name="ads-projects"
                         id="project_04"
                     />
 
                 </div>
 
-                <div className="h-full bg-color03 rounded-lg w-full flex flex-col absolute top-0 projects_details_in hidden" id="project_detail">
+                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in" id="project_detail">
                     {currentProject && 
                         <SelectedProject 
                             closeFunc={handleClose} 
