@@ -272,6 +272,24 @@
 
 }
 
+/* overlay animation */
+.overlay_in {
+  animation: scaleInO 100ms ease-in forwards;
+}
+
+@keyframes scaleInO {
+
+  0% {
+    opacity: 0;
+    scale: 0;
+  }
+
+  100% {
+    opacity: 50%;
+    scale: 1;
+  }
+}
+
 /* Projects animation */
 .projects_details_in {
   animation: scaleIn 200ms ease-in forwards;
