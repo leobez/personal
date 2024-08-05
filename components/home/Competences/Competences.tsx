@@ -14,12 +14,12 @@ export default function Competences() {
 
             <div className="flex md:flex-row flex-col">
 
-                <div className="p-3 gap-3 grid md:w-1/2 md:grid-cols-1 w-full sm:grid-cols-2 grid-cols-1">
+                <div className="p-3 gap-3 grid md:w-1/3 md:grid-cols-1 w-full sm:grid-cols-2 grid-cols-1">
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">Front-end</p>
                         <ul className="list-disc pl-6">
-                            <li>HTML/CSS/JS;</li>
+                            <li>HTML <span className="text-xs">&&</span> CSS <span className="text-xs">&&</span> JS;</li>
                             <li>React.js;</li>
                             <li>Tailwind CSS.</li>
                         </ul>
@@ -44,7 +44,7 @@ export default function Competences() {
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">{t('tools')}</p>
                         <ul className="list-disc pl-6">
-                            <li>Git && Github;</li>
+                            <li>Git <span className="text-xs">&&</span> Github;</li>
                             <li>Office 365.</li>
                         </ul>
                     </div>
