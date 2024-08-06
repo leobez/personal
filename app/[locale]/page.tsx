@@ -15,9 +15,9 @@ export default function Home() {
         <AboutMe/>
       </div>
 
-{/*       <div>
+      <div>
         <Competences/>
-      </div> */}
+      </div>
 
       <div>
         <Education/>
@@ -33,7 +33,7 @@ export default function Home() {
 
       <div>
         <Curriculum/>
-      </div>
+      </div> 
 
 {/*       <div>
         <Contact/>

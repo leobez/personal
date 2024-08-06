@@ -135,7 +135,7 @@ export default function Projects({content}:Props) {
 
                 </div>
 
-                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in" id="project_detail">
+                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden" id="project_detail">
                     {currentProject && 
                         <SelectedProject 
                             closeFunc={handleClose} 

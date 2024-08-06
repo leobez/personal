@@ -12,7 +12,7 @@ export default function Competences() {
                 <p className="font-bold text-lg">{t('title')}</p>
             </div>
 
-            <div className="flex md:flex-row flex-col">
+            <div className="flex md:flex-row flex-col justify-between">
 
                 <div className="p-3 gap-3 grid md:w-1/3 md:grid-cols-1 w-full sm:grid-cols-2 grid-cols-1">
 
