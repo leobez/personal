@@ -26,7 +26,8 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                         className="bg-color03 md:h-full h-96 w-full flex flex-col" 
                         id="project_01"
                         >
-                        <div className="h-full w-full relative">
+                        <div 
+                            className="h-full w-full relative">
                             <Image 
                                 src={`${selectedProject.image_src}`} 
                                 alt='photo' 

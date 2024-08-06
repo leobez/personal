@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from "react"
 import { AllProjects } from "./AllProjects"
 import ProjectComponent from "./ProjectComponent"
 import SelectedProject from "./SelectedProject"
-import { motion } from "framer-motion"
 
 type Props = {
     content: {
