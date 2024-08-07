@@ -1,15 +1,17 @@
 import Image from "next/image"
-import { Project } from "./Projects";
+import { LocalizedProjectContent, Project, ShowCaseDesc } from "./Projects";
 import ProjectShowcase from "./ProjectShowcase";
 import { IoCloseOutline } from "react-icons/io5";
 
 type Props = {
     closeFunc:()=>void;
     selectedProject:Project;
-    content:any;
+    selectedProjectLocalizedContent:LocalizedProjectContent;
 }
 
-export default function SelectedProject({closeFunc, selectedProject, content}:Props) {
+export default function SelectedProject({closeFunc, selectedProject, selectedProjectLocalizedContent}:Props) {
+
+    //console.log('selectedProjectLocalizedContent:', selectedProjectLocalizedContent)
 
     return (
 
@@ -25,7 +27,10 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
 
                 <div className="w-full h-[400px] bg-color02 rounded-t-lg shadow-lg grid place-items-center" id="project_detail_selected_card">
                     <div className="bg-color03 h-full w-full flex flex-col" id="project_01">
-                        <ProjectShowcase selectedProject={selectedProject}/>
+                        <ProjectShowcase 
+                            selectedProject={selectedProject}
+                            showcaseContent={selectedProjectLocalizedContent.showcaseDescs}
+                        />
                     </div>
                 </div>
 
@@ -44,11 +49,11 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                     </div>
 
                     <p className="font-light text-justify py-3">
-                        {content.projects[Number(selectedProject.id)].desc}
+                        {selectedProjectLocalizedContent.desc}
                     </p>
 
                     <p className="flex flex-col gap-1 pt-5">
-                        <span>{content.linkRepo}</span>
+                        <span>{selectedProject.repo_link}</span>
                         <a href={`${selectedProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
                             {selectedProject.repo_link}
                         </a>
@@ -56,7 +61,7 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
 
                     {selectedProject.project_link && 
                         <p className="flex flex-col gap-1 pt-5">
-                            <span>{content.linkProject}</span>
+                            <span>{selectedProject.project_link}</span>
                             <a href={`${selectedProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
                                 {selectedProject.project_link}
                             </a>

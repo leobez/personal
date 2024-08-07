@@ -49,21 +49,62 @@
       },
       "title2": "Cursos"
     },
+
     "Projects": {
       "title": "Projetos",
       "subtitle": "Projetos do github",
       "projects": {
         "mediacollection" : {
-          "description": "Site que usa uma API pública para exibir filmes com alguns recursos de busca/filtragem."
+          "description": "Site que usa uma API pública para exibir filmes com alguns recursos de busca/filtragem.",
+          "showcase": {
+            "desc0": {
+              "id":"0",
+              "desc": "Desc pt mediacollection image 0"
+            },
+            "desc1": {
+              "id":"1",
+              "desc": "Desc pt mediacollection image 1"
+            },
+            "desc2": {
+              "id":"2",
+              "desc": "Desc pt mediacollection image 2"
+            },
+            "desc3": {
+              "id":"3",
+              "desc": "Desc pt mediacollection image 3"
+            },
+            "desc4": {
+              "id":"4",
+              "desc": "Desc pt mediacollection image 4"
+            }
+          }
         },
         "divulgacampo" : {
-          "description": "Site para divulgação de pesquisas de campo."
+          "description": "Site para divulgação de pesquisas de campo.",
+          "showcase": {
+            "desc0": {
+              "id":"0",
+              "desc": "Desc pt divulgacampo image 0"
+            }
+          }
         },
         "seocomparison" : {
-          "description": "Monografia para a conclusão do curso em ADS na Fatec. Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR."
+          "description": "Monografia para a conclusão do curso em ADS na Fatec. Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR.",
+          "showcase": {
+            "desc0": {
+              "id":"0",
+              "desc": "Desc pt seocomparison image 0"
+            }
+          }
         },
         "adsprojects" : {
-          "description": "Conjunto de projetos feitos na faculdade de ADS."
+          "description": "Conjunto de projetos feitos na faculdade de ADS.",
+          "showcase": {
+            "desc0": {
+              "id":"0",
+              "desc": "Desc pt adsprojects image 0"
+            }
+          }
         }
       },
       "linkRepo": "Link para o repositório:",

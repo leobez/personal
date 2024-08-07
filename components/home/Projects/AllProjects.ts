@@ -12,35 +12,30 @@ export const AllProjects = [
             {
                 id: 0,
                 image_src: '/images/media-collection.png',
-                desc: 'desc 0'
             },
 
             // One to show color scheme
             {
                 id: 1,
-                image_src: '/images/media-collection.png',
-                desc: 'desc 1'
+                image_src: '/images/chat-mqtt.png',
             },
 
             // One to show movie/:id
             {
                 id: 2,
-                image_src: '/images/media-collection.png',
-                desc: 'desc 2'
+                image_src: '/images/seo-comparison.png',
             },
 
             // One to show random
             {
                 id: 3,
-                image_src: '/images/media-collection.png',
-                desc: 'desc 3'
+                image_src: '/images/divulgacampo.png',
             },
 
             // One to show api
             {
                 id: 4,
-                image_src: '/images/media-collection.png',
-                desc: 'desc 4'
+                image_src: '/images/medidas-dispersao.png',
             },
         ]
     },
@@ -57,7 +52,6 @@ export const AllProjects = [
             {
                 id: 0,
                 image_src: '/images/divulgacampo.png',
-                desc: 'desc 0'
             },
         ]
     },
@@ -74,7 +68,6 @@ export const AllProjects = [
             {
                 id: 0,
                 image_src: '/images/seo-comparison.png',
-                desc: 'desc 0'
             },
         ]
     },
@@ -91,7 +84,6 @@ export const AllProjects = [
             {
                 id: 0,
                 image_src: '/images/ads-content.png',
-                desc: 'desc 0'
             },
         ]
     },

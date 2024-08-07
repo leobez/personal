@@ -1,26 +1,21 @@
 'use client'
 
-import Image from "next/image"
-import { Project } from "./Projects";
+import { Project, ShowCaseDesc } from "./Projects";
 import { useEffect, useState } from "react";
-
-import { motion } from "framer-motion";
-import GradualText from "../AboutMe/GradualText";
 import ShowcaseElement from "./ShowcaseElement";
 
 const SECONDS=12
 
 type Props = {
     selectedProject:Project;
+    showcaseContent:ShowCaseDesc[]
 }
 
-export default function ProjectShowcase({selectedProject}:Props) {
-
-    if (!selectedProject.showcase) {
-        return;
-    }
+export default function ProjectShowcase({selectedProject, showcaseContent}:Props) {
 
     const [currentImage, setCurrentImage] = useState<typeof selectedProject.showcase[0]>(selectedProject.showcase[0])
+
+    //console.log('showcaseContent: ', showcaseContent)
 
     useEffect(() => {
 
@@ -33,7 +28,6 @@ export default function ProjectShowcase({selectedProject}:Props) {
 
             } else {
                 console.log('up')
-                // @ts-expect-error -> selectedProject.showcase is not null.
                 setCurrentImage(prev => selectedProject.showcase[prev.id+1])
             }
 
@@ -52,8 +46,8 @@ export default function ProjectShowcase({selectedProject}:Props) {
 
                         <ShowcaseElement
                             image_src={currentImage.image_src}
-                            desc={currentImage.desc}
-                        />
+                            desc={showcaseContent[currentImage.id].desc}
+                        /> 
                         
                     </div>
                 </div>

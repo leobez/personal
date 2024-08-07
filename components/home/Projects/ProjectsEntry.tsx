@@ -7,24 +7,65 @@ export default function ProjectsEntry() {
 
     return (
         <div className="h-full min-h-[500px]">
-            <Projects content={
+            <Projects localeContent={
                 {
                     title: t('title'),
                     subtitle: t('subtitle'),
-                    projects: {
-                        1: {
-                            desc: t('projects.mediacollection.description')
+                    projects: [
+                        {
+                            desc: t('projects.mediacollection.description'),
+                            showcaseDescs: [
+                                {
+                                    id: t('projects.mediacollection.showcase.desc0.id'),
+                                    desc: t('projects.mediacollection.showcase.desc0.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc1.id'),
+                                    desc: t('projects.mediacollection.showcase.desc1.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc2.id'),
+                                    desc: t('projects.mediacollection.showcase.desc2.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc3.id'),
+                                    desc: t('projects.mediacollection.showcase.desc3.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc4.id'),
+                                    desc: t('projects.mediacollection.showcase.desc4.desc'),
+                                }
+                            ]
                         },
-                        2: {
-                            desc: t('projects.divulgacampo.description')
+
+                        {
+                            desc: t('projects.divulgacampo.description'),
+                            showcaseDescs: [
+                                {
+                                    id: t('projects.divulgacampo.showcase.desc0.id'),
+                                    desc: t('projects.divulgacampo.showcase.desc0.desc'),
+                                }
+                            ]
                         },
-                        3: {
-                            desc: t('projects.seocomparison.description')
+                        {
+                            desc: t('projects.seocomparison.description'),
+                            showcaseDescs: [
+                                {
+                                    id: t('projects.seocomparison.showcase.desc0.id'),
+                                    desc: t('projects.seocomparison.showcase.desc0.desc'),
+                                }
+                            ]
                         },
-                        4: {
-                            desc: t('projects.adsprojects.description')
+                        {
+                            desc: t('projects.adsprojects.description'),
+                            showcaseDescs: [
+                                {
+                                    id: t('projects.adsprojects.showcase.desc0.id'),
+                                    desc: t('projects.adsprojects.showcase.desc0.desc'),
+                                }
+                            ]
                         },
-                    } ,
+                    ],
                     linkRepo: t("linkRepo"),  
                     linkProject: t("linkProject"),                            
                 }

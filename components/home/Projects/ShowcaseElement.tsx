@@ -50,6 +50,8 @@ export default function ShowcaseElement({image_src, desc}:Props) {
                 transition={{
                     delay: 1,
                     times: [0, 0.03, 0.97, 1],
+                    repeat: Infinity,
+                    repeatDelay: 1,
                     duration: SECONDS-1,
                     ease: 'anticipate',
                 }}
