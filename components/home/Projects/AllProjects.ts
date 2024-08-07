@@ -1,41 +1,17 @@
 export const AllProjects = [
+
     {
         id: 0,
-        name: 'cinelog',
-        description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
-        topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
-        repo_link: 'https://github.com/leobez/cinelog',
-        project_link: 'https://cinelogleob.vercel.app/',
-        image_src: '/images/media-collection.png',
-
+        name: 'ads-content',
+        description: 'Conjunto de projetos feitos na faculdade de ADS.',
+        topics: ['Various'],
+        repo_link: 'https://github.com/leobez/ads-content',
+        project_link: '',
+        image_src: '/images/ads-content.png',
         showcase: [
             {
                 id: 0,
-                image_src: '/images/media-collection.png',
-            },
-
-            // One to show color scheme
-            {
-                id: 1,
-                image_src: '/images/chat-mqtt.png',
-            },
-
-            // One to show movie/:id
-            {
-                id: 2,
-                image_src: '/images/seo-comparison.png',
-            },
-
-            // One to show random
-            {
-                id: 3,
-                image_src: '/images/divulgacampo.png',
-            },
-
-            // One to show api
-            {
-                id: 4,
-                image_src: '/images/medidas-dispersao.png',
+                image_src: '/images/ads-content.png',
             },
         ]
     },
@@ -55,7 +31,7 @@ export const AllProjects = [
             },
         ]
     },
-    
+
     {
         id: 2, 
         name: 'seo-comparison',
@@ -71,22 +47,57 @@ export const AllProjects = [
             },
         ]
     },
-
+    
     {
         id: 3,
-        name: 'ads-content',
-        description: 'Conjunto de projetos feitos na faculdade de ADS.',
-        topics: ['Various'],
-        repo_link: 'https://github.com/leobez/ads-content',
-        project_link: '',
-        image_src: '/images/ads-content.png',
+        name: 'cinelog',
+        description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
+        topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
+        repo_link: 'https://github.com/leobez/cinelog',
+        project_link: 'https://cinelogleob.vercel.app/',
+        image_src: '/images/media-collection.png',
         showcase: [
+
+            // Base 
             {
                 id: 0,
-                image_src: '/images/ads-content.png',
+                image_src: '/images/media-collection.png',
+            },
+
+            // One to show movie/:id
+            {
+                id: 1,
+                image_src: '/images/chat-mqtt.png',
+            },
+            // One to show filtering by genre
+            {
+                id: 2,
+                image_src: '/images/chat-mqtt.png',
+            },
+            // One to show filtering by query
+            {
+                id: 3,
+                image_src: '/images/chat-mqtt.png',
+            },
+            // One to show color scheme
+            {
+                id: 4,
+                image_src: '/images/seo-comparison.png',
+            },
+
+            // One to show random
+            {
+                id: 5,
+                image_src: '/images/divulgacampo.png',
+            },
+
+            // One to show api
+            {
+                id: 6,
+                image_src: '/images/medidas-dispersao.png',
             },
         ]
     },
-    
+
 ]
  

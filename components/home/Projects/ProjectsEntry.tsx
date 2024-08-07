@@ -17,30 +17,13 @@ export default function ProjectsEntry() {
                     l_subtitle: t('subtitle'),
 
                     l_projects: [
-
-                        // media-collection
+                        // ads-content
                         {
-                            projectDesc: t('projects.mediacollection.description'),
+                            projectDesc: t('projects.adsprojects.description'),
                             showcaseDesc: [
                                 {
-                                    id: t('projects.mediacollection.showcase.desc0.id'),
-                                    text: t('projects.mediacollection.showcase.desc0.desc'),
-                                },
-                                {
-                                    id: t('projects.mediacollection.showcase.desc1.id'),
-                                    text: t('projects.mediacollection.showcase.desc1.desc'),
-                                },
-                                {
-                                    id: t('projects.mediacollection.showcase.desc2.id'),
-                                    text: t('projects.mediacollection.showcase.desc2.desc'),
-                                },
-                                {
-                                    id: t('projects.mediacollection.showcase.desc3.id'),
-                                    text: t('projects.mediacollection.showcase.desc3.desc'),
-                                },
-                                {
-                                    id: t('projects.mediacollection.showcase.desc4.id'),
-                                    text: t('projects.mediacollection.showcase.desc4.desc'),
+                                    id: t('projects.adsprojects.showcase.desc0.id'),
+                                    text: t('projects.adsprojects.showcase.desc0.desc'),
                                 }
                             ]
                         },
@@ -66,17 +49,46 @@ export default function ProjectsEntry() {
                                 }
                             ]
                         },
-
-                        // ads-content
+                        
+                        // media-collection
                         {
-                            projectDesc: t('projects.adsprojects.description'),
+                            projectDesc: t('projects.mediacollection.description'),
                             showcaseDesc: [
                                 {
-                                    id: t('projects.adsprojects.showcase.desc0.id'),
-                                    text: t('projects.adsprojects.showcase.desc0.desc'),
+                                    id: t('projects.mediacollection.showcase.desc0.id'),
+                                    text: t('projects.mediacollection.showcase.desc0.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc1.id'),
+                                    text: t('projects.mediacollection.showcase.desc1.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc2.id'),
+                                    text: t('projects.mediacollection.showcase.desc2.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc3.id'),
+                                    text: t('projects.mediacollection.showcase.desc3.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc4.id'),
+                                    text: t('projects.mediacollection.showcase.desc4.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc5.id'),
+                                    text: t('projects.mediacollection.showcase.desc5.desc'),
+                                },
+                                {
+                                    id: t('projects.mediacollection.showcase.desc6.id'),
+                                    text: t('projects.mediacollection.showcase.desc6.desc'),
                                 }
                             ]
                         },
+
+
+
+
+
 
                     ],
 

@@ -4,7 +4,7 @@ import { Project, ShowCaseDesc } from "./types";
 import { useEffect, useState } from "react";
 import ShowcaseElement from "./ShowcaseElement";
 
-const SECONDS=12
+const SECONDS=10
 
 type Props = {
     selectedProject:Project;
@@ -25,12 +25,12 @@ export default function ProjectShowcase({
         const interval = setInterval(() => {
 
             if (currentImage?.id >= (Number(selectedProject.showcase?.length)-1)) {
-                console.log('back to 0')
+                //console.log('back to 0')
                 if (!selectedProject.showcase) return;
                 setCurrentImage(selectedProject.showcase[0])
 
             } else {
-                console.log('up')
+                //console.log('up')
                 setCurrentImage(prev => selectedProject.showcase[prev.id+1])
             }
 

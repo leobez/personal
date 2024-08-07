@@ -16,10 +16,14 @@ export default function Projects({
     }
 }:LocaleProps) {
 
-    console.log('l_projects: ', l_projects)
+    //console.log('l_projects: ', l_projects)
 
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentProject, setCurrentProject] = useState<Project|null>(null)
+    
+/*     useEffect(() => {
+        console.log('currentProject: ', currentProject)
+    }, [currentProject])   */
 
     useEffect(() => {
         setMounted(true)
@@ -31,11 +35,11 @@ export default function Projects({
         const id = e.currentTarget.id
         if (!id) return;
 
-        const numberId = id.replace('project_', '')
+        const numberId = Number(id.replace('project_', ''))
         
         //console.log('numberId: ', numberId)
 
-        setCurrentProject(AllProjects[numberId-1])
+        setCurrentProject(AllProjects[numberId])
 
         const projectDetail = document.querySelector('#project_detail')
         //console.log('projectDetail: ', projectDetail)
@@ -76,30 +80,17 @@ export default function Projects({
                 {/* Projects cards */}
                 <div className="md:flex md:flex-wrap grid sm:grid-cols-2 grid-cols-1 relative">
 
-                    <ProjectComponent
-                        clickFunc={handleClick}
-                        imgSrc="/images/media-collection.png"
-                        name="cinelog"
-                        id="project_01"
-                    />
-                    <ProjectComponent
-                        clickFunc={handleClick}
-                        imgSrc="/images/divulgacampo.png"
-                        name="divulgacampo"
-                        id="project_02"
-                    />
-                    <ProjectComponent
-                        clickFunc={handleClick}
-                        imgSrc="/images/seo-comparison.png"
-                        name="seo-comparison"
-                        id="project_03"
-                    />
-                    <ProjectComponent
-                        clickFunc={handleClick}
-                        imgSrc="/images/ads-content.png"
-                        name="ads-content"
-                        id="project_04"
-                    />
+                    {AllProjects && AllProjects.map((project:Project) => (
+                        <ProjectComponent
+                            key={project.id}
+                            clickFunc={handleClick}
+                            imgSrc={project.image_src}
+                            name={project.name}
+                            id={`project_${project.id}`}
+                        />
+                    ))
+
+                    }
 
                 </div>
 

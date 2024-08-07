@@ -58,23 +58,31 @@
         "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Desc en mediacollection image 0"
+              "desc": "Website to discover movies"
             },
             "desc1": {
               "id":"1",
-              "desc": "Desc en mediacollection image 1"
+              "desc": "Click a movie to see more about it"
             },
             "desc2": {
               "id":"2",
-              "desc": "Desc en mediacollection image 2"
+              "desc": "Filter movies by genres"
             },
             "desc3": {
               "id":"3",
-              "desc": "Desc en mediacollection image 3"
+              "desc": "Query movies"
             },
             "desc4": {
               "id":"4",
-              "desc": "Desc en mediacollection image 4"
+              "desc": "The website has a variety of color themes"
+            },
+            "desc5": {
+              "id":"5",
+              "desc": "Don't know what to watch? Select some prefered genres and get a random movie"
+            },
+            "desc6": {
+              "id":"6",
+              "desc": "Generate an API key and unlock the app"
             }
           }
       },
@@ -83,7 +91,7 @@
         "showcase": {
           "desc0": {
             "id":"0",
-            "desc": "Desc en divulgacampo image 0"
+            "desc": "A website to share field research"
           }
         }
       },
@@ -92,7 +100,7 @@
         "showcase": {
           "desc0": {
             "id":"0",
-            "desc": "Desc en seocomparison image 0"
+            "desc": "A scientific research on website rendering approaches: SSR and CSR"
           }
         }
       },
@@ -101,7 +109,7 @@
         "showcase": {
           "desc0": {
             "id":"0",
-            "desc": "Desc en adsprojects image 0"
+            "desc": "Various projects, activities and exercises carried out during the undergraduate course in systems analysis and development"
           }
         }
       }

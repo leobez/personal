@@ -59,23 +59,31 @@
           "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Desc pt mediacollection image 0"
+              "desc": "Um site para descobrir filmes"
             },
             "desc1": {
               "id":"1",
-              "desc": "Desc pt mediacollection image 1"
+              "desc": "Clique em um filme para ver informações sobre ele"
             },
             "desc2": {
               "id":"2",
-              "desc": "Desc pt mediacollection image 2"
+              "desc": "Filtre filmes de acordo com gênro"
             },
             "desc3": {
               "id":"3",
-              "desc": "Desc pt mediacollection image 3"
+              "desc": "Busque por filmes"
             },
             "desc4": {
               "id":"4",
-              "desc": "Desc pt mediacollection image 4"
+              "desc": "O site conta com diversos esquemas de cores"
+            },
+            "desc5": {
+              "id":"5",
+              "desc": "Não sabe o que assistir? Então seja sorteado um filme de acordo com seus gêneros favoritos"
+            },
+            "desc6": {
+              "id":"6",
+              "desc": "Gere uma chave API e use a aplicação"
             }
           }
         },
@@ -84,7 +92,7 @@
           "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Desc pt divulgacampo image 0"
+              "desc": "Um site para divulgação de pesquisas de campo"
             }
           }
         },
@@ -93,7 +101,7 @@
           "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Desc pt seocomparison image 0"
+              "desc": "Uma pesquisa científica sobre as abordagens de renderização de sites: SSR e CSR"
             }
           }
         },
@@ -102,7 +110,7 @@
           "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Desc pt adsprojects image 0"
+              "desc": "Diversos projetos, atividades e exercícios feitos durante a graduação em analise e desenvolvimento de sistemas"
             }
           }
         }

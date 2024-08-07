@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion";
 
-const SECONDS=12
+const SECONDS=10
 
 type Props = {
     image_src:string;
@@ -15,7 +15,7 @@ export default function ShowcaseElement({image_src, desc}:Props) {
 
             <motion.div
                 animate={{
-                    scale: [1.8, 1, 1.8],
+                    scale: [1.5, 1, 1.5],
                 }}
                 transition={{
                     times: [0, 0.5, 1],
@@ -56,7 +56,7 @@ export default function ShowcaseElement({image_src, desc}:Props) {
                     ease: 'anticipate',
                 }}
 
-                className="absolute left-0 top-0 h-full w-48 bg-black opacity-90 px-5 py-4 text-white font-light"
+                className="absolute left-0 top-0 h-full w-52 bg-black opacity-90 px-5 py-4 text-white font-bold text-lg grid place-items-center"
             >
                 {desc}
 
