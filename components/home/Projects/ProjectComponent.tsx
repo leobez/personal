@@ -15,12 +15,12 @@ export default function ProjectComponent({clickFunc, imgSrc, name, id}:Props) {
                 onClick={clickFunc} 
                 id={id}
             >
-                <div className={`h-full w-full relative  hover:before:content-['${name}'] text-colorText grid place-items-center text-xl`}>
+                <div className={`h-full w-full relative tracking-widest  hover:before:content-['${name}'] text-colorText grid place-items-center text-xl`}>
                     <Image 
                         src={imgSrc} 
                         alt='photo' 
                         fill={true} 
-                        style={{objectFit: "cover", objectPosition: 'center',}}
+                        style={{objectFit: "cover", objectPosition: 'center'}}
                         className="hover:opacity-5 duration-200 "
                     />
                 </div>

@@ -1,9 +1,9 @@
 'use client'
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useState } from "react"
 import { AllProjects } from "./AllProjects"
 import ProjectComponent from "./ProjectComponent"
-import SelectedProject from "./SelectedProject"
+import SelectedProject from "./SelectedProject2"
 
 type Props = {
     content: {
@@ -36,6 +36,7 @@ export type Project = {
     repo_link: string,
     project_link: string,
     image_src: string,
+    showcase?:{id:number, image_src:string, desc:string}[]
 }
 
 export default function Projects({content}:Props) {
@@ -126,7 +127,7 @@ export default function Projects({content}:Props) {
 
                 </div>
 
-                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-96" id="project_detail">
+                <div className="absolute h-full w-full p-1 left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-96" id="project_detail">
                     {currentProject &&
                         <SelectedProject 
                             closeFunc={handleClose} 

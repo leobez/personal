@@ -67,9 +67,6 @@ export default function Summary({content}:Props) {
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentSection, setCurrentSection] = useState<string>('')
     const [threshold, setThreshold] = useState<number>(0.9)
-    useEffect(() => {
-        console.log('threshold: ', threshold)
-    }, [threshold])
 
     useEffect(() => {
         setMounted(true)
@@ -93,7 +90,7 @@ export default function Summary({content}:Props) {
                     //console.log('activated: ', entry)
                     if (entry.isIntersecting) {
                         const idOfVisibleElement = entry.target.id
-                        console.log('current visible section: ', idOfVisibleElement)
+                        //console.log('current visible section: ', idOfVisibleElement)
                         setCurrentSection(idOfVisibleElement)
                     }
                 });

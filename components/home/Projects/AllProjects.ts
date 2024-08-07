@@ -6,8 +6,46 @@ export const AllProjects = [
         topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
         repo_link: 'https://github.com/leobez/cinelog',
         project_link: 'https://cinelogleob.vercel.app/',
-        image_src: '/images/media-collection.png' 
+        image_src: '/images/media-collection.png',
+
+        // testing
+        showcase: [
+            {
+                id: 0,
+                image_src: '/images/media-collection.png',
+                desc: 'desc 0'
+            },
+
+            // One to show color scheme
+            {
+                id: 1,
+                image_src: '/images/media-collection.png',
+                desc: 'desc 1'
+            },
+
+            // One to show movie/:id
+            {
+                id: 2,
+                image_src: '/images/media-collection.png',
+                desc: 'desc 2'
+            },
+
+            // One to show random
+            {
+                id: 3,
+                image_src: '/images/media-collection.png',
+                desc: 'desc 3'
+            },
+
+            // One to show api
+            {
+                id: 4,
+                image_src: '/images/media-collection.png',
+                desc: 'desc 4'
+            },
+        ]
     },
+
     {
         id: 2,
         name: 'divulgacampo',
@@ -17,6 +55,7 @@ export const AllProjects = [
         project_link: 'https://divulgacampo.web.app/',
         image_src: '/images/divulgacampo.png'
     },
+    
     {
         id: 3, 
         name: 'seo-comparison',

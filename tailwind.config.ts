@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const colors = require('tailwindcss/colors')
 
 const config: Config = {
 
@@ -15,6 +16,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      
     },
     colors: {
       // Using modern `rgb`
@@ -23,6 +25,7 @@ const config: Config = {
       color03: 'rgb(var(--color03) / <alpha-value>)',
       color04: 'rgb(var(--color04) / <alpha-value>)',
       colorText: 'rgb(var(--colorText) / <alpha-value>)',
+      ...colors
     }
   },
 
@@ -38,4 +41,5 @@ const config: Config = {
     require('tailwindcss-animated')
   ]
 };
+
 export default config;

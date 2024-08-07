@@ -7,9 +7,10 @@ type Props = {
     classNames:string;
     preHeight:string;
     ms:number;
+    delay?:number;
 }
 
-export default function GradualText({text, classNames, preHeight, ms}:Props) {
+export default function GradualText({text, classNames, preHeight, ms, delay}:Props) {
 
     const [gradualText, setGradualText] = useState<string[]>([]) 
     const [mounted, setMounted] = useState<boolean>(false) 
@@ -18,6 +19,10 @@ export default function GradualText({text, classNames, preHeight, ms}:Props) {
 
         const sleep = (ms:number) => {
             return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        if (delay) {
+            sleep(delay)
         }
 
         const asyncSetGradualText = async() => {
@@ -38,7 +43,7 @@ export default function GradualText({text, classNames, preHeight, ms}:Props) {
 
         setMounted(true)
 
-    }, [text])
+    }, [text, delay])
 
 
     if (!mounted) {
