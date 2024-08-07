@@ -23,6 +23,7 @@ type Props = {
     }
 }
 
+
 export default function Summary({content}:Props) {
 
     const sectionsElements = [
@@ -64,44 +65,57 @@ export default function Summary({content}:Props) {
     ]
 
     const [mounted, setMounted] = useState<boolean>(false)
+    const [currentSection, setCurrentSection] = useState<string>('')
+    const [threshold, setThreshold] = useState<number>(0.9)
+    useEffect(() => {
+        console.log('threshold: ', threshold)
+    }, [threshold])
 
     useEffect(() => {
         setMounted(true)
+        window.addEventListener('resize', () => {
+            if (innerWidth <= 660) {
+                setThreshold(0.6)
+            } else {
+                setThreshold(0.9)
+            }
+        })
     }, [])
-
-    const [currentSection, setCurrentSection] = useState<string>('')
 
     useEffect(() => {
 
         if (!mounted) return;
 
-        let options = {
-            rootMargin: "0px",
-            threshold: 0.9,
-        };
-          
-        let observer = new IntersectionObserver((entries:any) => {
-            entries.forEach((entry:IntersectionObserverEntry) => {
-                if (entry.isIntersecting) {
-                    const idOfVisibleElement = entry.target.id
-                    //console.log('current visible section: ', idOfVisibleElement)
-                    setCurrentSection(idOfVisibleElement)
-                }
+        const setObservers = () => {
+              
+            const observer = new IntersectionObserver((entries:any) => {
+                entries.forEach((entry:IntersectionObserverEntry) => {
+                    //console.log('activated: ', entry)
+                    if (entry.isIntersecting) {
+                        const idOfVisibleElement = entry.target.id
+                        console.log('current visible section: ', idOfVisibleElement)
+                        setCurrentSection(idOfVisibleElement)
+                    }
+                });
+            }, {
+                threshold: threshold
             });
-        }, options);
+            
+            const sectionsToObserve:any = document.getElementsByClassName('section')
+            //console.log('sectionsToObserve: ', sectionsToObserve)
         
-        const sectionsToObserve:any = document.getElementsByTagName('section')
-        //console.log('sectionsToObserve: ', sectionsToObserve)
+            if (!sectionsToObserve) return;
+        
+            Object.values(sectionsToObserve).forEach((section:any) => {
+                observer.observe(section)
+                //console.log('observing section: ', section)
+            });
+        }
 
-        if (!sectionsToObserve) return;
+        setObservers()
 
-        Object.values(sectionsToObserve).forEach((section:any) => {
-            observer.observe(section)
-            //console.log('observing section: ', section)
-        });
+    }, [mounted, currentSection, threshold])
 
-
-    }, [mounted])
 
     const handleClick = (e:any):void => {
         e.preventDefault()

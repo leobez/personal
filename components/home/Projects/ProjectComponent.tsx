@@ -11,24 +11,20 @@ export default function ProjectComponent({clickFunc, imgSrc, name, id}:Props) {
 
     return (
             <div 
-                className="rounded-lg bg-color03 hover:opacity-50 border-2 border-color01 h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                className=" bg-color01 p-[1px] h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
                 onClick={clickFunc} 
                 id={id}
             >
-                <div className="h-full w-full relative rounded-lg">
+                <div className={`h-full w-full relative  hover:before:content-['${name}'] text-colorText grid place-items-center text-xl`}>
                     <Image 
                         src={imgSrc} 
                         alt='photo' 
                         fill={true} 
-                        style={{objectFit: "cover", objectPosition: 'center', borderTopLeftRadius: '0.5rem', borderTopRightRadius: '0.5rem'}}
+                        style={{objectFit: "cover", objectPosition: 'center',}}
+                        className="hover:opacity-5 duration-200 "
                     />
                 </div>
 
-                <div className="h-12 w-full px-3 bg-color03 flex items-center rounded-b-lg">
-                    <p className="whitespace-nowrap overflow-hidden text-ellipsis w-full">
-                        {name}
-                    </p>
-                </div>
 
             </div>
     ) 

@@ -1,7 +1,7 @@
 export default function Curriculum() {
 
     return (
-        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px]" id="curriculum">
+        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3">
 
             <div>
                 <p className="font-bold text-lg">Curriculum</p>

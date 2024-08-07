@@ -6,7 +6,7 @@ export default function ProjectsEntry() {
     const t = useTranslations('Projects')
 
     return (
-        <>
+        <div className="h-full min-h-[500px]">
             <Projects content={
                 {
                     title: t('title'),
@@ -29,6 +29,6 @@ export default function ProjectsEntry() {
                     linkProject: t("linkProject"),                            
                 }
             }/>
-        </>
+        </div>
     )
 }

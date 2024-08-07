@@ -42,16 +42,7 @@ export default function Projects({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
 
-    const [currentProject, setCurrentProject] = useState<Project|null>({
-    id: 1,
-    name: 'cinelog',
-    description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
-    topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
-    repo_link: 'https://github.com/leobez/cinelog',
-    project_link: 'https://cinelogleob.vercel.app/',
-    image_src: '/images/media-collection.png' 
-        
-    })
+    const [currentProject, setCurrentProject] = useState<Project|null>(null)
 
     useEffect(() => {
         setMounted(true)
@@ -73,6 +64,7 @@ export default function Projects({content}:Props) {
         //console.log('projectDetail: ', projectDetail)
         projectDetail?.classList.remove("projects_details_out")
         projectDetail?.classList.remove("hidden")
+        projectDetail?.scrollIntoView({block: "start", behavior: "smooth"});    
     }
 
     const handleClose = ():void => {
@@ -88,7 +80,7 @@ export default function Projects({content}:Props) {
 
     return (
 
-        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px] overflow-clip" id='projects'>
+        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip">
 
             <div>
                 <p className="font-bold text-lg">
@@ -128,14 +120,14 @@ export default function Projects({content}:Props) {
                     <ProjectComponent
                         clickFunc={handleClick}
                         imgSrc="/images/ads-content.png"
-                        name="ads-projects"
+                        name="ads-content"
                         id="project_04"
                     />
 
                 </div>
 
-                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden" id="project_detail">
-                    {currentProject && 
+                <div className="absolute h-full w-full left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-96" id="project_detail">
+                    {currentProject &&
                         <SelectedProject 
                             closeFunc={handleClose} 
                             selectedProject={currentProject} 

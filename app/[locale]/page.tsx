@@ -9,17 +9,17 @@ import ProjectsEntry from "@/components/home/Projects/ProjectsEntry";
 export default function Home() {
 
   return (
-    <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3">
+    <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3" id="section_root">
 
-      <div>
+      <div id="about_me" className="h-fit section scroll-mt-24">
         <AboutMe/>
       </div>
 
-      <div>
+      <div id="competence" className="h-fit section scroll-mt-24">
         <Competences/>
       </div>
 
-      <div>
+      <div id="education" className="h-fit section scroll-mt-24">
         <Education/>
       </div>
 
@@ -27,11 +27,11 @@ export default function Home() {
         <Experience/>
       </div> */}
 
-      <div>
+      <div id="projects" className="h-fit section scroll-mt-24">
         <ProjectsEntry/>
-      </div> 
+      </div>
 
-      <div>
+      <div id="curriculum" className="h-fit section scroll-mt-24">
         <Curriculum/>
       </div> 
 

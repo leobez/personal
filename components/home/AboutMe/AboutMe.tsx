@@ -11,7 +11,7 @@ export default function AboutMe() {
     const t = useTranslations('AboutMe')
 
     return (
-        <section className="bg-color01 p-3 rounded-lg shadow-lg gap-3 scroll-mt-[100px] max-w-full flex md:flex-row flex-col-reverse" id="about_me">
+        <section className="bg-color01 p-3 rounded-lg shadow-lg gap-3 max-w-full flex md:flex-row flex-col-reverse">
 
             <div className="flex flex-col gap-3 md:w-1/2 w-full">
 

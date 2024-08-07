@@ -27,7 +27,11 @@ const config: Config = {
   },
 
   safelist: [
-    
+    /* Projects names */
+    "hover:before:content-['cinelog']",
+    "hover:before:content-['divulgacampo']",
+    "hover:before:content-['seo-comparison']",
+    "hover:before:content-['ads-content']",
   ],
 
   plugins: [

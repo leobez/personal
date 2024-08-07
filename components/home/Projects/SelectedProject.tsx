@@ -22,10 +22,7 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
             <div className="flex md:flex-row flex-col gap-3 p-3 h-full w-full overflow-y-scroll">
 
                 <div className="md:w-1/2 w-full md:h-full bg-color02 rounded-lg shadow-lg p-3 grid place-items-center" id="project_detail_selected_card">
-                    <div 
-                        className="bg-color03 md:h-full h-96 w-full flex flex-col" 
-                        id="project_01"
-                        >
+                    <div className="bg-color03 md:h-full h-96 w-full flex flex-col" id="project_01">
                         <div 
                             className="h-full w-full relative">
                             <Image 

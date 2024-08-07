@@ -6,7 +6,7 @@ export default function Competences() {
     const t = useTranslations('Competences')
 
     return (
-        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 scroll-mt-[100px] max-w-full" id="competence">
+        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 max-w-full">
 
             <div>
                 <p className="font-bold text-lg">{t('title')}</p>
