@@ -54,16 +54,56 @@
     "subtitle": "Github projects",
     "projects": {
       "mediacollection" : {
-        "description": "Site that uses a public API to display movies with some search/filtering capabilities."
+        "description": "Site that uses a public API to display movies with some search/filtering capabilities.",
+        "showcase": {
+            "desc0": {
+              "id":"0",
+              "desc": "Desc en mediacollection image 0"
+            },
+            "desc1": {
+              "id":"1",
+              "desc": "Desc en mediacollection image 1"
+            },
+            "desc2": {
+              "id":"2",
+              "desc": "Desc en mediacollection image 2"
+            },
+            "desc3": {
+              "id":"3",
+              "desc": "Desc en mediacollection image 3"
+            },
+            "desc4": {
+              "id":"4",
+              "desc": "Desc en mediacollection image 4"
+            }
+          }
       },
       "divulgacampo" : {
-        "description": "Website for sharing field research."
+        "description": "Website for sharing field research.",
+        "showcase": {
+          "desc0": {
+            "id":"0",
+            "desc": "Desc en divulgacampo image 0"
+          }
+        }
       },
       "seocomparison" : {
-        "description": "Research about the impact on SEO of the SSR and CSR website rendering approaches."
+        "description": "Research about the impact on SEO of the SSR and CSR website rendering approaches.",
+        "showcase": {
+          "desc0": {
+            "id":"0",
+            "desc": "Desc en seocomparison image 0"
+          }
+        }
       },
       "adsprojects" : {
-        "description": "Set of projects carried out at the SDA course."
+        "description": "Set of projects carried out at the SDA course.",
+        "showcase": {
+          "desc0": {
+            "id":"0",
+            "desc": "Desc en adsprojects image 0"
+          }
+        }
       }
     },
     "linkRepo": "Link to repository:",

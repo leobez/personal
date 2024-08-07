@@ -1,41 +1,48 @@
 import Image from "next/image"
-import { Project } from "./Projects";
+import { LocalizedProjectContent, Project, ShowCaseDesc } from "./types";
+import ProjectShowcase from "./ProjectShowcase";
+import { IoCloseOutline } from "react-icons/io5";
 
 type Props = {
     closeFunc:()=>void;
     selectedProject:Project;
-    content:any;
+    localizedProps:{
+        l_project:LocalizedProjectContent,
+        l_linkRepo:string,
+        l_linkProject:string,
+    };
 }
 
-export default function SelectedProject({closeFunc, selectedProject, content}:Props) {
+export default function SelectedProject({
+    closeFunc, 
+    selectedProject, 
+    localizedProps,
+}:Props) {
 
     return (
 
-        <>
+        <div className="h-fit overflow-y-scroll">
+
             {/* CLOSE BUTTON */}
-            <div className="w-full p-3 flex justify-end items-center bg-color04 rounded-t-lg">
-                <button className="h-12 w-12 bg-color01 rounded-lg hover:opacity-50 duration-200 text-lg font-bold" onClick={closeFunc}>
-                    X
+            <div className="absolute top-0 w-full flex justify-end items-center rounded-t-lg">
+                <button className="h-12 w-12 mt-4 mr-10 border-2 border-black rounded-lg bg-color04 text-colorText duration-200 text-2xl font-extralight z-30 grid place-items-center" onClick={closeFunc}>
+                    <IoCloseOutline size={40}/>
                 </button>
             </div>
 
-            <div className="flex md:flex-row flex-col gap-3 p-3 h-full w-full overflow-y-scroll">
+            {/* PROJECT CONTENT */}
+            <div className="flex flex-col min-h-full h-fit w-full">
 
-                <div className="md:w-1/2 w-full md:h-full bg-color02 rounded-lg shadow-lg p-3 grid place-items-center" id="project_detail_selected_card">
-                    <div className="bg-color03 md:h-full h-96 w-full flex flex-col" id="project_01">
-                        <div 
-                            className="h-full w-full relative">
-                            <Image 
-                                src={`${selectedProject.image_src}`} 
-                                alt='photo' 
-                                fill={true} 
-                                style={{objectFit: "cover", objectPosition: 'center', borderRadius: '0.5rem'}}
-                            />
-                        </div>
+                <div className="w-full h-[400px] bg-color02 rounded-t-lg shadow-lg grid place-items-center" id="project_detail_selected_card">
+                    <div className="bg-color03 h-full w-full flex flex-col" id="project_01">
+                        <ProjectShowcase 
+                            selectedProject={selectedProject}
+                            showcaseContent={localizedProps.l_project.showcaseDesc}
+                        />
                     </div>
                 </div>
 
-                <div className="md:w-1/2 w-full bg-color02 rounded-lg p-3">
+                <div className="w-full h-fit flex-grow bg-color02 rounded-b-lg p-3">
 
                     <p className="font-bold text-lg py-3">
                         {selectedProject.name}
@@ -50,11 +57,11 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                     </div>
 
                     <p className="font-light text-justify py-3">
-                        {content.projects[Number(selectedProject.id)].desc}
+                        {localizedProps.l_project.projectDesc}
                     </p>
 
                     <p className="flex flex-col gap-1 pt-5">
-                        <span>{content.linkRepo}</span>
+                        <span>{localizedProps.l_linkRepo}</span>
                         <a href={`${selectedProject.repo_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200">
                             {selectedProject.repo_link}
                         </a>
@@ -62,7 +69,7 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
 
                     {selectedProject.project_link && 
                         <p className="flex flex-col gap-1 pt-5">
-                            <span>{content.linkProject}</span>
+                            <span>{localizedProps.l_linkProject}</span>
                             <a href={`${selectedProject.project_link}`} target="_blank" className="text-sm hover:opacity-50 duration-200 break-words">
                                 {selectedProject.project_link}
                             </a>
@@ -72,7 +79,7 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
                 </div>
 
             </div>
-        </>
+        </div>
     )
 
 

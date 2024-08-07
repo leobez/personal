@@ -1,6 +1,6 @@
 'use client'
 
-import { Project, ShowCaseDesc } from "./Projects";
+import { Project, ShowCaseDesc } from "./types";
 import { useEffect, useState } from "react";
 import ShowcaseElement from "./ShowcaseElement";
 
@@ -11,7 +11,10 @@ type Props = {
     showcaseContent:ShowCaseDesc[]
 }
 
-export default function ProjectShowcase({selectedProject, showcaseContent}:Props) {
+export default function ProjectShowcase({
+    selectedProject, 
+    showcaseContent
+}:Props) {
 
     const [currentImage, setCurrentImage] = useState<typeof selectedProject.showcase[0]>(selectedProject.showcase[0])
 
@@ -46,7 +49,7 @@ export default function ProjectShowcase({selectedProject, showcaseContent}:Props
 
                         <ShowcaseElement
                             image_src={currentImage.image_src}
-                            desc={showcaseContent[currentImage.id].desc}
+                            desc={showcaseContent[currentImage.id].text}
                         /> 
                         
                     </div>

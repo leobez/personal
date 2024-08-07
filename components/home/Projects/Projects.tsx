@@ -3,50 +3,20 @@
 import { useEffect, useState } from "react"
 import { AllProjects } from "./AllProjects"
 import ProjectComponent from "./ProjectComponent"
-import SelectedProject from "./SelectedProject2"
+import SelectedProject from "./SelectedProject"
+import { LocaleProps, Project } from "./types"
 
-/* TYPES TO LOCALIZED CONTENT PROPS */
-export type ShowCaseDesc = {
-    id:string;
-    desc:string;
-}
-
-export type LocalizedProjectContent = {
-    desc:string;
-    showcaseDescs:ShowCaseDesc[];
-}
-
-export type Props = {
+export default function Projects({
     localeContent: {
-        title:string;
-        subtitle:string;
-        projects:LocalizedProjectContent[];
-        linkRepo:string;
-        linkProject:string;
-    } 
-}
+        l_title,
+        l_subtitle,
+        l_projects,
+        l_linkRepo,
+        l_linkProject,
+    }
+}:LocaleProps) {
 
-
-/* TYPES OF PROJECT FROM ./AllProjects */
-type ShowCaseImage = {
-   id:number;
-   image_src:string; 
-}
-
-export type Project = {
-    id: number;
-    name: string;
-    description: string;
-    topics: string[];
-    repo_link: string;
-    project_link: string;
-    image_src: string;
-    showcase:ShowCaseImage[]
-}
-
-export default function Projects({localeContent}:Props) {
-
-    //console.log('localeContent: ', localeContent)
+    console.log('l_projects: ', l_projects)
 
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentProject, setCurrentProject] = useState<Project|null>(null)
@@ -91,12 +61,12 @@ export default function Projects({localeContent}:Props) {
 
             <div>
                 <p className="font-bold text-lg">
-                    {localeContent.title}
+                    {l_title}
                 </p>
 
                 <p className="font-light">
                     <a href="https://github.com/leobez?tab=repositories" target="_blank" className="hover:text-color04 duration-200">
-                        {localeContent.subtitle}
+                        {l_subtitle}
                     </a>
                 </p> 
             </div>
@@ -135,11 +105,17 @@ export default function Projects({localeContent}:Props) {
 
                 <div className="absolute h-full w-full p-1 left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-96" id="project_detail">
                     {currentProject &&
+
                         <SelectedProject 
                             closeFunc={handleClose} 
                             selectedProject={currentProject} 
-                            selectedProjectLocalizedContent={localeContent.projects[currentProject.id-1]}
+                            localizedProps={{
+                                l_linkProject,
+                                l_linkRepo,
+                                l_project: l_projects[Number(currentProject.id)]
+                            }}
                         />
+
                     }
                 </div>
 

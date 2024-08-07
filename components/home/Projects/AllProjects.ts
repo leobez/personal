@@ -1,6 +1,6 @@
 export const AllProjects = [
     {
-        id: 1,
+        id: 0,
         name: 'cinelog',
         description: 'Site que usa uma API pública pra exibir filmes com alguns recursos de busca/filtragem.',
         topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
@@ -41,7 +41,7 @@ export const AllProjects = [
     },
 
     {
-        id: 2,
+        id: 1,
         name: 'divulgacampo',
         description: 'Site para divulgação de pesquisas de campo.',
         topics: ['React.js', 'CSS', 'Firebase', 'Context API'],
@@ -57,7 +57,7 @@ export const AllProjects = [
     },
     
     {
-        id: 3, 
+        id: 2, 
         name: 'seo-comparison',
         description: 'Monografia para a conclusão do curso em ADS na Fatec. Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR.',
         topics: ['React.js', 'Next.js', 'Tailwind CSS', 'Web Vitals', 'SSR', 'CSR', 'SEO'],
@@ -73,7 +73,7 @@ export const AllProjects = [
     },
 
     {
-        id: 4,
+        id: 3,
         name: 'ads-content',
         description: 'Conjunto de projetos feitos na faculdade de ADS.',
         topics: ['Various'],
