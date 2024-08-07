@@ -8,7 +8,6 @@ export const AllProjects = [
         project_link: 'https://cinelogleob.vercel.app/',
         image_src: '/images/media-collection.png',
 
-        // testing
         showcase: [
             {
                 id: 0,
@@ -53,7 +52,14 @@ export const AllProjects = [
         topics: ['React.js', 'CSS', 'Firebase', 'Context API'],
         repo_link: 'https://github.com/leobez/divulgacampo',
         project_link: 'https://divulgacampo.web.app/',
-        image_src: '/images/divulgacampo.png'
+        image_src: '/images/divulgacampo.png',
+        showcase: [
+            {
+                id: 0,
+                image_src: '/images/divulgacampo.png',
+                desc: 'desc 0'
+            },
+        ]
     },
     
     {
@@ -63,8 +69,16 @@ export const AllProjects = [
         topics: ['React.js', 'Next.js', 'Tailwind CSS', 'Web Vitals', 'SSR', 'CSR', 'SEO'],
         repo_link: 'https://github.com/leobez/seo-comparison',
         project_link: 'https://ric.cps.sp.gov.br/handle/123456789/21533',
-        image_src: '/images/seo-comparison.png' 
+        image_src: '/images/seo-comparison.png',
+        showcase: [
+            {
+                id: 0,
+                image_src: '/images/seo-comparison.png',
+                desc: 'desc 0'
+            },
+        ]
     },
+
     {
         id: 4,
         name: 'ads-content',
@@ -72,7 +86,14 @@ export const AllProjects = [
         topics: ['Various'],
         repo_link: 'https://github.com/leobez/ads-content',
         project_link: '',
-        image_src: '/images/ads-content.png'
+        image_src: '/images/ads-content.png',
+        showcase: [
+            {
+                id: 0,
+                image_src: '/images/ads-content.png',
+                desc: 'desc 0'
+            },
+        ]
     },
     
 ]

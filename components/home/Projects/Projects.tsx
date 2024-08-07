@@ -81,7 +81,7 @@ export default function Projects({content}:Props) {
 
     return (
 
-        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip">
+        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip min-h-[700px]">
 
             <div>
                 <p className="font-bold text-lg">

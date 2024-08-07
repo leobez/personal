@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Project } from "./Projects";
 import ProjectShowcase from "./ProjectShowcase";
+import { IoCloseOutline } from "react-icons/io5";
 
 type Props = {
     closeFunc:()=>void;
@@ -15,8 +16,8 @@ export default function SelectedProject({closeFunc, selectedProject, content}:Pr
         <div className="h-fit overflow-y-scroll">
             {/* CLOSE BUTTON */}
             <div className="absolute top-0 w-full flex justify-end items-center rounded-t-lg">
-                <button className="h-12 w-12 mt-4 mr-5 bg-color01 rounded-lg hover:bg-color04 text-colorText duration-200 text-2xl font-extralight z-30" onClick={closeFunc}>
-                    X
+                <button className="h-12 w-12 mt-4 mr-10 border-2 border-black rounded-lg bg-color04 text-colorText duration-200 text-2xl font-extralight z-30 grid place-items-center" onClick={closeFunc}>
+                    <IoCloseOutline size={40}/>
                 </button>
             </div>
 
