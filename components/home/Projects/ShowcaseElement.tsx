@@ -48,10 +48,10 @@ export default function ShowcaseElement({image_src, desc}:Props) {
                 }}
                 
                 transition={{
-                    delay: 1,
+                    delay: 0.7,
                     times: [0, 0.03, 0.97, 1],
                     repeat: Infinity,
-                    repeatDelay: 1,
+                    repeatDelay: 0.7,
                     duration: SECONDS-1,
                     ease: 'anticipate',
                 }}

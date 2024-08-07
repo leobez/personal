@@ -78,7 +78,7 @@ export default function Projects({
             <div>
 
                 {/* Projects cards */}
-                <div className="md:flex md:flex-wrap grid sm:grid-cols-2 grid-cols-1 relative">
+                <div className="md:flex flex-reverse md:flex-wrap grid sm:grid-cols-2 md:gap-0 gap-2 grid-cols-1 relative">
 
                     {AllProjects && AllProjects.map((project:Project) => (
                         <ProjectComponent
@@ -94,7 +94,7 @@ export default function Projects({
 
                 </div>
 
-                <div className="absolute h-full w-full p-1 left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-96" id="project_detail">
+                <div className="absolute h-full w-full p-1 left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-[450px]" id="project_detail">
                     {currentProject &&
 
                         <SelectedProject 
