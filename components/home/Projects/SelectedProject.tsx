@@ -25,7 +25,7 @@ export default function SelectedProject({
 
             {/* CLOSE BUTTON */}
             <div className="absolute top-0 w-full flex justify-end items-center rounded-t-lg">
-                <button className="h-12 w-12 mt-4 mr-10 border-2 border-black rounded-lg bg-color01 text-colorText duration-200 text-2xl font-extralight z-30 grid place-items-center" onClick={closeFunc}>
+                <button className="h-12 w-12 mt-4 mr-10 rounded-lg bg-color01 text-colorText duration-200 text-2xl font-extralight z-30 grid place-items-center" onClick={closeFunc}>
                     <IoCloseOutline size={40}/>
                 </button>
             </div>

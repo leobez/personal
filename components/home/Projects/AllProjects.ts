@@ -7,11 +7,11 @@ export const AllProjects = [
         topics: ['Various'],
         repo_link: 'https://github.com/leobez/ads-content',
         project_link: '',
-        image_src: '/images/ads-content.png',
+        image_src: '/images/ads-content/ads-content.png',
         showcase: [
             {
                 id: 0,
-                image_src: '/images/ads-content.png',
+                image_src: '/images/ads-content/ads-content.png',
             },
         ]
     },
@@ -23,11 +23,11 @@ export const AllProjects = [
         topics: ['React.js', 'CSS', 'Firebase', 'Context API'],
         repo_link: 'https://github.com/leobez/divulgacampo',
         project_link: 'https://divulgacampo.web.app/',
-        image_src: '/images/divulgacampo.png',
+        image_src: '/images/divulgacampo/divulgacampo.png',
         showcase: [
             {
                 id: 0,
-                image_src: '/images/divulgacampo.png',
+                image_src: '/images/divulgacampo/divulgacampo.png',
             },
         ]
     },
@@ -39,11 +39,11 @@ export const AllProjects = [
         topics: ['React.js', 'Next.js', 'Tailwind CSS', 'Web Vitals', 'SSR', 'CSR', 'SEO'],
         repo_link: 'https://github.com/leobez/seo-comparison',
         project_link: 'https://ric.cps.sp.gov.br/handle/123456789/21533',
-        image_src: '/images/seo-comparison.png',
+        image_src: '/images/seo-comparison/seo-comparison.png',
         showcase: [
             {
                 id: 0,
-                image_src: '/images/seo-comparison.png',
+                image_src: '/images/seo-comparison/seo-comparison.png',
             },
         ]
     },
@@ -55,47 +55,47 @@ export const AllProjects = [
         topics: ['React.js', 'TypeScript', 'Vercel', 'React icons', 'Tailwind CSS', 'DaisyUI', 'Context API', 'TMDB'],
         repo_link: 'https://github.com/leobez/cinelog',
         project_link: 'https://cinelogleob.vercel.app/',
-        image_src: '/images/media-collection.png',
+        image_src: '/images/cinelog/media-collection.png',
         showcase: [
 
             // Base 
             {
                 id: 0,
-                image_src: '/images/media-collection.png',
+                image_src: '/images/cinelog/media-collection.png',
             },
 
             // show movie/:id
             {
                 id: 1,
-                image_src: '/images/movie.png',
+                image_src: '/images/cinelog/movie.png',
             },
             // show filtering by genre
             {
                 id: 2,
-                image_src: '/images/bygenre.png',
+                image_src: '/images/cinelog/bygenre.png',
             },
             // show filtering by query
             {
                 id: 3,
-                image_src: '/images/byquery.png',
+                image_src: '/images/cinelog/byquery.png',
             },
             // show color scheme
             {
                 id: 4,
                 image_src: '',
                 multiple_src: [
-                    '/images/color-themes/color1.png',
-                    '/images/color-themes/color2.png',
-                    '/images/color-themes/color3.png',
-                    '/images/color-themes/color4.png',
-                    '/images/color-themes/color5.png',
+                    '/images/cinelog/color-themes/color1.png',
+                    '/images/cinelog/color-themes/color2.png',
+                    '/images/cinelog/color-themes/color3.png',
+                    '/images/cinelog/color-themes/color4.png',
+                    '/images/cinelog/color-themes/color5.png',
                 ]
             },
 
             // show random
             {
                 id: 5,
-                image_src: '/images/random.png',
+                image_src: '/images/cinelog/random.png',
             },
         ]
     },
