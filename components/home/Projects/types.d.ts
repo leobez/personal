@@ -34,5 +34,6 @@ export type Project = {
 export type ShowCaseImage = {
     id:number;
     image_src:string; 
+    multiple_src?:string[]
  }
  

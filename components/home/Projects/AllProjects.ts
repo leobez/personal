@@ -67,34 +67,35 @@ export const AllProjects = [
             // One to show movie/:id
             {
                 id: 1,
-                image_src: '/images/chat-mqtt.png',
+                image_src: '/images/movie.png',
             },
             // One to show filtering by genre
             {
                 id: 2,
-                image_src: '/images/chat-mqtt.png',
+                image_src: '/images/bygenre.png',
             },
             // One to show filtering by query
             {
                 id: 3,
-                image_src: '/images/chat-mqtt.png',
+                image_src: '/images/byquery.png',
             },
             // One to show color scheme
             {
                 id: 4,
-                image_src: '/images/seo-comparison.png',
+                image_src: '',
+                multiple_src: [
+                    '/images/color-themes/color1.png',
+                    '/images/color-themes/color2.png',
+                    '/images/color-themes/color3.png',
+                    '/images/color-themes/color4.png',
+                    '/images/color-themes/color5.png',
+                ]
             },
 
             // One to show random
             {
                 id: 5,
-                image_src: '/images/divulgacampo.png',
-            },
-
-            // One to show api
-            {
-                id: 6,
-                image_src: '/images/medidas-dispersao.png',
+                image_src: '/images/random.png',
             },
         ]
     },

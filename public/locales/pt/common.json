@@ -59,31 +59,27 @@
           "showcase": {
             "desc0": {
               "id":"0",
-              "desc": "Um site para descobrir filmes"
+              "desc": "Um site para descobrir filmes."
             },
             "desc1": {
               "id":"1",
-              "desc": "Clique em um filme para ver informações sobre ele"
+              "desc": "Clique em um filme para ver informações sobre."
             },
             "desc2": {
               "id":"2",
-              "desc": "Filtre filmes de acordo com gênro"
+              "desc": "Filtre filmes por gênero."
             },
             "desc3": {
               "id":"3",
-              "desc": "Busque por filmes"
+              "desc": "Busque por filmes através de queries."
             },
             "desc4": {
               "id":"4",
-              "desc": "O site conta com diversos esquemas de cores"
+              "desc": "O site conta com diversos temas."
             },
             "desc5": {
               "id":"5",
-              "desc": "Não sabe o que assistir? Então seja sorteado um filme de acordo com seus gêneros favoritos"
-            },
-            "desc6": {
-              "id":"6",
-              "desc": "Gere uma chave API e use a aplicação"
+              "desc": "Não sabe o que assistir? Então seja sorteado um filme de acordo com seus gêneros favoritos."
             }
           }
         },
