@@ -28,36 +28,43 @@ export default function Summary({content}:Props) {
 
     const sectionsElements = [
         {
+            id: 0,
             link: 'about_me',
             name: content.name1,
             icon: <IoPersonOutline size={25} style={{pointerEvents: 'none'}}/>
         },
         {
+            id: 1,
             link: 'competence',
             name: content.name2,
             icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
         },
         {
+            id: 2,
             link: 'education',
             name: content.name3,
             icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
         },
     /*     {
+            id: 3,
             link: 'experience',
             name: content.name4,
             icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
         }, */
         {
+            id: 4,
             link: 'projects',
             name: content.name5,
             icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
         },
         {
+            id: 5,
             link: 'curriculum',
             name: content.name6,
             icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
         },
     /*     {
+            id: 6,
             link: 'contact',
             name: content.name7,
             icon: <IoMailOutline size={25} style={{pointerEvents: 'none'}}/>
@@ -67,6 +74,10 @@ export default function Summary({content}:Props) {
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentSection, setCurrentSection] = useState<string>('')
     const [threshold, setThreshold] = useState<number>(0.9)
+
+/*     useEffect(() => {
+        console.log(currentSection, sectionsElements)
+    }, [currentSection]) */
 
     useEffect(() => {
         setMounted(true)
@@ -136,15 +147,28 @@ export default function Summary({content}:Props) {
         <div className="flex flex-col gap-3 bg-color01 p-3 rounded-lg shadow-lg w-full">
             <div className="flex flex-col gap-3">
                 {sectionsElements.map((element:any, index:number) => (
-                    <div className={`w-full hover:bg-color04 duration-200 cursor-pointer rounded-lg shadow-md ${element.link===currentSection ? 'bg-color04' : ''}`} key={index}>
-                        <button 
-                            className="py-4 px-3 h-full w-full flex justify-between items-center text-sm" 
-                            onClick={handleClick} 
-                            id={`button_${element.link}`}
-                        >
-                            {element.name}
-                            {element.icon}
-                        </button>
+                    <div key={`div${index}`}>
+                        {element.link === currentSection ? (
+                            <button 
+                                className="rounded-lg shadow-md py-4 px-3 h-full w-full flex duration-200 cursor-pointer justify-between items-center text-sm bg-color04 hover:bg-color04 " 
+                                onClick={handleClick} 
+                                id={`button_${element.link}`}
+                                key={`${index}a`}
+                            >
+                                {element.name}
+                                {element.icon}
+                            </button>
+                        ) : (
+                            <button 
+                                className="rounded-lg shadow-md py-4 px-3 h-full w-full flex duration-200 cursor-pointer justify-between items-center text-sm bg-color01 hover:bg-color04 " 
+                                onClick={handleClick} 
+                                id={`button_${element.link}`}
+                                key={`${index}b`}
+                            >
+                                {element.name}
+                                {element.icon}
+                            </button>
+                        )}
                     </div>
                 ))}
             </div>
