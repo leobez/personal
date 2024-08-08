@@ -16,6 +16,7 @@ export default function ShowcaseElement({image_src, desc, multiple_src}:Props) {
 
     const [index, setIndex] = useState<number>(1)
 
+    /* Is there is multiple_src, that will trigger a rapid change of each image */
     useEffect(() => {
         
         if (!multiple_src) return;
@@ -34,8 +35,6 @@ export default function ShowcaseElement({image_src, desc, multiple_src}:Props) {
         return () => clearInterval(interval)
 
     }, [index, multiple_src])
-
-
 
     return (
         <>

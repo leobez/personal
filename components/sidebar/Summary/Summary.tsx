@@ -70,6 +70,11 @@ export default function Summary({content}:Props) {
 
     useEffect(() => {
         setMounted(true)
+        if (innerWidth <= 660) {
+            setThreshold(0.6)
+        } else {
+            setThreshold(0.9)
+        }
         window.addEventListener('resize', () => {
             if (innerWidth <= 660) {
                 setThreshold(0.6)

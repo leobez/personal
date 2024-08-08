@@ -64,22 +64,22 @@ export const AllProjects = [
                 image_src: '/images/media-collection.png',
             },
 
-            // One to show movie/:id
+            // show movie/:id
             {
                 id: 1,
                 image_src: '/images/movie.png',
             },
-            // One to show filtering by genre
+            // show filtering by genre
             {
                 id: 2,
                 image_src: '/images/bygenre.png',
             },
-            // One to show filtering by query
+            // show filtering by query
             {
                 id: 3,
                 image_src: '/images/byquery.png',
             },
-            // One to show color scheme
+            // show color scheme
             {
                 id: 4,
                 image_src: '',
@@ -92,7 +92,7 @@ export const AllProjects = [
                 ]
             },
 
-            // One to show random
+            // show random
             {
                 id: 5,
                 image_src: '/images/random.png',
