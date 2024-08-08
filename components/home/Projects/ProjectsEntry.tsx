@@ -77,19 +77,9 @@ export default function ProjectsEntry() {
                                 {
                                     id: t('projects.mediacollection.showcase.desc5.id'),
                                     text: t('projects.mediacollection.showcase.desc5.desc'),
-                                },
-                                {
-                                    id: t('projects.mediacollection.showcase.desc6.id'),
-                                    text: t('projects.mediacollection.showcase.desc6.desc'),
                                 }
                             ]
                         },
-
-
-
-
-
-
                     ],
 
                     l_linkRepo: t("linkRepo"),  
