@@ -158,6 +158,7 @@ export default function ShowcaseElement({image_src, desc, multiple_src}:Props) {
                         alt='photo' 
                         height={800}
                         width={1400}
+                        priority={true}
                         style={{
                             objectFit: "cover", 
                             objectPosition: 'center', 
@@ -176,6 +177,7 @@ export default function ShowcaseElement({image_src, desc, multiple_src}:Props) {
                         src={`/images/cinelog/color-themes/color${index}.png`} 
                         alt='photo' 
                         fill={true} 
+                        priority={true}
                         style={{
                             objectFit: "cover", 
                             objectPosition: 'center', 
