@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="bg-color02 p-3 rounded-lg shadow-lg min-h-screen flex flex-col gap-3" id="section_root">
 
-{/*       <div id="about_me" className="h-fit section scroll-mt-24">
+      <div id="about_me" className="h-fit section scroll-mt-24">
         <AboutMe/>
       </div>
 
@@ -21,7 +21,7 @@ export default function Home() {
 
       <div id="education" className="h-fit section scroll-mt-24">
         <Education/>
-      </div> */}
+      </div>
 
 {/*       <div>
         <Experience/>
@@ -31,13 +31,13 @@ export default function Home() {
         <ProjectsEntry/>
       </div>
 
-{/*       <div id="curriculum" className="h-fit section scroll-mt-24">
+      <div id="curriculum" className="h-fit section scroll-mt-24">
         <Curriculum/>
-      </div> */} 
+      </div>
 
 {/*       <div>
         <Contact/>
-      </div> */}
+      </div> */} 
 
     </div>
   ); 
