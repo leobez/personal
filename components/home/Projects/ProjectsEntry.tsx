@@ -9,6 +9,20 @@ export default function ProjectsEntry() {
 
         <div className="h-full min-h-[500px]">
 
+            <>
+                {/* CINELOG */}
+                <img src="/images/cinelog/media-collection.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/movie.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/random.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/bygenre.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/byquery.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/color-themes/color1.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/color-themes/color2.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/color-themes/color3.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/color-themes/color4.png" style={{display: 'none'}}></img>
+                <img src="/images/cinelog/color-themes/color5.png" style={{display: 'none'}}></img>
+            </>
+
             <Projects localeContent={
 
                 {
