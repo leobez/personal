@@ -33,26 +33,26 @@ export default function Education() {
                 <p className="font-bold text-lg">{t('title2')}</p>
             </div>
             
-            <div className="p-3 flex flex-col gap-3">
+            <div className="p-3 flex flex-wrap gap-3">
 
-                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2">
+                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
                     <p className="font-bold">Microlins</p>
                     <p>{t('educations.education3.desc')}</p>
                     <p className="text-sm">2017 - 2018</p>
                     {/* <p className="text-sm"><span className="font-bold">Competências:</span>Office 365, informática</p> */}
                 </div>
 
-                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2">
+                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
                     <p className="font-bold">American English Learning (AEL)</p>
                     <p>{t('educations.education4.desc')}</p>
                     <p className="text-sm">2018 - 2018</p>
                     {/* <p className="text-sm"><span className="font-bold">Competências:</span>inglês</p> */}
                 </div>
 
-                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2">
+                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
                     <p className="font-bold">Udemy</p>
                     <p>{t('educations.education5.desc')}</p>
-                    <p className="text-sm">2023 - 2024</p>
+                    <p className="text-sm">---</p>
                     {/* <p className="text-sm"><span className="font-bold">Competências:</span>Competências: JavaScript, React.js, Node.js, Express.js, MySQL</p> */}
                 </div>
 

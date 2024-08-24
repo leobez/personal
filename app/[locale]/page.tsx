@@ -19,6 +19,10 @@ export default function Home() {
         <Competences/>
       </div>
 
+      <div id="projects" className="h-fit section scroll-mt-24">
+        <ProjectsEntry/>
+      </div>
+
       <div id="education" className="h-fit section scroll-mt-24">
         <Education/>
       </div>
@@ -27,13 +31,9 @@ export default function Home() {
         <Experience/>
       </div> */}
 
-      <div id="projects" className="h-fit section scroll-mt-24">
-        <ProjectsEntry/>
-      </div>
-
-      <div id="curriculum" className="h-fit section scroll-mt-24">
+{/*       <div id="curriculum" className="h-fit section scroll-mt-24">
         <Curriculum/>
-      </div>
+      </div> */}
 
 {/*       <div>
         <Contact/>

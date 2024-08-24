@@ -26,7 +26,12 @@ const config: Config = {
       color04: 'rgb(var(--color04) / <alpha-value>)',
       colorText: 'rgb(var(--colorText) / <alpha-value>)',
       ...colors
-    }
+    },
+/*     borderRadius: {
+      lg: '0',
+      sm: '0',
+      md: '0'
+    } */
   },
 
   safelist: [

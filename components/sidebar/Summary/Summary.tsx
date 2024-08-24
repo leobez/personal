@@ -40,6 +40,12 @@ export default function Summary({content}:Props) {
             icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
         },
         {
+            id: 4,
+            link: 'projects',
+            name: content.name5,
+            icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
+        },
+        {
             id: 2,
             link: 'education',
             name: content.name3,
@@ -51,18 +57,12 @@ export default function Summary({content}:Props) {
             name: content.name4,
             icon: <IoBriefcaseOutline size={25} style={{pointerEvents: 'none'}}/>
         }, */
-        {
-            id: 4,
-            link: 'projects',
-            name: content.name5,
-            icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
-        },
-        {
+/*         {
             id: 5,
             link: 'curriculum',
             name: content.name6,
             icon: <IoDocumentOutline size={25} style={{pointerEvents: 'none'}}/>
-        },
+        }, */
     /*     {
             id: 6,
             link: 'contact',

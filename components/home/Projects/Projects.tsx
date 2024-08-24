@@ -6,6 +6,23 @@ import ProjectComponent from "./ProjectComponent"
 import SelectedProject from "./SelectedProject"
 import { LocaleProps, Project } from "./types"
 
+// Reversing AllProjects array
+for (let a=0; a<AllProjects.length; a++) {
+
+    let ia = a
+    let ib = AllProjects.length-1-a
+
+    if (ia >= ib) {
+        break;
+    }
+
+    let ela = AllProjects[ia]
+    let elb = AllProjects[ib]
+
+    AllProjects[ia] = elb
+    AllProjects[ib] = ela
+}
+
 export default function Projects({
     localeContent: {
         l_title,
@@ -61,7 +78,7 @@ export default function Projects({
 
     return (
 
-        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip">
+        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip min-h-[700px] justify-center">
 
             <div>
                 <p className="font-bold text-lg">
@@ -78,18 +95,20 @@ export default function Projects({
             <div>
 
                 {/* Projects cards */}
-                <div className="md:flex flex-reverse md:flex-wrap grid sm:grid-cols-2 md:gap-0 gap-2 grid-cols-1 relative">
+                <div className="md:flex md:flex-wrap grid sm:grid-cols-2 md:gap-0 gap-2 grid-cols-1 relative">
 
-                    {AllProjects && AllProjects.map((project:Project) => (
-                        <ProjectComponent
-                            key={project.id}
-                            clickFunc={handleClick}
-                            imgSrc={project.image_src}
-                            name={project.name}
-                            id={`project_${project.id}`}
-                        />
-                    ))
+                    {AllProjects && AllProjects.map((project:Project) => {
 
+                            return (
+                                <ProjectComponent
+                                key={project.id}
+                                clickFunc={handleClick}
+                                imgSrc={project.image_src}
+                                name={project.name}
+                                id={`project_${project.id}`}
+                                />
+                            )
+                        })
                     }
 
                 </div>

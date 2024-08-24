@@ -11,7 +11,7 @@ export default function ProjectComponent({clickFunc, imgSrc, name, id}:Props) {
 
     return (
             <div 
-                className=" bg-color01 p-[1px] h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col" 
+                className={`bg-color01 p-[1px] h-60 md:w-1/3 w-full duration-200 cursor-pointer flex flex-col order-${id.split('_')[1]}`} 
                 onClick={clickFunc} 
                 id={id}
             >
