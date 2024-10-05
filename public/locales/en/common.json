@@ -1,7 +1,8 @@
 {
   "AboutMe": {
     "title": "Hi, i'm Leo!",
-    "description": "I am a computer technician and (almost) graduated in systems analysis and development. I am looking for opportunities in the IT market that allow me to contribute to the development of software solutions. I'm always willing to learn!"
+    "description": "I am a computer technician and (almost) graduated in systems analysis and development. I am looking for opportunities in the IT market that allow me to contribute to the development of software solutions.",
+    "learning": "I am always learning!"
   },
   "ThemeSelector": {
     "title": "Select a theme:"
@@ -20,8 +21,8 @@
   },
   "Competences": {
     "title": "Competences",
-    "bd": "Database",
-    "tools": "Tools",
+    "technologies": "Technologies",
+    "techdesc": "Technologies I am skilled in.",
     "langs": {
       "title": "Languages",
       "lang1": "Portuguese (Native)",

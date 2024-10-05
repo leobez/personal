@@ -25,15 +25,19 @@ export default function AboutMe() {
                 <p className="text-justify font-light">
                     {t('description')}
                 </p>
+
+                <p className="font-bold">
+                    {t('learning')}
+                </p>
                 
-                <div className="w-full flex items-end justify-center relative h-full rounded-lg">
-                    <div className="relative w-full h-[260px] bg-color03 rounded-lg grid place-items-center">
+                <div className="w-full flex items-end justify-end relative h-full rounded-lg">
+                    <div className="relative w-1/2 h-[150px] bg-color03 rounded-lg grid place-items-center">
                         <Image 
                             src={`/gifs/darksouls.gif`} 
                             unoptimized={true} 
                             alt='darksouls.gif' 
                             fill={true} 
-                            style={{objectFit: "cover", borderRadius: "0.5rem"}}
+                            style={{objectFit: "cover", objectPosition: "right", borderRadius: "0.5rem"}}
                         />
                     </div>
                 </div>

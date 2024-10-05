@@ -5,26 +5,22 @@ import { FaCss3Alt } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaReact } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { RiTailwindCssLine } from "react-icons/ri";
 import { RiNextjsLine } from "react-icons/ri";
-import { TbBrandMongodb } from "react-icons/tb";
 import { FaGithub } from "react-icons/fa";
 import { useEffect, useState } from "react";
 
 const elements = [
-    <FaHtml5 size={50}/>,
-    <FaCss3Alt size={50}/>,
-    <IoLogoJavascript size={50}/>,
-    <FaReact size={50}/>,
-    <RiTailwindCssLine size={50}/>,
-    <FaNodeJs size={50}/>,
-    <RiNextjsLine size={50}/>,
-    <SiExpress size={50}/>,
-    <SiMysql size={50}/>,
-    <TbBrandMongodb size={50}/>,
-    <FaGithub size={50}/>,
+    <FaHtml5 size={35}/>,
+    <FaCss3Alt size={35}/>,
+    <IoLogoJavascript size={35}/>,
+    <FaReact size={35}/>,
+    <RiTailwindCssLine size={35}/>,
+    <FaNodeJs size={35}/>,
+    <RiNextjsLine size={35}/>,
+    <SiMysql size={35}/>,
+    <FaGithub size={35}/>,
 ]
 
 export default function AnimatedPool() {
@@ -39,7 +35,7 @@ export default function AnimatedPool() {
 
     return (
 
-        <div className="w-2/3 p-3">
+        <div className="w-1/2 p-3">
             <div className="relative overflow-hidden h-full w-full">
                 {elements.map((element:any, index:number) => (
                     <div key={index} 

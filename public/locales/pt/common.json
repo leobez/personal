@@ -1,7 +1,8 @@
 {
     "AboutMe": {
       "title": "Olá, me chamo Léo!",
-      "description": "Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Estou em busca de oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software. Sempre estou disposto a aprender!"
+      "description": "Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Estou em busca de oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software.",
+      "learning": "Estou sempre aprendendo!"
     },
     "ThemeSelector": {
       "title": "Selecione um tema:"
@@ -20,8 +21,8 @@
     },
     "Competences": {
       "title": "Competências",
-      "bd": "Banco de dados",
-      "tools": "Ferramentas",
+      "technologies": "Tecnologias",
+      "techdesc": "Tecnologias nas quais sou competente.",
       "langs": {
         "title": "Idiomas",
         "lang1": "Português (Fluente)",

@@ -14,38 +14,24 @@ export default function Competences() {
 
             <div className="flex md:flex-row flex-col justify-between">
 
-                <div className="p-3 gap-3 grid md:w-1/3 md:grid-cols-1 w-full sm:grid-cols-2 grid-cols-1">
+                <div className="p-3 gap-3 grid md:w-1/2 md:grid-cols-1 w-full sm:grid-cols-2 grid-cols-1">
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">Front-end</p>
-                        <ul className="list-disc pl-6">
-                            <li>HTML <span className="text-xs">&&</span> CSS <span className="text-xs">&&</span> JS;</li>
-                            <li>React.js;</li>
-                            <li>Tailwind CSS.</li>
-                        </ul>
-                    </div>
 
-                    <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">Back-end</p>
-                        <ul className="list-disc pl-6">
-                            <li>Node.js;</li>
-                            <li>Next.js.</li>
-                        </ul>
-                    </div>
+                        <p className="font-bold">{t('technologies')}</p>
 
-                    <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">{t('bd')}</p>
-                        <ul className="list-disc pl-6">
-                            <li>MySQL;</li>
-                            <li>MongoDB.</li>
-                        </ul>
-                    </div>
+                        <p className="font-light text-sm">
+                            {t('techdesc')}
+                        </p>
 
-                    <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">{t('tools')}</p>
-                        <ul className="list-disc pl-6">
-                            <li>Git <span className="text-xs">&&</span> Github;</li>
-                            <li>Office 365.</li>
+                        <ul className="list-disc pl-6 pt-4">
+                            <li>JavaScript: React.js, Node.js, Next.js;</li>
+                            <li>Java: SE 21;</li>
+                            <li>CSS: Tailwind CSS;</li>
+                            <li>HTML;</li>
+                            <li>SQL: MySQL;</li>
+                            <li>Git && Github;</li>
+                            <li>Docker.</li>
                         </ul>
                     </div>
 
