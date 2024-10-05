@@ -26,7 +26,7 @@ export default function AboutMe() {
                     {t('description')}
                 </p>
 
-                <p className="font-bold">
+                <p>
                     {t('learning')}
                 </p>
                 
