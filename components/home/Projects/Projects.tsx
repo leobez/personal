@@ -1,10 +1,10 @@
 'use client'
 
 import { useEffect, useState } from "react"
-import { AllProjects } from "./AllProjects"
-import ProjectComponent from "./ProjectComponent"
-import SelectedProject from "./SelectedProject"
-import { LocaleProps, Project } from "./types"
+import { AllProjects } from "./SAVE/AllProjects"
+import { LocaleProps } from "./types"
+import { PROJECTDATA, Project } from "./ProjectData"
+import Image from "next/image"
 
 export default function Projects({
     localeContent: {
@@ -29,89 +29,65 @@ export default function Projects({
         setMounted(true)
     }, [])  
 
-    const handleClick = (e:any):void => {
-        e.preventDefault()
-
-        const id = e.currentTarget.id
-        if (!id) return;
-
-        const numberId = Number(id.replace('project_', ''))
-        
-        //console.log('numberId: ', numberId)
-
-        setCurrentProject(AllProjects[numberId])
-
-        const projectDetail = document.querySelector('#project_detail')
-        //console.log('projectDetail: ', projectDetail)
-        projectDetail?.classList.remove("projects_details_out")
-        projectDetail?.classList.remove("hidden")
-        projectDetail?.scrollIntoView({block: "start", behavior: "smooth"});    
-    }
-
-    const handleClose = ():void => {
-        const projectDetailSelectedCard = document.querySelector('#project_detail_selected_card')
-        if (!projectDetailSelectedCard) return;
-        setCurrentProject(null)
-
-        const projectDetail = document.querySelector('#project_detail')
-        projectDetail?.classList.add("projects_details_out")
-    }
-
     if (!mounted) return;
 
     return (
 
-        <section className="relative bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 overflow-clip">
+        <section className="relative bg-color01 p-4 rounded-lg shadow-lg flex flex-col gap-3 overflow-y-scroll h-[900px]">
 
             <div>
                 <p className="font-bold text-lg">
                     {l_title}
                 </p>
-
-                <p className="font-light">
-                    <a href="https://github.com/leobez?tab=repositories" target="_blank" className="hover:text-color04 duration-200">
-                        {l_subtitle}
-                    </a>
-                </p> 
             </div>
             
-            <div>
+            <div className="p-3 flex flex-col gap-3 ">
 
-                {/* Projects cards */}
-                <div className="md:flex md:flex-wrap grid sm:grid-cols-2 md:gap-0 gap-2 grid-cols-1 relative">
+                {PROJECTDATA.map((project:Project) => (
+                    
+                    <div className="border border-color04 rounded-lg flex gap-1 bg-color03">
 
-                    {AllProjects && AllProjects.map((project:Project, index:number) => {
+                        {/* IMAGEM */}
+                        <div className="w-2/3 h-[360px] relative">
+                            <Image
+                                src={`${project.image_path}`} 
+                                alt={`${project.name}`} 
+                                fill={true}
+                                style={{
+                                    objectFit: "cover", 
+                                    objectPosition: 'left', 
+                                    borderTopLeftRadius: '0.5rem', 
+                                    borderBottomLeftRadius: '0.5rem', 
+                                }}
+                            />
+                        </div>
 
-                            return (
-                                <ProjectComponent
-                                key={project.id}
-                                clickFunc={handleClick}
-                                imgSrc={project.image_src}
-                                name={project.name}
-                                id={`project_${index}`}
-                                />
-                            )
-                        })
-                    }
+                        {/* TEXT */}
+                        <div className="w-1/3 p-3">
 
-                </div>
+                            {/* NAME */}
+                            <div>{project.name}</div>
 
-                <div className="absolute h-full w-full p-1 left-0 top-0 bg-color03 rounded-lg flex flex-col projects_details_in hidden scroll-mt-[630px] sm:scroll-mt-[450px]" id="project_detail">
-                    {currentProject &&
+                            {/* LINK REPO */}
+                            <div>{project.link_repo}</div>
 
-                        <SelectedProject 
-                            closeFunc={handleClose} 
-                            selectedProject={currentProject} 
-                            localizedProps={{
-                                l_linkProject,
-                                l_linkRepo,
-                                l_project: l_projects[Number(currentProject.id)]
-                            }}
-                        />
+                            {/* LINK PROJECT */}
+                            <div>{project.link_project}</div>
 
-                    }
-                </div>
+                            {/* TECH STACK */}
+                            <div> Tech Stack </div>
 
+                            {/* DESCRIPTION */}
+                            <div> Description </div>
+
+                        </div>
+
+                    </div>
+                    
+                ))}
+
+
+                
             </div>
 
         </section>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Project, ShowCaseDesc, ShowCaseImage } from "./types";
+import { Project, ShowCaseDesc, ShowCaseImage } from "../types";
 import { useEffect, useState } from "react";
 import ShowcaseElement from "./ShowcaseElement";
 

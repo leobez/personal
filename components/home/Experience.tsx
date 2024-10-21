@@ -7,7 +7,7 @@ export default function Experience() {
                 <p className="font-bold text-lg">Experiência</p>
             </div>
             
-            <div className="p-5 flex flex-col gap-5">
+            <div className="p-3 flex flex-col gap-5">
 
                 <div className="bg-color03 p-5 rounded-lg shadow-md font-light">
 

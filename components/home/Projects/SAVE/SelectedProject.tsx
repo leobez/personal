@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { LocalizedProjectContent, Project, ShowCaseDesc } from "./types";
+import { LocalizedProjectContent, Project, ShowCaseDesc } from "../types";
 import ProjectShowcase from "./ProjectShowcase";
 import { IoCloseOutline } from "react-icons/io5";
 
