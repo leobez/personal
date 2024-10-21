@@ -40,13 +40,13 @@ export default function Summary({content}:Props) {
             icon: <RiComputerLine size={25} style={{pointerEvents: 'none'}}/>
         },
         {
-            id: 4,
+            id: 2,
             link: 'projects',
             name: content.name5,
             icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
         },
         {
-            id: 2,
+            id: 3,
             link: 'education',
             name: content.name3,
             icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
@@ -73,7 +73,6 @@ export default function Summary({content}:Props) {
 
     const [mounted, setMounted] = useState<boolean>(false)
     const [currentSection, setCurrentSection] = useState<string>('')
-    const [threshold, setThreshold] = useState<number>(0.9)
 
 /*     useEffect(() => {
         console.log(currentSection, sectionsElements)
@@ -81,18 +80,6 @@ export default function Summary({content}:Props) {
 
     useEffect(() => {
         setMounted(true)
-        if (innerWidth <= 660) {
-            setThreshold(0.6)
-        } else {
-            setThreshold(0.9)
-        }
-        window.addEventListener('resize', () => {
-            if (innerWidth <= 660) {
-                setThreshold(0.6)
-            } else {
-                setThreshold(0.9)
-            }
-        })
     }, [])
 
     useEffect(() => {
@@ -103,6 +90,7 @@ export default function Summary({content}:Props) {
               
             const observer = new IntersectionObserver((entries:any) => {
                 entries.forEach((entry:IntersectionObserverEntry) => {
+
                     //console.log('activated: ', entry)
                     if (entry.isIntersecting) {
                         const idOfVisibleElement = entry.target.id
@@ -111,7 +99,7 @@ export default function Summary({content}:Props) {
                     }
                 });
             }, {
-                threshold: threshold
+                threshold: 0.8
             });
             
             const sectionsToObserve:any = document.getElementsByClassName('section')
@@ -125,9 +113,9 @@ export default function Summary({content}:Props) {
             });
         }
 
-        setObservers()
+        //setObservers()
 
-    }, [mounted, currentSection, threshold])
+    }, [mounted, currentSection])
 
 
     const handleClick = (e:any):void => {

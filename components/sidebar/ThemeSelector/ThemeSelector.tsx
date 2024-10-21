@@ -70,7 +70,7 @@ export default function ThemeSelector({content}:Props) {
             setCurrentTheme(localStorageTheme)
         } else {
             // Default theme
-            setCurrentTheme('skyLight')
+            setCurrentTheme('slateLight')
         }
 
     }, [])

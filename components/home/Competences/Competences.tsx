@@ -6,7 +6,7 @@ export default function Competences() {
     const t = useTranslations('Competences')
 
     return (
-        <section className="bg-color01 p-3 rounded-lg shadow-lg flex flex-col gap-3 max-w-full">
+        <section className="bg-color01 p-4 rounded-lg shadow-lg flex flex-col gap-3 max-w-full">
 
             <div>
                 <p className="font-bold text-lg">{t('title')}</p>
@@ -20,24 +20,20 @@ export default function Competences() {
 
                         <p className="font-bold">{t('technologies')}</p>
 
-                        <p className="font-light text-sm">
-                            {t('techdesc')}
-                        </p>
-
-                        <ul className="list-disc pl-6 pt-4">
-                            <li>JavaScript: React.js, Node.js, Next.js;</li>
-                            <li>Java: SE 21;</li>
-                            <li>CSS: Tailwind CSS;</li>
+                        <ul className="list-disc pl-6 pt-2">
+                            <li>JavaScript, React.js, Next.js, Node.js;</li>
+                            <li>Java;</li>
+                            <li>CSS, Tailwind CSS;</li>
                             <li>HTML;</li>
-                            <li>SQL: MySQL;</li>
-                            <li>Git && Github;</li>
+                            <li>SQL, MySQL;</li>
+                            <li>Git, Github;</li>
                             <li>Docker.</li>
                         </ul>
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
                         <p className="font-bold">{t('langs.title')}</p>
-                        <ul className="list-disc pl-6">
+                        <ul className="list-disc pl-6 pt-2">
                             <li>{t('langs.lang1')}</li>
                             <li>{t('langs.lang2')}</li>
                         </ul>

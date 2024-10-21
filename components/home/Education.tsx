@@ -52,7 +52,7 @@ export default function Education() {
                 <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
                     <p className="font-bold">Udemy</p>
                     <p>{t('educations.education5.desc')}</p>
-                    <p className="text-sm">---</p>
+                    <p className="text-sm">2021 - ....</p>
                     {/* <p className="text-sm"><span className="font-bold">Competências:</span>Competências: JavaScript, React.js, Node.js, Express.js, MySQL</p> */}
                 </div>
 

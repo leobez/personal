@@ -1,7 +1,7 @@
 export default function Experience() {
 
     return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg flex flex-col gap-5 scroll-mt-[100px]" id="experience">
+        <section className="bg-color01 p-4 rounded-lg shadow-lg flex flex-col gap-5 scroll-mt-[100px]" id="experience">
 
             <div>
                 <p className="font-bold text-lg">Experiência</p>
@@ -11,8 +11,8 @@ export default function Experience() {
 
                 <div className="bg-color03 p-5 rounded-lg shadow-md font-light">
 
-                    <p className="font-bold">FATEC de Americana | Auditor de sistemas</p>
-                    <p>2024 - 2024</p>
+                    <p className="font-bold">FATEC de Americana | Estudante de TI</p>
+                    <p>2021 - 2024</p>
                     <p>Atividades:</p>
                     <ul>
                         <li className="before:p-2">a</li>

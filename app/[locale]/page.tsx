@@ -15,27 +15,25 @@ export default function Home() {
         <AboutMe/>
       </div>
 
-      <div id="competence" className="h-fit section scroll-mt-24">
+      <div id="competence" className="h-fit section scroll-mt-24"> 
         <Competences/>
+      </div>
+
+      <div id="experience" className="h-fit section scroll-mt-24">
+        <Experience/>
       </div>
 
       <div id="projects" className="h-fit section scroll-mt-24">
         <ProjectsEntry/>
       </div>
 
-      <div id="education" className="h-fit section scroll-mt-24">
+      <div id="education" className="h-fit section scroll-mt-24"> 
         <Education/>
       </div>
 
-{/*       <div>
-        <Experience/>
-      </div> */}
 
-{/*       <div id="curriculum" className="h-fit section scroll-mt-24">
-        <Curriculum/>
-      </div> */}
 
-{/*       <div>
+{/*   <div>
         <Contact/>
       </div> */} 
 

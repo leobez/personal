@@ -1,8 +1,14 @@
 {
     "AboutMe": {
-      "title": "Olá, me chamo Léo!",
-      "description": "Sou técnico em informática e (quase) graduado em análise e desenvolvimento de sistemas. Estou em busca de oportunidades no mercado de TI que me permitam contribuir para o desenvolvimento de soluções de software.",
-      "learning": "Estou sempre aprendendo!"
+      "title": "Olá, me chamo Leonardo!",
+
+      "description_1": "Sou técnico de informática e estudante de TI com foco em desenvolvimento de software.",
+
+      "description_2": "Possuo conhecimento em tecnologias voltadas para Web, como HTML, CSS e JavaScript e desenvolvi diversos projetos acadêmicos utilizando essas tecnologias. Se tratando de JavaScript, também possuo conhecimento em React.js, Next.js e Node.js. Também possuo bons fundamentos em Java, sendo uma linguagem na qual estudei intensamente durante os anos de graduação. Ademais, possuo conhecimentos em banco de dados SQL, principalmente MySQL e tecnologias de versionamento e conteinerização como Git, GitHub e Docker.",
+
+      "description_3": "Meus projetos podem ser vistos com mais detalhes em link",
+
+      "learning": "Estou aberto a oportunidades de trabalho estágio, iniciante ou voluntário na área de TI. Sempre estou disposto a aprender!"
     },
     "ThemeSelector": {
       "title": "Selecione um tema:"
