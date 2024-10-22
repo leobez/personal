@@ -1,6 +1,5 @@
 import AboutMe from "@/components/home/AboutMe/AboutMe";
 import Contact from "@/components/home/Contact";
-import Curriculum from "@/components/home/Curriculum";
 import Education from "@/components/home/Education";
 import Experience from "@/components/home/Experience";
 import Competences from "@/components/home/Competences/Competences";
