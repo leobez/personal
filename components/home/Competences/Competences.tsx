@@ -18,7 +18,7 @@ export default function Competences() {
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
 
-                        <p className="font-bold">{t('technologies')}</p>
+                        <p className="font-bold">{t('content.content_1')}</p>
 
                         <ul className="list-disc pl-6 pt-2">
                             <li>JavaScript, React.js, Next.js, Node.js;</li>
@@ -32,10 +32,10 @@ export default function Competences() {
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">{t('langs.title')}</p>
+                        <p className="font-bold">{t('content.content_2')}</p>
                         <ul className="list-disc pl-6 pt-2">
-                            <li>{t('langs.lang1')}</li>
-                            <li>{t('langs.lang2')}</li>
+                            <li>{t('content.content_3')}</li>
+                            <li>{t('content.content_4')}</li>
                         </ul>
                     </div>
 

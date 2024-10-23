@@ -17,9 +17,6 @@ type Props = {
         name2:string,
         name3:string,
         name4:string,
-        name5:string,
-        name6:string,
-        name7:string,
     }
 }
 
@@ -41,13 +38,13 @@ export default function Nav({content}:Props) {
         {
             id: 2,
             link: 'projects',
-            name: content.name5,
+            name: content.name3,
             icon: <SlSocialGithub size={25} style={{pointerEvents: 'none'}}/>
         },
         {
             id: 3,
             link: 'education',
-            name: content.name3,
+            name: content.name4,
             icon: <IoSchoolOutline size={25} style={{pointerEvents: 'none'}}/>
         },
 

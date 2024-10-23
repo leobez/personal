@@ -34,7 +34,7 @@ export default function Projects({
                 </p>
             </div>
             
-            <div className="px-7 py-4 flex flex-col gap-5">
+            <div className="px-7 pb-5 flex flex-col gap-5">
 
                 {PROJECTDATA.map((project:ProjectTYPE) => (             
                     <Project project={project} key={project.id}/>

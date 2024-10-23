@@ -1,124 +1,81 @@
 {
+
     "AboutMe": {
       "title": "Olá, me chamo Leonardo!",
-
-      "description_1": "Sou técnico de informática e estudante de TI com foco em desenvolvimento de software.",
-
-      "description_2": "Possuo conhecimento em tecnologias voltadas para Web, como HTML, CSS e JavaScript e desenvolvi diversos projetos acadêmicos utilizando essas tecnologias. Se tratando de JavaScript, também possuo conhecimento em React.js, Next.js e Node.js. Também possuo bons fundamentos em Java, sendo uma linguagem na qual estudei intensamente durante os anos de graduação. Ademais, possuo conhecimentos em banco de dados SQL, principalmente MySQL e tecnologias de versionamento e conteinerização como Git, GitHub e Docker.",
-
-      "description_3": "Meus projetos podem ser vistos com mais detalhes em link",
-
-      "learning": "Estou aberto a oportunidades de trabalho estágio, iniciante ou voluntário na área de TI. Sempre estou disposto a aprender!"
+      "content": {
+        "content_1": "Sou técnico de informática e estudante de TI com foco em desenvolvimento de software.",
+        "content_2": "Possuo conhecimento em tecnologias voltadas para Web, como HTML, CSS e JavaScript e desenvolvi diversos projetos acadêmicos utilizando essas tecnologias. Se tratando de JavaScript, também possuo conhecimento em React.js, Next.js e Node.js. Também possuo bons fundamentos em Java, sendo uma linguagem na qual estudei intensamente durante os anos de graduação. Ademais, possuo conhecimentos em banco de dados SQL, principalmente MySQL e tecnologias de versionamento e conteinerização como Git, GitHub e Docker.",
+        "content_3": "Estou aberto a oportunidades de trabalho estágio, iniciante ou voluntário na área de TI. Sempre estou disposto a aprender!"
+      }
     },
+
     "ThemeSelector": {
       "title": "Selecione um tema:"
     },
+
     "Summary": {
       "title": "Sumário",
-      "names": {
-        "name1": "Sobre mim",
-        "name2": "Competências",
-        "name3": "Educação",
-        "name4": "Experiência",
-        "name5": "Projetos",
-        "name6": "Currículo",
-        "name7": "Contato"
+      "content": {
+        "content_1": "Sobre mim",
+        "content_2": "Competências",
+        "content_3": "Projetos",
+        "content_4": "Educação"
       }
     },
+
     "Competences": {
       "title": "Competências",
-      "technologies": "Tecnologias",
-      "techdesc": "Tecnologias nas quais sou competente.",
-      "langs": {
-        "title": "Idiomas",
-        "lang1": "Português (Fluente)",
-        "lang2": "Inglês (Avançado)"
+      "content": {
+        "content_1": "Tecnologias",
+        "content_2": "Idiomas",
+        "content_3": "Português (Fluente)",
+        "content_4": "Inglês (Avançado)"
       }
     },
+
     "Education": {
       "title": "Educação",
-      "educations": {
-        "education1": {
-          "desc": "Técnico de informática"
-        },
-        "education2": {
-          "desc": "Técnologo em análise e desenvolvimento de sistemas"
-        },
-        "education3": {
-          "desc": "Capacitação em informática"
-        },
-        "education4": {
-          "desc": "Inglês"
-        },
-        "education5": {
-          "desc": "React.js, Node.js, Docker"
-        }
-      },
-      "title2": "Cursos"
+      "content": {
+        "content_1": "Técnico de informática",
+        "content_2": "Técnologo em análise e desenvolvimento de sistemas",
+        "content_3": "Capacitação em informática",
+        "content_4": "Inglês",
+        "content_5": "Cursos"
+
+      }
     },
 
     "Projects": {
+
       "title": "Projetos",
       "subtitle": "Projetos do github",
-      "projects": {
-        "mediacollection" : {
-          "description": "Site que usa uma API pública para exibir filmes com alguns recursos de busca/filtragem.",
-          "showcase": {
-            "desc0": {
-              "id":"0",
-              "desc": "Um site para descobrir filmes."
-            },
-            "desc1": {
-              "id":"1",
-              "desc": "Clique em um filme para ver informações sobre."
-            },
-            "desc2": {
-              "id":"2",
-              "desc": "Filtre filmes por gênero."
-            },
-            "desc3": {
-              "id":"3",
-              "desc": "Busque por filmes através de queries."
-            },
-            "desc4": {
-              "id":"4",
-              "desc": "O site conta com diversos temas."
-            },
-            "desc5": {
-              "id":"5",
-              "desc": "Não sabe o que assistir? Então seja sorteado um filme de acordo com seus gêneros favoritos."
-            }
-          }
-        },
-        "divulgacampo" : {
-          "description": "Site para divulgação de pesquisas de campo.",
-          "showcase": {
-            "desc0": {
-              "id":"0",
-              "desc": "Um site para divulgação de pesquisas de campo"
-            }
-          }
-        },
-        "seocomparison" : {
-          "description": "Monografia para a conclusão do curso em ADS na Fatec. Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR.",
-          "showcase": {
-            "desc0": {
-              "id":"0",
-              "desc": "Uma pesquisa científica sobre as abordagens de renderização de sites: SSR e CSR"
-            }
-          }
-        },
-        "adsprojects" : {
-          "description": "Conjunto de projetos feitos na faculdade de ADS.",
-          "showcase": {
-            "desc0": {
-              "id":"0",
-              "desc": "Diversos projetos, atividades e exercícios feitos durante a graduação em analise e desenvolvimento de sistemas"
-            }
-          }
-        }
+
+      "content": {
+        "content_1": "Link para o repositório:",
+        "content_2": "Link para o projeto:"
       },
-      "linkRepo": "Link para o repositório:",
-      "linkProject": "Link para o projeto:"
+
+      "projects": {
+
+        "cinelog" : {
+          "description": "Site que usa uma API pública para exibir filmes com alguns recursos de busca/filtragem."
+        },
+
+        "divulgacampo" : {
+          "description": "Site para divulgação de pesquisas de campo."
+        },
+
+        "seocomparison" : {
+          "description": "Monografia para a conclusão do curso em ADS na Fatec. Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR."
+        },
+
+        "vmmonitor" : {
+          "description": "Conjunto de projetos feitos na faculdade de ADS."
+        },
+
+        "chatmqtt" : {
+          "description": "Conjunto de projetos feitos na faculdade de ADS."
+        }
+      }
     }
 }

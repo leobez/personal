@@ -24,19 +24,15 @@ export default function AboutMe() {
                 />
 
                 <p className="text-justify font-light">
-                    {t('description_1')}
+                    {t('content.content_1')}
                 </p>
 
                 <p className="text-justify font-light">
-                    {t('description_2')}
-                </p>
-
-                <p className="text-justify font-light">
-                    {t('description_3')}
+                    {t('content.content_2')}
                 </p>
 
                 <p className="text-justify font-bold">
-                    {t('learning')}
+                    {t('content.content_3')}
                 </p>
 
             </div>
