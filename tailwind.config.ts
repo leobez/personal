@@ -43,7 +43,8 @@ const config: Config = {
   ],
 
   plugins: [
-    require('tailwindcss-animated')
+    require('tailwindcss-animated'),
+    require('tailwind-scrollbar')
   ]
 };
 

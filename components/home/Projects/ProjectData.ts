@@ -7,7 +7,7 @@
 // STILL MISSING: DOCKER ON AWS, JAVA APP AND NODE.JS APP
 
 
-export interface Project {
+export interface ProjectTYPE {
     id: number;
     name: String;
     image_path: String;
@@ -17,7 +17,7 @@ export interface Project {
     desc:String;
 }
 
-export const PROJECTDATA:Project[] = [
+export const PROJECTDATA:ProjectTYPE[] = [
     {
         id: 0,
         name: "CINELOG",
