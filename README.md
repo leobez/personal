@@ -1,11 +1,11 @@
 # Site de portfolio
 
-https://leobez.vercel.app/
+https://www.leobez.com.br
 
 <hr>
 
 Tech stack:
 
-- Next.js
-- Vercel
-- Tailwind Css
+- NEXT.JS
+- VERCEL
+- TAILWIND CSS
