@@ -18,10 +18,6 @@ export default function Home() {
         <Competences/>
       </div>
 
-      <div id="experience" className="h-fit section scroll-mt-24">
-        <Experience/>
-      </div>
-
       <div id="projects" className="h-fit section scroll-mt-24">
         <ProjectsEntry/>
       </div>
@@ -30,7 +26,9 @@ export default function Home() {
         <Education/>
       </div>
 
-
+{/*   <div id="experience" className="h-fit section scroll-mt-24">
+        <Experience/>
+      </div> */}
 
 {/*   <div>
         <Contact/>

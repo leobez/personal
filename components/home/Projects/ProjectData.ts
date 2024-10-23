@@ -21,7 +21,7 @@ export const PROJECTDATA:Project[] = [
     {
         id: 0,
         name: "CINELOG",
-        image_path: "/images/cinelog/media-collection.png",
+        image_path: "/images/cinelog/cinelog.png",
         link_repo: "https://github.com/leobez/cinelog",
         link_project: "https://cinelogleob.vercel.app/",
         tech_stack: ["JAVASCRIPT", "HTML", "CSS", "TAILWIND CSS", "REACT.JS", "REST API"],

@@ -1,13 +1,13 @@
-import Summary from "./Summary";
+import Nav from "./Nav";
 import { useTranslations } from "next-intl";
 
-export default function SummaryEntry() {
+export default function NavEntry() {
 
     const t = useTranslations('Summary')
 
     return (
         <>
-            <Summary content={{
+            <Nav content={{
                 title: t('title'),
                 name1: t('names.name1'),
                 name2: t('names.name2'),
