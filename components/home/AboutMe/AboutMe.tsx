@@ -40,7 +40,7 @@ export default function AboutMe() {
             {/* IMAGE */}
             <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 min-h-full w-full">
 
-                <div className="relative h-2/3 w-full rounded-lg">
+                <div className="relative h-96 md:h-2/3 w-full rounded-lg">
                     <Image 
                         src={`/images/photo.jpg`} 
                         alt='photo' 

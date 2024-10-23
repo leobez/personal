@@ -11,10 +11,10 @@ const Project = ({project, description}: Props) => {
 
   return (
 
-    <div className="border border-color04 rounded-lg flex gap-1 bg-color03 h-[360px]">
+    <div className="border border-color04 rounded-lg gap-1 bg-color03 h-fit md:h-[360px] flex flex-col md:flex-row">
 
         {/* IMAGEM */}
-        <div className="w-2/3 h-full relative">
+        <div className="w-full md:w-2/3 h-64 md:h-full relative">
             <Image
                 src={`${project.image_path}`} 
                 alt={`${project.name}`} 
@@ -29,7 +29,7 @@ const Project = ({project, description}: Props) => {
         </div>
 
         {/* TEXT */}
-        <div className="w-1/3 p-3 h-full overflow-y-auto">
+        <div className="w-full md:w-1/3 p-3 h-fit md:h-full overflow-y-auto">
 
             {/* NAME */}
             <div className="font-bold text-lg">{project.name}</div>
