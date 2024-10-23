@@ -9,14 +9,16 @@
 
 export interface ProjectTYPE {
     id: number;
-    name: String;
-    image_path: String;
-    link_repo: String;
-    link_project: String|null;
-    tech_stack: String[];
-    desc:String;
+    name: string;
+    image_path: string;
+    link_repo: string;
+    link_project: string|null;
+    tech_stack: string[];
+    desc:string;
 }
 
+
+/* THIS 'desc' IS UNUSED BECAUSE OF LOCALE */
 export const PROJECTDATA:ProjectTYPE[] = [
     {
         id: 0,
@@ -45,7 +47,7 @@ export const PROJECTDATA:ProjectTYPE[] = [
         link_repo: "https://github.com/leobez/seo-comparison",
         link_project: "https://ric.cps.sp.gov.br/handle/123456789/21533",
         tech_stack: ['REACT.JS', 'NEXT.JS', 'TAILWIND CSS', 'LIGHTHOUSE', 'SEO'],
-        desc: "Comparação do impacto em SEO das abordagens de renderização de sites SSR e CSR."
+        desc: "Pesquisa de comparação de SEO das abordagens de renderização de sites SSR e CSR com React.js e Next.js."
     },
 
     {

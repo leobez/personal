@@ -4,9 +4,10 @@ import Image from 'next/image';
 
 type Props = {
     project: ProjectTYPE;
+    description: string;
 }
 
-const Project = ({project}: Props) => {
+const Project = ({project, description}: Props) => {
 
   return (
 
@@ -64,7 +65,7 @@ const Project = ({project}: Props) => {
             {/* DESCRIPTION */}
             <div className="my-3 w-full">
                 <p className="w-full break-words text-justify text-sm">
-                    {project.desc}
+                    {description}
                 </p>
             </div>
 
