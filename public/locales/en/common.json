@@ -1,121 +1,76 @@
 {
+
   "AboutMe": {
     "title": "Hi, i'm Leo!",
-    "description": "I am a computer technician and (almost) graduated in systems analysis and development. I am looking for opportunities in the IT market that allow me to contribute to the development of software solutions.",
-    "learning": "I am always learning!"
+    "content": {
+      "content_1": "I am a computer technician and IT student with a focus on software development.",
+      "content_2": "I have knowledge in web technologies such as HTML, CSS and JavaScript and have developed several academic projects using these technologies. When it comes to JavaScript, I also have knowledge of React.js, Next.js and Node.js. I also have good fundamentals in Java, a language that I studied intensively during my undergraduate years. In addition, I have knowledge of SQL databases, mainly MySQL and versioning and containerization technologies such as Git, GitHub and Docker.",
+      "content_3": "I am open to internship, entry-level or volunteer opportunities in the IT field. I am always willing to learn!"
+    }
   },
+
   "ThemeSelector": {
     "title": "Select a theme:"
   },
+
   "Summary": {
     "title": "Summary",
-    "names": {
-      "name1": "About me",
-      "name2": "Competences",
-      "name3": "Education",
-      "name4": "Experience",
-      "name5": "Projects",
-      "name6": "Curriculum",
-      "name7": "Contact"
+    "content": {
+      "content_1": "About me",
+      "content_2": "Competences",
+      "content_3": "Projects",
+      "content_4": "Education"
     }
   },
+
   "Competences": {
     "title": "Competences",
-    "technologies": "Technologies",
-    "techdesc": "Technologies I am skilled in.",
-    "langs": {
-      "title": "Languages",
-      "lang1": "Portuguese (Native)",
-      "lang2": "English (Advanced)"
+    "content": {
+      "content_1": "Technologies",
+      "content_2": "Languages",
+      "content_3": "Portuguese (Native)",
+      "content_4": "English (Advanced)"
     }
   },
+
   "Education": {
     "title": "Education",
-    "educations": {
-      "education1": {
-        "desc": "Technician in informatics"
-      },
-      "education2": {
-        "desc": "Graduation in system development and analysis"
-      },
-      "education3": {
-        "desc": "Informatics basics"
-      },
-      "education4": {
-        "desc": "English"
-      },
-      "education5": {
-        "desc": "React.js, Node.js, Docker"
-      }
-    },
-    "title2": "Courses"
+    "content": {
+      "content_1": "Technician in informatics",
+      "content_2": "Associate in system development and analysis",
+      "content_3": "Informatics basics",
+      "content_4": "English",
+      "content_5": "Courses"
+
+    }
   },
+
   "Projects": {
+
     "title": "Projects",
-    "subtitle": "Github projects",
+
     "projects": {
-      "mediacollection" : {
-        "description": "Site that uses a public API to display movies with some search/filtering capabilities.",
-        "showcase": {
-            "desc0": {
-              "id":"0",
-              "desc": "Website to discover movies"
-            },
-            "desc1": {
-              "id":"1",
-              "desc": "Click a movie to see more about it"
-            },
-            "desc2": {
-              "id":"2",
-              "desc": "Filter movies by genres"
-            },
-            "desc3": {
-              "id":"3",
-              "desc": "Query movies"
-            },
-            "desc4": {
-              "id":"4",
-              "desc": "The website has a variety of color themes"
-            },
-            "desc5": {
-              "id":"5",
-              "desc": "Don't know what to watch? Select some prefered genres and get a random movie"
-            },
-            "desc6": {
-              "id":"6",
-              "desc": "Generate an API key and unlock the app"
-            }
-          }
+
+      "cinelog" : {
+        "description": "A website for discovering and filtering movies. Through The Movie Database (TMDB), you can search over 100,000 movies using various types of filters, such as: top rated movies, most popular movies, new releases and much more."
       },
+
       "divulgacampo" : {
-        "description": "Website for sharing field research.",
-        "showcase": {
-          "desc0": {
-            "id":"0",
-            "desc": "A website to share field research"
-          }
-        }
+        "description": "A full-stack website for sharing field research. Register on the site, create a field research and share it on the site."
       },
+
       "seocomparison" : {
-        "description": "Research about the impact on SEO of the SSR and CSR website rendering approaches.",
-        "showcase": {
-          "desc0": {
-            "id":"0",
-            "desc": "A scientific research on website rendering approaches: SSR and CSR"
-          }
-        }
+        "description": "SEO comparison research of SSR and CSR website rendering approaches with React.js and Next.js."
       },
-      "adsprojects" : {
-        "description": "Set of projects carried out at the SDA course.",
-        "showcase": {
-          "desc0": {
-            "id":"0",
-            "desc": "Various projects, activities and exercises carried out during the undergraduate course in systems analysis and development"
-          }
-        }
+
+      "vmmonitor" : {
+        "description": "Planning and practice of applying the MQTT protocol for monitoring virtual machines."
+      },
+
+      "chatmqtt" : {
+        "description": "Website that provides an interface for sending and receiving messages through an MQTT broker."
       }
-    },
-    "linkRepo": "Link to repository:",
-    "linkProject": "Link to projeto:"
+    }
   }
+  
 }
