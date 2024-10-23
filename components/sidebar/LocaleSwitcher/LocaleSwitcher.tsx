@@ -46,17 +46,17 @@ export default function LangSwitcher() {
             {locale === 'pt' && 
                 <div className="flex rounded-3xl border-2 border-color04">
 
-                    <div className="w-full overflow-x-hidden">
-                        <button className="py-2 px-4 text-2xl bg-color04 rounded-2xl" disabled>
+                    <div className="w-1/2 overflow-x-hidden">
+                        <button className="py-2 px-4 text-2xl bg-color04 rounded-l-2xl" disabled>
                             {"\u{1F1E7}\u{1F1F7}"} {/* BR */}
                         </button>
                     </div>
 
-                    {/* <div className="w-1/2 overflow-x-hidden hover:opacity-60">
+                    <div className="w-1/2 overflow-x-hidden hover:opacity-60">
                         <button onClick={(e) => updateLang(e)} id="en" className="py-2 px-4 text-2xl">
-                            {"\u{1F1FA}\u{1F1F8}"} ENG 
+                            {"\u{1F1FA}\u{1F1F8}"} {/* ENG */} 
                         </button>
-                    </div> */}
+                    </div>
 
                 </div>
             }

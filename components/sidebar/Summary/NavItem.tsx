@@ -18,7 +18,7 @@ export default function NavItem({section, content}:Props) {
     const OBSERVEDDIV:HTMLDivElement|null = document.querySelector(`div#${section}`)
 
     const ref = useRef(OBSERVEDDIV)
-    const isInView = useInView(ref, {amount: 0.82})
+    const isInView = useInView(ref, {amount: 0.85})
 
     const handleClick = (e:any):void => {
         e.preventDefault()
