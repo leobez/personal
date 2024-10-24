@@ -40,8 +40,8 @@
       "content_2": "Associate in system development and analysis",
       "content_3": "Informatics basics",
       "content_4": "English",
-      "content_5": "Courses"
-
+      "content_5": "Courses",
+      "content_6": "[Certificate]"
     }
   },
 
@@ -69,7 +69,12 @@
 
       "chatmqtt" : {
         "description": "Website that provides an interface for sending and receiving messages through an MQTT broker."
+      },
+
+      "javaexe" : {
+        "description": "Series of exercises in JAVA that uses the most important concepts of object-oriented programming, such as: classes, objects, inheritance, encapsulation and polymorphism."
       }
+
     }
   }
   

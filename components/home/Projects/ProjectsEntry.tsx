@@ -29,6 +29,9 @@ export default function ProjectsEntry() {
                         },
                         {
                             description: t("projects.chatmqtt.description")
+                        },
+                        {
+                            description: t("projects.javaexe.description")
                         }
                     ]                     
                 }

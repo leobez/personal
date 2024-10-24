@@ -70,4 +70,14 @@ export const PROJECTDATA:ProjectTYPE[] = [
         desc: "Site que disponibiliza uma interface para enviar e receber mensagens através de um broker MQTT."
     },
 
+    {
+        id: 5,
+        name: "JAVA-EXERCISES",
+        image_path: "/images/java-exe/java-exe.png",
+        link_repo: "https://github.com/leobez/ads-content/tree/main/OOP-Exercises",
+        link_project: null,
+        tech_stack: ['JAVA'],
+        desc: "Série de exercicíos em JAVA que utilizam dos mais importantes conceitos de programação orientada a objetos, como: classes, objetos, herança, encapsulamento e polimorfismo."
+    },
+
 ]

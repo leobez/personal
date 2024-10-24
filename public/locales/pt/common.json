@@ -40,7 +40,8 @@
         "content_2": "Técnologo em análise e desenvolvimento de sistemas",
         "content_3": "Capacitação em informática",
         "content_4": "Inglês",
-        "content_5": "Cursos"
+        "content_5": "Cursos",
+        "content_6": "[Certificado]"
 
       }
     },
@@ -69,7 +70,12 @@
 
         "chatmqtt" : {
           "description": "Site que disponibiliza uma interface para enviar e receber mensagens através de um broker MQTT."
+        },
+
+        "javaexe" : {
+          "description": "Série de exercicíos em JAVA que utiliza dos mais importantes conceitos de programação orientada a objetos, como: classes, objetos, herança, encapsulamento e polimorfismo."
         }
+
       }
     }
     

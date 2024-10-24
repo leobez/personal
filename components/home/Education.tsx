@@ -49,8 +49,35 @@ export default function Education() {
 
                 <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
                     <p className="font-bold">Udemy</p>
-                    <p>React.js, Node.js, Docker</p>
-                    <p className="text-sm">2023 - YYYY</p>
+
+                    <div className="flex gap-3">
+                        <p>React.js</p>
+                        <a href="https://www.udemy.com/certificate/UC-ca2136f3-0c52-4a60-9586-11b9e6a8aaaa/" target="_blank" className="hover:text-color04 duration-200">{t('content.content_6')}</a>
+                    </div>
+
+                    <p className="text-sm">2023 - 2024</p>
+                </div>
+
+                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
+                    <p className="font-bold">Udemy</p>
+
+                    <div className="flex gap-3">
+                        <p>Node.js</p>
+                        <a href="https://www.udemy.com/certificate/UC-18f22563-60c4-4389-8c87-860fe6a9e4cb/" target="_blank" className="hover:text-color04 duration-200">{t('content.content_6')}</a>
+                    </div>
+
+                    <p className="text-sm">2023 - 2024</p>
+                </div>
+                
+                <div className="bg-color03 p-3 rounded-lg shadow-md font-light flex flex-col gap-2 w-fit">
+                    <p className="font-bold">Udemy</p>
+
+                    <div className="flex gap-3">
+                        <p>Docker</p>
+                        <a href="https://www.udemy.com/certificate/UC-28863bd2-e9cb-4c55-85a7-80b8e43e47fb/" target="_blank" className="hover:text-color04 duration-200">{t('content.content_6')}</a>
+                    </div>
+      
+                    <p className="text-sm">2023 - 2024</p>
                 </div>
 
             </div>
