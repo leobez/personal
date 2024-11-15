@@ -26,7 +26,7 @@ export const PROJECTDATA:ProjectTYPE[] = [
         image_path: "/images/cinelog/cinelog.png",
         link_repo: "https://github.com/leobez/cinelog",
         link_project: "https://cinelogleob.vercel.app/",
-        tech_stack: ["JAVASCRIPT", "HTML", "CSS", "TAILWIND CSS", "REACT.JS", "REST API"],
+        tech_stack: ["JAVASCRIPT", "HTML", "CSS", "TAILWIND CSS", "REACT.JS", "NODE JS", "REST API"],
         desc: "Um site para descobrir e filtrar filmes. Através da The Movie Database (TMDB), é possível buscar mais de 100 mil filmes utilizando diversos tipos de filtros, como: filmes mais bem avaliados, filmes mais populares, novos lançamentos e muito mais."
     },
 
