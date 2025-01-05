@@ -21,7 +21,8 @@ export default function Competences() {
                         <p className="font-bold">{t('content.content_1')}</p>
 
                         <ul className="list-disc pl-6 pt-2">
-                            <li>JavaScript, React.js, Next.js, Node.js;</li>
+                            <li>JavaScript, React.js, Next.js;</li>
+                            <li>Node.js, Express, Nest;</li>
                             <li>Java;</li>
                             <li>CSS, Tailwind CSS;</li>
                             <li>HTML;</li>

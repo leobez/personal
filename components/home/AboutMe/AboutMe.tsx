@@ -14,7 +14,7 @@ export default function AboutMe() {
         <section className="bg-color01 p-5 rounded-lg shadow-lg gap-6 max-w-full flex md:flex-row flex-col-reverse">
             
             {/* TEXT */}
-            <div className="flex flex-col gap-4 md:w-1/2 w-full">
+            <div className="flex flex-col gap-5 md:w-1/2 w-full">
 
                 <GradualText 
                     text={t('title')}
@@ -23,15 +23,15 @@ export default function AboutMe() {
                     ms={25}
                 />
 
-                <p className="text-justify font-light">
+                <p className="text-justify text-md font-light">
                     {t('content.content_1')}
                 </p>
 
-                <p className="text-justify font-light">
+                <p className="text-justify text-md font-light">
                     {t('content.content_2')}
                 </p>
 
-                <p className="text-justify font-bold">
+                <p className="text-justify text-md font-bold">
                     {t('content.content_3')}
                 </p>
 
