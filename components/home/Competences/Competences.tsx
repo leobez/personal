@@ -1,15 +1,12 @@
 import AnimatedPool from "./AnimatedPool";
-import { useTranslations } from "next-intl";
 
 export default function Competences() {
-
-    const t = useTranslations('Competences')
 
     return (
         <section className="bg-color01 p-4 rounded-lg shadow-lg flex flex-col gap-3 max-w-full">
 
             <div>
-                <p className="font-bold text-lg">{t('title')}</p>
+                <p className="font-bold text-lg">Titulo</p>
             </div>
 
             <div className="flex md:flex-row flex-col justify-between">
@@ -18,7 +15,7 @@ export default function Competences() {
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
 
-                        <p className="font-bold">{t('content.content_1')}</p>
+                        <p className="font-bold">A</p>
 
                         <ul className="list-disc pl-6 pt-2">
                             <li>JavaScript, React.js, Next.js;</li>
@@ -33,10 +30,10 @@ export default function Competences() {
                     </div>
 
                     <div className="bg-color03 p-3 rounded-lg shadow-md font-light">
-                        <p className="font-bold">{t('content.content_2')}</p>
+                        <p className="font-bold">A</p>
                         <ul className="list-disc pl-6 pt-2">
-                            <li>{t('content.content_3')}</li>
-                            <li>{t('content.content_4')}</li>
+                            <li>A</li>
+                            <li>A</li>
                         </ul>
                     </div>
 

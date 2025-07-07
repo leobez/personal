@@ -1,5 +1,8 @@
 TODO:  
-    -> Way to detect theme on req, then send to user with corret theme
-    -> Sidebar auto dark not working when small screen
-    -> Page -> Contact page     
-    
+    - Go on redoing
+        > Competences
+        > Experience
+        > Education
+        > Simple navbar
+        > Responsivity
+        > Dark-mode
