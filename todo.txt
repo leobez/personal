@@ -1,8 +1,13 @@
 TODO:  
     - Go on redoing
-        > Competences
-        > Experience
-        > Education
-        > Simple navbar
-        > Responsivity
-        > Dark-mode
+
+        > About me text    
+        > Light animations (on section when appearing, on about me text gradual showing, on background) 
+        > Resposivity
+        > Theme selector
+        
+        > Merge to main, deploy.
+
+
+
+

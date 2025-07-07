@@ -3,6 +3,22 @@ body,
 #root {
   height: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+/* globals.css ou arquivo CSS importado */
+.transition-text {
+  transition-property: opacity, max-width, transform;
+  transition-timing-function: ease-in-out;
+  transition-duration: 1000ms;
+}
+
+.transition-text.quick-exit {
+  transition-duration: 150ms;
+}
+
+
 
 @tailwind base;
 @tailwind components;
