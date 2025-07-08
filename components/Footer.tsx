@@ -1,25 +1,46 @@
-import Image from "next/image";
+'use client'
 
-export default function Footer() {
+import { ThemeMap, useThemeStore } from "@/store/useThemeStore"
+import Image from "next/image"
 
-    return (
-        <footer className={`h-36 w-full bg-color04 text-colorText z-30`}>
-            <div className="max-w-[1250px] h-full mx-auto flex items-center gap-3 p-3">
-                <div className="h-fit w-fit">
-                    <Image 
-                        src={`/gifs/bonfire.gif`} 
-                        unoptimized={true} 
-                        alt='bonfire.gif' 
-                        height={100}
-                        width={100}
-                        style={{objectFit: "cover", borderRadius: "0.5rem"}}
-                    />
-                </div>
-                <div>
-                    <p className="font-bold text-lg">Leonardo de Souza Bezerra</p>
-                    <p className="font-light">Portfolio</p>
-                </div>
-            </div>
-        </footer>
-    )
+type Props = {
+	maxWidth: number
+}
+
+export default function Footer({ maxWidth }: Props) {
+
+	const { theme } = useThemeStore()
+
+	return (
+		<footer 
+			style={{ 
+				backgroundColor: ThemeMap[theme].headerBg,
+				color: ThemeMap[theme].headerFont
+			}} 
+			className={`h-24 w-full z-20`}>
+
+			<div
+				style={{ 
+					maxWidth: maxWidth,
+				}} 
+				className="h-full mx-auto flex justify-between items-center gap-2 p-2">
+					
+				<div>
+					<p className="font-bold text-lg">Leonardo de Souza Bezerra</p>
+					<p className="font-light">Portfolio pessoal</p>
+				</div>
+
+				<Image
+						src={`/gifs/bonfire.gif`} 
+						unoptimized={true} 
+						alt='bonfire.gif' 
+						height={80}
+						width={80}
+						style={{objectFit: "cover"}}
+				/>
+
+			</div>
+
+		</footer>
+	)
 }

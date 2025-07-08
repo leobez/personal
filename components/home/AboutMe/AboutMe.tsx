@@ -1,79 +1,65 @@
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import GradualText from "./GradualText";
 import { IoMailOutline } from "react-icons/io5";
-import { CiPhone } from "react-icons/ci";
 import Image from 'next/image'
-import { useTranslations } from "next-intl";
+import Section from "@/components/Section";
+import AboutMeIcon from "./Icon";
 
 export default function AboutMe() {
 
-    const t = useTranslations('AboutMe')
+	return (
+		<Section id="about">
 
-    return (
-        <section className="bg-color01 p-5 rounded-lg shadow-lg gap-6 max-w-full flex md:flex-row flex-col-reverse">
-            
-            {/* TEXT */}
-            <div className="flex flex-col gap-5 md:w-1/2 w-full">
+			<div className="w-full flex flex-col md:flex-row items-start">
 
-                <GradualText 
-                    text={t('title')}
-                    classNames="font-bold text-lg" 
-                    preHeight='28px' 
-                    ms={25}
-                />
+				<div className="md:w-1/2 flex flex-col gap-4">
+					<h1 className="font-bold text-xl">&gt; Sobre mim</h1>
 
-                <p className="text-justify text-md font-light">
-                    {t('content.content_1')}
-                </p>
+					<p className="text-justify font-light leading-relaxed text-sm md:text-base">
+						Olá! Me chamo Leonardo e sou um desenvolvedor focado em Backend. Possuo experiência em Node.js, usando Nestjs para desenvolver microsserviços e APIs eficientes. Já desenvolvi aplicações até o ponto de produção e configurei instâncias EC2 para servir as aplicações com sgurança e eficiência. Ademais, também tenho experiência no uso de postgres, redis, docker e nginx. Nas horas vagas estou sempre estudando a aprimorando meus conhecimentos em design patterns e arquitetura de sistemas, além de experimentar com Game dev.  
+					</p>
 
-                <p className="text-justify text-md font-light">
-                    {t('content.content_2')}
-                </p>
+				</div>
 
-                <p className="text-justify text-md font-bold">
-                    {t('content.content_3')}
-                </p>
+				<div className="md:w-1/2 flex flex-col sm:flex-row justify-end w-full">
 
-            </div>
+					<div className="flex my-4 md:my-0 md:flex-col gap-2 md:justify-between justify-end w-full sm:w-auto px-4">
+						<AboutMeIcon
+							icon={FaLinkedin}
+							text="LinkedIn"
+							link="https://www.linkedin.com/in/leosouz"
+						/>
+						<AboutMeIcon
+							icon={FaGithub}
+							text="GitHub"
+							link="https://github.com/leobez"
+						/>
+						<AboutMeIcon
+							icon={IoMailOutline}
+							text="E-mail"
+							link="mailto:leobez.contato@gmail.com"
+						/>
+						<AboutMeIcon
+							icon={FaWhatsapp}
+							text="WhatsApp"
+							link="https://wa.me/5519998250343"
+						/>
+					</div>
 
-            {/* IMAGE */}
-            <div className="bg-color03 rounded-lg flex flex-col justify-between md:w-1/2 min-h-full w-full">
+					{/* Foto */}
+					<div className="hidden md:flex justify-center">
+						<Image
+							src="/images/photo.jpg"
+							alt="Minha foto"
+							height={320}
+							width={320}
+							className="rounded-xl object-cover shadow-md max-w-full h-auto"
+						/>
+					</div>
 
-                <div className="relative h-96 md:h-2/3 w-full rounded-lg">
-                    <Image 
-                        src={`/images/photo.jpg`} 
-                        alt='photo' 
-                        fill={true} 
-                        style={{objectFit: "cover", objectPosition: 'center', opacity: '0.8', borderTopRightRadius: '0.5rem', borderTopLeftRadius: '0.5rem'}}
-                    />
-                </div>
+				</div>
 
-                <div className="border-t-2 border-color04 p-2 flex items-center justify-between w-full h-1/3">
-                    <div className="w-fit flex flex-col">
-                        <a href="https://www.linkedin.com/in/leosouz/" target="_blank" className="p-2 text-xs flex-col items-start gap-1">
-                            <FaLinkedin size={30}/>
-                            <span className="block">linkedin.com/leosouz</span>
-                        </a>
-                        <a href="https://github.com/leobez" target="_blank" className="p-2 text-xs flex-col items-start gap-1">
-                            <FaGithub size={30}/>
-                            <span className="block">github.com/leobez</span>
-                        </a>
-                    </div>
-                    <div className="w-fit flex flex-col">
-                        <p className="p-2 text-xs flex flex-col items-start gap-1">
-                            <IoMailOutline size={30}/>
-                            <span className="block">leosbezerra@outlook.com</span>
-                        </p>
-                        <p className="p-2 text-xs flex flex-col items-start gap-1">
-                            <CiPhone size={30}/>
-                            <span className="block">+55 (19) 99825-0343</span>
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-    )
+			</div>
+		</Section>
+	)
 }
