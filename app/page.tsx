@@ -8,7 +8,7 @@ export default function Home() {
 
   return (
 
-    <div className="bg-white text-black min-h-screen flex flex-col py-2">
+    <div className="min-h-screen flex flex-col py-2">
       <AboutMe/>
       <SectionDivider/>
       <Competences/>
@@ -16,7 +16,6 @@ export default function Home() {
       <Experience/>
       <SectionDivider/>
       <Education/>
-      <SectionDivider/>
     </div>
     
   ); 

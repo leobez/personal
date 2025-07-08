@@ -1,3 +1,6 @@
+'use client'
+
+import { ThemeMap, useThemeStore } from "@/store/useThemeStore"
 import Navbar from "./Navbar"
 
 type Props = {
@@ -6,8 +9,15 @@ type Props = {
 
 export default function Header({ maxWidth }: Props) {
 
+	const { theme } = useThemeStore()
+
 	return (
-		<header className="h-24 w-full bg-black text-white sticky top-0 z-20">
+		<header
+			style={{ 
+				backgroundColor: ThemeMap[theme].headerBg,
+				color: ThemeMap[theme].headerFont
+			}} 
+			className="h-24 w-full sticky top-0 z-20 transition-colors duration-500 ease-in-out">
 
 			<div 
 				style={{ maxWidth }} 
@@ -21,7 +31,6 @@ export default function Header({ maxWidth }: Props) {
 				<Navbar/>
 
 			</div>
-			
 		</header>
 	)
 }

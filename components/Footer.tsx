@@ -1,3 +1,6 @@
+'use client'
+
+import { ThemeMap, useThemeStore } from "@/store/useThemeStore"
 import Image from "next/image"
 
 type Props = {
@@ -6,11 +9,20 @@ type Props = {
 
 export default function Footer({ maxWidth }: Props) {
 
+	const { theme } = useThemeStore()
+
 	return (
-		<footer className={`h-24 w-full bg-black text-white z-20`}>
+		<footer 
+			style={{ 
+				backgroundColor: ThemeMap[theme].headerBg,
+				color: ThemeMap[theme].headerFont
+			}} 
+			className={`h-24 w-full z-20`}>
 
 			<div
-				style={{ maxWidth }} 
+				style={{ 
+					maxWidth: maxWidth,
+				}} 
 				className="h-full mx-auto flex justify-between items-center gap-2 p-2">
 					
 				<div>

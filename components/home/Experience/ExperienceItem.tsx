@@ -7,7 +7,7 @@ type ExperienceItemProps = {
 
 export default function ExperienceItem({ empresa, cargo, tempo, atividades }: ExperienceItemProps) {
   return (
-    <div className="rounded-lg p-4 bg-white text-black mb-4">
+    <div className="rounded-lg p-4 mb-4">
       <p className="font-bold text-lg">{empresa} | {cargo}</p>
       <p className="text-md mb-1">Tempo de atuação: {tempo}</p>
       <p className="text-md mb-1">Atividades:</p>

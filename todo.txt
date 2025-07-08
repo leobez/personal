@@ -1,7 +1,4 @@
-> Theme selector (icon on sidebar: blue,red,gold,green,default,dark)
-> favicon
+> About me text + gradual text animation    
 
-> About me text.    
 > Resposivity.
-> Gradual text animation, section fadein animation.
 > Merge to main, deploy.

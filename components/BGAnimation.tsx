@@ -1,7 +1,11 @@
+'use client'
+
+import { ThemeMap, useThemeStore } from "@/store/useThemeStore";
+
 export default function BGAnimation() {
-  const backgroundColor = "#fff";        // Fundo da tela
-  const starColor = "#000";              // Estrelas piscantes
-  const shootingColor = "#000";          // Estrelas cadentes (traço)
+
+  const {theme} = useThemeStore()
+
   
   const generateShootingStars = (count = 8) => {
     const stars = [];
@@ -16,7 +20,7 @@ export default function BGAnimation() {
     return stars;
   };
 
-  const shootingStars = generateShootingStars(15);
+  const shootingStars = generateShootingStars(8);
 
   // Estilo base da estrela cadente
   const shootingStyleBase = {
@@ -24,7 +28,7 @@ export default function BGAnimation() {
     width: "100px",
     height: "4px",
     left: "-100px",
-    background: `linear-gradient(320deg, ${shootingColor}, transparent)`,
+    background: `linear-gradient(320deg, ${ThemeMap[theme].mainFont}, transparent)`,
     animation: "shoot 10s infinite ease-in-out",
   };
 
@@ -33,21 +37,21 @@ export default function BGAnimation() {
     width: "1px",
     height: "1px",
     position: "absolute" as const,
-    background: starColor,
+    background: ThemeMap[theme].mainFont,
     boxShadow: `
-      2vw 5vh 2px ${starColor}, 10vw 8vh 2px ${starColor}, 15vw 15vh 1px ${starColor},
-      22vw 22vh 1px ${starColor}, 28vw 12vh 2px ${starColor}, 32vw 32vh 1px ${starColor},
-      38vw 18vh 2px ${starColor}, 42vw 35vh 1px ${starColor}, 48vw 25vh 2px ${starColor},
-      53vw 42vh 1px ${starColor}, 58vw 15vh 2px ${starColor}, 63vw 38vh 1px ${starColor},
-      68vw 28vh 2px ${starColor}, 73vw 45vh 1px ${starColor}, 78vw 32vh 2px ${starColor},
-      83vw 48vh 1px ${starColor}, 88vw 20vh 2px ${starColor}, 93vw 52vh 1px ${starColor},
-      98vw 35vh 2px ${starColor}, 5vw 60vh 1px ${starColor}, 12vw 65vh 2px ${starColor},
-      18vw 72vh 1px ${starColor}, 25vw 78vh 2px ${starColor}, 30vw 85vh 1px ${starColor},
-      35vw 68vh 2px ${starColor}, 40vw 82vh 1px ${starColor}, 45vw 92vh 2px ${starColor},
-      50vw 75vh 1px ${starColor}, 55vw 88vh 2px ${starColor}, 60vw 95vh 1px ${starColor},
-      65vw 72vh 2px ${starColor}, 70vw 85vh 1px ${starColor}, 75vw 78vh 2px ${starColor},
-      80vw 92vh 1px ${starColor}, 85vw 82vh 2px ${starColor}, 90vw 88vh 1px ${starColor},
-      95vw 75vh 2px ${starColor}
+      2vw 5vh 2px ${ThemeMap[theme].mainFont}, 10vw 8vh 2px ${ThemeMap[theme].mainFont}, 15vw 15vh 1px ${ThemeMap[theme].mainFont},
+      22vw 22vh 1px ${ThemeMap[theme].mainFont}, 28vw 12vh 2px ${ThemeMap[theme].mainFont}, 32vw 32vh 1px ${ThemeMap[theme].mainFont},
+      38vw 18vh 2px ${ThemeMap[theme].mainFont}, 42vw 35vh 1px ${ThemeMap[theme].mainFont}, 48vw 25vh 2px ${ThemeMap[theme].mainFont},
+      53vw 42vh 1px ${ThemeMap[theme].mainFont}, 58vw 15vh 2px ${ThemeMap[theme].mainFont}, 63vw 38vh 1px ${ThemeMap[theme].mainFont},
+      68vw 28vh 2px ${ThemeMap[theme].mainFont}, 73vw 45vh 1px ${ThemeMap[theme].mainFont}, 78vw 32vh 2px ${ThemeMap[theme].mainFont},
+      83vw 48vh 1px ${ThemeMap[theme].mainFont}, 88vw 20vh 2px ${ThemeMap[theme].mainFont}, 93vw 52vh 1px ${ThemeMap[theme].mainFont},
+      98vw 35vh 2px ${ThemeMap[theme].mainFont}, 5vw 60vh 1px ${ThemeMap[theme].mainFont}, 12vw 65vh 2px ${ThemeMap[theme].mainFont},
+      18vw 72vh 1px ${ThemeMap[theme].mainFont}, 25vw 78vh 2px ${ThemeMap[theme].mainFont}, 30vw 85vh 1px ${ThemeMap[theme].mainFont},
+      35vw 68vh 2px ${ThemeMap[theme].mainFont}, 40vw 82vh 1px ${ThemeMap[theme].mainFont}, 45vw 92vh 2px ${ThemeMap[theme].mainFont},
+      50vw 75vh 1px ${ThemeMap[theme].mainFont}, 55vw 88vh 2px ${ThemeMap[theme].mainFont}, 60vw 95vh 1px ${ThemeMap[theme].mainFont},
+      65vw 72vh 2px ${ThemeMap[theme].mainFont}, 70vw 85vh 1px ${ThemeMap[theme].mainFont}, 75vw 78vh 2px ${ThemeMap[theme].mainFont},
+      80vw 92vh 1px ${ThemeMap[theme].mainFont}, 85vw 82vh 2px ${ThemeMap[theme].mainFont}, 90vw 88vh 1px ${ThemeMap[theme].mainFont},
+      95vw 75vh 2px ${ThemeMap[theme].mainFont}
     `,
     animation: "twinkle 8s infinite linear",
   };
@@ -58,23 +62,23 @@ export default function BGAnimation() {
     position: "absolute" as const,
     width: "1px",
     height: "1px",
-    background: starColor,
+    background: ThemeMap[theme].mainFont,
     boxShadow: `
-      8vw 12vh 2px ${starColor}, 16vw 18vh 1px ${starColor}, 24vw 25vh 2px ${starColor},
-      33vw 15vh 1px ${starColor}, 41vw 28vh 2px ${starColor}, 49vw 35vh 1px ${starColor},
-      57vw 22vh 2px ${starColor}, 65vw 42vh 1px ${starColor}, 73vw 28vh 2px ${starColor},
-      81vw 48vh 1px ${starColor}, 89vw 32vh 2px ${starColor}, 97vw 45vh 1px ${starColor},
-      3vw 68vh 2px ${starColor}, 11vw 75vh 1px ${starColor}, 19vw 82vh 2px ${starColor},
-      27vw 88vh 1px ${starColor}, 35vw 72vh 2px ${starColor}, 43vw 85vh 1px ${starColor},
-      51vw 92vh 2px ${starColor}, 59vw 78vh 1px ${starColor}
+      8vw 12vh 2px ${ThemeMap[theme].mainFont}, 16vw 18vh 1px ${ThemeMap[theme].mainFont}, 24vw 25vh 2px ${ThemeMap[theme].mainFont},
+      33vw 15vh 1px ${ThemeMap[theme].mainFont}, 41vw 28vh 2px ${ThemeMap[theme].mainFont}, 49vw 35vh 1px ${ThemeMap[theme].mainFont},
+      57vw 22vh 2px ${ThemeMap[theme].mainFont}, 65vw 42vh 1px ${ThemeMap[theme].mainFont}, 73vw 28vh 2px ${ThemeMap[theme].mainFont},
+      81vw 48vh 1px ${ThemeMap[theme].mainFont}, 89vw 32vh 2px ${ThemeMap[theme].mainFont}, 97vw 45vh 1px ${ThemeMap[theme].mainFont},
+      3vw 68vh 2px ${ThemeMap[theme].mainFont}, 11vw 75vh 1px ${ThemeMap[theme].mainFont}, 19vw 82vh 2px ${ThemeMap[theme].mainFont},
+      27vw 88vh 1px ${ThemeMap[theme].mainFont}, 35vw 72vh 2px ${ThemeMap[theme].mainFont}, 43vw 85vh 1px ${ThemeMap[theme].mainFont},
+      51vw 92vh 2px ${ThemeMap[theme].mainFont}, 59vw 78vh 1px ${ThemeMap[theme].mainFont}
     `,
     animation: "twinkle 8s infinite linear reverse",
   };
 
   return (
     <div
-      className="fixed inset-0 z-0 pointer-events-none"
-      style={{ backgroundColor }}
+      className="fixed inset-0 z-0 pointer-events-none transition-colors duration-500 ease-in-out"
+      style={{ backgroundColor: ThemeMap[theme].mainBg }}
     >
       {/* Estrelas principais */}
       <div style={starStyle} />

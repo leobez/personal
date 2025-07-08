@@ -12,7 +12,7 @@ type Props = {
 
 export default function SkillCategory({ title, items }: Props) {
   return (
-    <div className="rounded-lg py-4 w-fit px-4 bg-white text-black">
+    <div className="rounded-lg py-4 w-fit px-4">
       <p className="font-bold mb-2 text-left">{title}</p>
       <ul className="space-y-2">
         {items.map((item, idx) => (
