@@ -7,7 +7,7 @@ type Props = {
 export default function Footer({ maxWidth }: Props) {
 
 	return (
-		<footer className={`h-24 w-full bg-black text-white`}>
+		<footer className={`h-24 w-full bg-black text-white z-20`}>
 
 			<div
 				style={{ maxWidth }} 

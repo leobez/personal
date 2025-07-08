@@ -7,7 +7,7 @@ type Props = {
 export default function Header({ maxWidth }: Props) {
 
 	return (
-		<header className="h-24 w-full bg-black text-white sticky top-0 z-10">
+		<header className="h-24 w-full bg-black text-white sticky top-0 z-20">
 
 			<div 
 				style={{ maxWidth }} 
