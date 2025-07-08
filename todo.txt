@@ -1,4 +1,2 @@
-> About me text + gradual text animation    
-
 > Resposivity.
 > Merge to main, deploy.

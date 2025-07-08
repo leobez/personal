@@ -16,15 +16,14 @@ export default function AboutMe() {
 					<h1 className="font-bold text-xl">&gt; Sobre mim</h1>
 
 					<p className="text-justify font-light leading-relaxed text-sm md:text-base">
-						Desenvolvedor focado em Backend, com experiência em Node.js, Nestjs, bancos de dados relacionais e não relacionais. Já desenvolvi sistemas empresariais até o ponto de produção, integrei com tecnologias como Docker e Nginx, gerenciei e configurei instâncias EC2 para servir a aplicação de forma consistente
-			
-						Gosto de arquitetura de sistemas e programação com práticas saúdaveis de código limpo [TODO: EC2, DOCKER ETC]
+						Olá! Me chamo Leonardo e sou um desenvolvedor focado em Backend. Possuo experiência em Node.js, usando Nestjs para desenvolver microsserviços e APIs eficientes. Já desenvolvi aplicações até o ponto de produção e configurei instâncias EC2 para servir as aplicações com sgurança e eficiência. Ademais, também tenho experiência no uso de postgres, redis, docker e nginx. Nas horas vagas estou sempre estudando a aprimorando meus conhecimentos em design patterns e arquitetura de sistemas, além de experimentar com Game dev.  
 					</p>
+
 				</div>
 
 				<div className="md:w-1/2 flex flex-col sm:flex-row justify-end w-full">
 
-					<div className="flex flex-col gap-2 justify-between w-full sm:w-auto px-4">
+					<div className="flex my-4 md:my-0 md:flex-col gap-2 md:justify-between justify-end w-full sm:w-auto px-4">
 						<AboutMeIcon
 							icon={FaLinkedin}
 							text="LinkedIn"
@@ -48,7 +47,7 @@ export default function AboutMe() {
 					</div>
 
 					{/* Foto */}
-					<div className="flex justify-center">
+					<div className="hidden md:flex justify-center">
 						<Image
 							src="/images/photo.jpg"
 							alt="Minha foto"

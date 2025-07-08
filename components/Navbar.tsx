@@ -54,7 +54,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="flex gap-2 items-center relative">
+    <nav className="gap-2 items-center relative md:flex hidden">
 
       {/* NAV ITEMS */}
       {navItems.map(({ id, label, icon: Icon }) => {
