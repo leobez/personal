@@ -1,11 +1,3 @@
-# Site de portfolio
+# Site pessoal
 
 https://www.leobez.com.br
-
-<hr>
-
-Tech stack:
-
-- NEXT.JS
-- VERCEL
-- TAILWIND CSS

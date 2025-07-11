@@ -10,20 +10,27 @@ export default function AboutMe() {
 	return (
 		<Section id="about">
 
-			<div className="w-full flex flex-col md:flex-row items-start">
+			<div className="w-full flex flex-col md:flex-row items-stretch">
 
 				<div className="md:w-1/2 flex flex-col gap-4">
+				
 					<h1 className="font-bold text-xl">&gt; Sobre mim</h1>
 
 					<p className="text-justify font-light leading-relaxed text-sm md:text-base">
-						Olá! Me chamo Leonardo e sou um desenvolvedor focado em Backend. Possuo experiência em Node.js, usando Nestjs para desenvolver microsserviços e APIs eficientes. Já desenvolvi aplicações até o ponto de produção e configurei instâncias EC2 para servir as aplicações com sgurança e eficiência. Ademais, também tenho experiência no uso de postgres, redis, docker e nginx. Nas horas vagas estou sempre estudando a aprimorando meus conhecimentos em design patterns e arquitetura de sistemas, além de experimentar com Game dev.  
+						Olá! Me chamo Leonardo e sou um desenvolvedor focado em Backend. Tenho experiência sólida com Node.js e NestJS no desenvolvimento de aplicações como APIs REST, microsserviços e webhooks.
+						<br/>
+						<br/>
+						Além disso, possuo conhecimentos em infraestrutura, tendo configurado instâncias EC2 para hospedar aplicações Node.js de forma eficiente. Também trabalho com bancos de dados como PostgreSQL e Redis, e tenho prática com Docker e Nginx para containerização e balanceamento de carga.
+						<br/>
+						<br/>
+						Nas horas vagas, busco aprimorar meus conhecimentos em design patterns e arquitetura de software, além de explorar automação e desenvolvimento de jogos (Game Dev).
 					</p>
 
 				</div>
 
 				<div className="md:w-1/2 flex flex-col sm:flex-row justify-end w-full">
 
-					<div className="flex my-4 md:my-0 md:flex-col gap-2 md:justify-between justify-end w-full sm:w-auto px-4">
+					<div className="flex mt-8 md:my-0 md:flex-col gap-2 md:justify-around justify-end w-full sm:w-auto px-4">
 						<AboutMeIcon
 							icon={FaLinkedin}
 							text="LinkedIn"
@@ -46,7 +53,6 @@ export default function AboutMe() {
 						/>
 					</div>
 
-					{/* Foto */}
 					<div className="hidden md:flex justify-center">
 						<Image
 							src="/images/photo.jpg"

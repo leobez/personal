@@ -69,24 +69,28 @@ export default function Navbar() {
               backgroundColor: ThemeMap[theme].mainBg,
               color: ThemeMap[theme].mainFont,
             }}
-            className={`group flex items-center justify-center gap-2 text-sm px-3 py-2 rounded-full transition-all`}>
-
-            <Icon className="text-xl" />
+            className={`
+              group
+              grid grid-cols-[auto,0fr] items-center
+              text-sm px-3 py-2 rounded-full transition-all
+              duration-300 ease-in-out
+              hover:grid-cols-[auto,1fr]
+              ${isActive ? "grid-cols-[auto,1fr]" : ""}
+            `}
+          >
+            <Icon className="text-xl justify-self-center" />
 
             <span
-              style={{
-                transitionDuration: isActive || hovered ? "200ms" : "800ms",
-              }}
               className={`
-                transition-all ease-in-out transform
                 overflow-hidden whitespace-nowrap
-                ${isActive ? "opacity-100 max-w-xs scale-100" : "opacity-0 max-w-0 scale-95"}
-                group-hover:opacity-100 group-hover:max-w-xs group-hover:scale-100
+                opacity-0 scale-95 transition-all duration-300 ease-in-out
+                group-hover:opacity-100 group-hover:scale-100
+                ${isActive ? "opacity-100 scale-100" : ""}
+                ml-2
               `}
             >
               {label}
             </span>
-
           </a>
         );
       })}
@@ -95,7 +99,7 @@ export default function Navbar() {
         onClick={() => setPopupOpen(!popupOpen)}
         key={'theme'}
         className={`
-          group flex items-center gap-2 text-sm px-3 py-2 rounded-full transition-all
+          group flex items-center gap-2 text-sm px-3 py-2 duration-200 rounded-full transition-all
           text-white hover:text-black hover:bg-white hover:bg-white"}
         `}
         >
