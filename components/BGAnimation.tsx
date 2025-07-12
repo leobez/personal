@@ -97,6 +97,14 @@ export default function BGAnimation() {
           }}
         />
       ))}
+
+      {/* <div 
+        style={{ 
+          borderColor: ThemeMap[theme].mainFont,
+        }}
+        className="absolute -right-[15%] -bottom-[50%] rotate-45 rounded-full border-2 h-[700px] w-[700px]"
+      /> */}
+
     </div>
   );
 }
