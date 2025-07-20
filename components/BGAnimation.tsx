@@ -26,32 +26,32 @@ export default function BGAnimation() {
   const shootingStyleBase = {
     position: "absolute" as const,
     width: "100px",
-    height: "4px",
+    height: "5px",
     left: "-100px",
-    background: `linear-gradient(320deg, ${ThemeMap[theme].mainFont}, transparent)`,
+    background: `linear-gradient(320deg, #fff, transparent)`,
     animation: "shoot 10s infinite ease-in-out",
   };
 
   // Estilo base das estrelas fixas
   const starStyle = {
-    width: "1px",
-    height: "1px",
+    width: "5px",
+    height: "5px",
     position: "absolute" as const,
-    background: ThemeMap[theme].mainFont,
+    background: "#FFF",
     boxShadow: `
-      2vw 5vh 2px ${ThemeMap[theme].mainFont}, 10vw 8vh 2px ${ThemeMap[theme].mainFont}, 15vw 15vh 1px ${ThemeMap[theme].mainFont},
-      22vw 22vh 1px ${ThemeMap[theme].mainFont}, 28vw 12vh 2px ${ThemeMap[theme].mainFont}, 32vw 32vh 1px ${ThemeMap[theme].mainFont},
-      38vw 18vh 2px ${ThemeMap[theme].mainFont}, 42vw 35vh 1px ${ThemeMap[theme].mainFont}, 48vw 25vh 2px ${ThemeMap[theme].mainFont},
-      53vw 42vh 1px ${ThemeMap[theme].mainFont}, 58vw 15vh 2px ${ThemeMap[theme].mainFont}, 63vw 38vh 1px ${ThemeMap[theme].mainFont},
-      68vw 28vh 2px ${ThemeMap[theme].mainFont}, 73vw 45vh 1px ${ThemeMap[theme].mainFont}, 78vw 32vh 2px ${ThemeMap[theme].mainFont},
-      83vw 48vh 1px ${ThemeMap[theme].mainFont}, 88vw 20vh 2px ${ThemeMap[theme].mainFont}, 93vw 52vh 1px ${ThemeMap[theme].mainFont},
-      98vw 35vh 2px ${ThemeMap[theme].mainFont}, 5vw 60vh 1px ${ThemeMap[theme].mainFont}, 12vw 65vh 2px ${ThemeMap[theme].mainFont},
-      18vw 72vh 1px ${ThemeMap[theme].mainFont}, 25vw 78vh 2px ${ThemeMap[theme].mainFont}, 30vw 85vh 1px ${ThemeMap[theme].mainFont},
-      35vw 68vh 2px ${ThemeMap[theme].mainFont}, 40vw 82vh 1px ${ThemeMap[theme].mainFont}, 45vw 92vh 2px ${ThemeMap[theme].mainFont},
-      50vw 75vh 1px ${ThemeMap[theme].mainFont}, 55vw 88vh 2px ${ThemeMap[theme].mainFont}, 60vw 95vh 1px ${ThemeMap[theme].mainFont},
-      65vw 72vh 2px ${ThemeMap[theme].mainFont}, 70vw 85vh 1px ${ThemeMap[theme].mainFont}, 75vw 78vh 2px ${ThemeMap[theme].mainFont},
-      80vw 92vh 1px ${ThemeMap[theme].mainFont}, 85vw 82vh 2px ${ThemeMap[theme].mainFont}, 90vw 88vh 1px ${ThemeMap[theme].mainFont},
-      95vw 75vh 2px ${ThemeMap[theme].mainFont}
+      2vw 5vh 2px #fff, 10vw 8vh 2px #fff, 15vw 15vh 1px #fff,
+      22vw 22vh 1px #fff, 28vw 12vh 2px #fff, 32vw 32vh 1px #fff,
+      38vw 18vh 2px #fff, 42vw 35vh 1px #fff, 48vw 25vh 2px #fff,
+      53vw 42vh 1px #fff, 58vw 15vh 2px #fff, 63vw 38vh 1px #fff,
+      68vw 28vh 2px #fff, 73vw 45vh 1px #fff, 78vw 32vh 2px #fff,
+      83vw 48vh 1px #fff, 88vw 20vh 2px #fff, 93vw 52vh 1px #fff,
+      98vw 35vh 2px #fff, 5vw 60vh 1px #fff, 12vw 65vh 2px #fff,
+      18vw 72vh 1px #fff, 25vw 78vh 2px #fff, 30vw 85vh 1px #fff,
+      35vw 68vh 2px #fff, 40vw 82vh 1px #fff, 45vw 92vh 2px #fff,
+      50vw 75vh 1px #fff, 55vw 88vh 2px #fff, 60vw 95vh 1px #fff,
+      65vw 72vh 2px #fff, 70vw 85vh 1px #fff, 75vw 78vh 2px #fff,
+      80vw 92vh 1px #fff, 85vw 82vh 2px #fff, 90vw 88vh 1px #fff,
+      95vw 75vh 2px #fff
     `,
     animation: "twinkle 8s infinite linear",
   };
@@ -60,17 +60,17 @@ export default function BGAnimation() {
   const afterStarStyle = {
     content: "''",
     position: "absolute" as const,
-    width: "1px",
-    height: "1px",
-    background: ThemeMap[theme].mainFont,
+    width: "5px",
+    height: "5px",
+    background: "#FFF",
     boxShadow: `
-      8vw 12vh 2px ${ThemeMap[theme].mainFont}, 16vw 18vh 1px ${ThemeMap[theme].mainFont}, 24vw 25vh 2px ${ThemeMap[theme].mainFont},
-      33vw 15vh 1px ${ThemeMap[theme].mainFont}, 41vw 28vh 2px ${ThemeMap[theme].mainFont}, 49vw 35vh 1px ${ThemeMap[theme].mainFont},
-      57vw 22vh 2px ${ThemeMap[theme].mainFont}, 65vw 42vh 1px ${ThemeMap[theme].mainFont}, 73vw 28vh 2px ${ThemeMap[theme].mainFont},
-      81vw 48vh 1px ${ThemeMap[theme].mainFont}, 89vw 32vh 2px ${ThemeMap[theme].mainFont}, 97vw 45vh 1px ${ThemeMap[theme].mainFont},
-      3vw 68vh 2px ${ThemeMap[theme].mainFont}, 11vw 75vh 1px ${ThemeMap[theme].mainFont}, 19vw 82vh 2px ${ThemeMap[theme].mainFont},
-      27vw 88vh 1px ${ThemeMap[theme].mainFont}, 35vw 72vh 2px ${ThemeMap[theme].mainFont}, 43vw 85vh 1px ${ThemeMap[theme].mainFont},
-      51vw 92vh 2px ${ThemeMap[theme].mainFont}, 59vw 78vh 1px ${ThemeMap[theme].mainFont}
+      8vw 12vh 2px #fff, 16vw 18vh 1px #fff, 24vw 25vh 2px #fff,
+      33vw 15vh 1px #fff, 41vw 28vh 2px #fff, 49vw 35vh 1px #fff,
+      57vw 22vh 2px #fff, 65vw 42vh 1px #fff, 73vw 28vh 2px #fff,
+      81vw 48vh 1px #fff, 89vw 32vh 2px #fff, 97vw 45vh 1px #fff,
+      3vw 68vh 2px #fff, 11vw 75vh 1px #fff, 19vw 82vh 2px #fff,
+      27vw 88vh 1px #fff, 35vw 72vh 2px #fff, 43vw 85vh 1px #fff,
+      51vw 92vh 2px #fff, 59vw 78vh 1px #fff
     `,
     animation: "twinkle 8s infinite linear reverse",
   };
@@ -98,12 +98,9 @@ export default function BGAnimation() {
         />
       ))}
 
-      {/* <div 
-        style={{ 
-          borderColor: ThemeMap[theme].mainFont,
-        }}
-        className="absolute -right-[15%] -bottom-[50%] rotate-45 rounded-full border-2 h-[700px] w-[700px]"
-      /> */}
+      <div 
+        className="absolute -right-[17%] -bottom-[45%] rotate-45 rounded-full bg-white h-[700px] w-[700px] overflow-hidden shadow-lg">
+      </div>
 
     </div>
   );
