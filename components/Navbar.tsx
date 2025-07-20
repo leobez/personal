@@ -5,6 +5,7 @@ import { IconType } from "react-icons";
 import { useEffect, useState } from "react";
 import { IoIosColorPalette } from "react-icons/io";
 import { Theme, ThemeMap, ThemesOptions, useThemeStore } from "@/store/useThemeStore";
+import ThemeToggle from "./ThemeToggle";
 
 type NavItem = {
   id: string;
@@ -21,9 +22,9 @@ const navItems: NavItem[] = [
 
 export default function Navbar() {
 
-  const [hovered, setHovered] = useState(false);
+  const [ hovered, setHovered] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("");
-  const { theme, setTheme } = useThemeStore();
+  const { theme } = useThemeStore();
   
   useEffect(() => {
 
@@ -45,13 +46,6 @@ export default function Navbar() {
     handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  const [popupOpen, setPopupOpen] = useState(false);
-
-  function handleClick(color: string) {
-    console.log("Tema selecionado:", color);
-    setTheme(color as Theme)
-  }
 
   return (
     <nav className="gap-2 items-center relative md:flex hidden">
@@ -95,51 +89,7 @@ export default function Navbar() {
         );
       })}
 
-      <button
-        onClick={() => setPopupOpen(!popupOpen)}
-        key={'theme'}
-        className={`
-          group flex items-center gap-2 text-sm px-3 py-2 duration-200 rounded-full transition-all
-          text-white hover:text-black hover:bg-white hover:bg-white"}
-        `}
-        >
-        <IoIosColorPalette className="text-xl" />
-
-      </button>
-
-      {popupOpen && (
-
-        <div
-          onMouseLeave={() => setPopupOpen(false)}
-          style={{
-            backgroundColor: ThemeMap[theme].sectionBg
-          }}
-          className="absolute -right-16 -top-2 mt-2 rounded-xl shadow-xl p-4 flex flex-col gap-4 z-50 transition-all duration-200"
-        >
-          {ThemesOptions.map(({ name, icon }) => {
-            const isActive = name === theme;
-            return (
-              <button
-                key={name}
-                onClick={() => handleClick(name)}
-                title={name}
-                className={`w-7 h-7 rounded-full border-2 relative transition-all duration-300
-                  ${isActive ? 'ring-2 ring-offset-2 ring-black dark:ring-white' : 'border-gray-300'}
-                  hover:scale-110 hover:ring-1 hover:ring-offset-1`}
-                style={{ backgroundColor: icon }}
-              >
-                {isActive && (
-                  <span className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white drop-shadow" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                    </svg>
-                  </span>
-                )}
-              </button>
-            );
-          })}
-        </div>
-      )}
+      <ThemeToggle />
 
     </nav>
   );

@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-export type Theme = 'DEFAULT' | 'DARK' | 'RED' | 'GREEN' | 'BLUE' | 'YELLOW'
+export type Theme = 'LIGHT' | 'DARK'
 
 export interface Colors {
   headerBg: string;
@@ -10,9 +10,8 @@ export interface Colors {
   sectionBg: string;
   sectionFont: string
 }
-
 export const ThemeMap:Record<Theme, Colors> = {
-  'DEFAULT': {
+  'LIGHT': {
     headerBg: '#000000',
     headerFont: '#ffffff',
     mainBg: '#ffffff',
@@ -28,7 +27,24 @@ export const ThemeMap:Record<Theme, Colors> = {
     sectionBg: '#18181b',
     sectionFont: "#ffffff"
   },
-  'RED': {
+
+}
+export const ThemesOptions = [
+  { name: "LIGHT"     , icon: "#ffffff"},
+  { name: "DARK"      , icon: "#000000"},
+]
+interface ThemeState {
+  theme: Theme;
+  setTheme: (theme: Theme) => void;
+}
+export const useThemeStore = create<ThemeState>((set) => ({
+  theme: 'LIGHT',
+  setTheme: (theme:Theme) => set(() => ({ theme })),
+}));
+
+
+
+/*   'RED': {
     headerBg: '#991b1b',
     headerFont: '#ffffff',
     mainBg: '#dc2626',      
@@ -59,25 +75,4 @@ export const ThemeMap:Record<Theme, Colors> = {
     mainFont: '#ffffff',
     sectionBg: '#ca8a04',   
     sectionFont: '#ffffff',
-  }
-}
-
-export const ThemesOptions = [
-  { name: "DEFAULT"   , icon: "#ffffff"},
-  { name: "DARK"      , icon: "#000000"},
-  { name: "RED"       , icon: "#dc2626"},
-  { name: "GREEN"     , icon: "#16a34a"},
-  { name: "BLUE"      , icon: "#2563eb"},
-  { name: "YELLOW"    , icon: "#facc15"},
-]
-
-
-interface ThemeState {
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
-}
-
-export const useThemeStore = create<ThemeState>((set) => ({
-  theme: 'DEFAULT',
-  setTheme: (theme:Theme) => set(() => ({ theme })),
-}));
+  } */
