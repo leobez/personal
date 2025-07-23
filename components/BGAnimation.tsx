@@ -99,7 +99,7 @@ export default function BGAnimation() {
       ))}
 
       <div 
-        className="absolute -right-[17%] -bottom-[45%] rotate-45 rounded-full bg-white h-[700px] w-[700px] overflow-hidden shadow-lg">
+        className="absolute -right-[17%] -bottom-[45%] rotate-45 rounded-full h-[700px] w-[700px] overflow-hidden shadow-none bg-white">
       </div>
 
     </div>
