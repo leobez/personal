@@ -1,13 +1,13 @@
-name: Deploy to EC2 via SCP and Restart
+name: Deploy to EC2 (local build)
 
 on:
   push:
     branches:
       - main
-      
+
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repo
@@ -24,21 +24,11 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - name: Upload to EC2
-        uses: appleboy/scp-action@v0.1.7
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
-          source: ".next,public"
-          target: "/home/${{ secrets.EC2_USER }}/ROOT"
+      - name: Move build to ROOT dir
+        run: |
+          rm -rf /home/$USER/ROOT/.next /home/$USER/ROOT/public
+          cp -r .next public /home/$USER/ROOT/
 
-      - name: Restart app via PM2
-        uses: appleboy/ssh-action@v0.1.10
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
-          script: |
-            cd /home/${{ secrets.EC2_USER }}/ROOT
-            pm2 restart pw
+      - name: Restart PM2 app
+        run: |
+          pm2 restart pw
