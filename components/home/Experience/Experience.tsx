@@ -13,14 +13,11 @@ export default function ExperienceSection() {
 					cargo="Desenvolvedor Full Stack"
           tempo="6 meses (estágio)"
           atividades={[
-            'Desenvolvimento de aplicações modernas com Nest.js',
+            'Desenvolvimento e manutenção de aplicações com NestJS',
 						'Desenvolvimento de backoffices e painéis com Next.js',
-						'Integração com tecnologias: postgres, redis, minio, nginx',
-						'Criação e uso de migrations para atualizar o banco de dados de forma segura (prisma)',
-            'Configuração de EC2 para servir aplicações Node (pm2)',
-            'Configuração de certificados SSL para EC2',
-            'Desenvolvimento de containers Docker para agilizar desenvolvimento local',
-            'Integração com APIs externas para: validação de usuários, análise de risco, bancarização, gateway de pagamentos e integração com WhatsApp (chatbot)',
+						'Integração com: Postgres, Redis, Minio, Nginx, Docker',
+						'Configuração de ambientes EC2 para produção ',
+            'Integração de API’s externas para: Validação de usuários; Análise de risco; Bancarização; Gateway de pagamentos; Integração com WhatsApp (chatbot)',
           ]}
         />
       </div>

@@ -20,10 +20,10 @@ export default function AboutMe() {
 						Olá! Me chamo Leonardo e sou um desenvolvedor focado em Backend. Tenho experiência sólida com Node.js e NestJS no desenvolvimento de aplicações como APIs REST, microsserviços e webhooks.
 						<br/>
 						<br/>
-						Além disso, possuo conhecimentos em infraestrutura, tendo configurado instâncias EC2 para hospedar aplicações Node.js de forma eficiente. Também trabalho com bancos de dados como PostgreSQL e Redis, e tenho prática com Docker e Nginx para containerização e balanceamento de carga.
+						Também possuo conhecimentos em infraestrutura, tendo configurado instâncias EC2 para hospedar aplicações Node.js de forma eficiente. Também trabalho com bancos de dados PostgreSQL e Redis. Ademais, tenho prática com Docker e Nginx para containerização e balanceamento de carga.
 						<br/>
 						<br/>
-						Nas horas vagas, busco aprimorar meus conhecimentos em design patterns e arquitetura de software, além de explorar automação e desenvolvimento de jogos (Game Dev).
+						Nas horas vagas, busco aprimorar meus conhecimentos em design patterns e arquitetura de software, além de explorar automação e desenvolvimento de jogos.
 					</p>
 
 				</div>
