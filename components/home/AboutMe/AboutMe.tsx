@@ -12,7 +12,7 @@ export default function AboutMe() {
 
 			<div className="w-full flex flex-col md:flex-row items-stretch">
 
-				<div className="md:w-1/2 flex flex-col gap-4">
+				<div className="md:w-4/5 flex flex-col gap-4">
 				
 					<h1 className="font-bold text-xl">&gt; Sobre mim</h1>
 
@@ -28,9 +28,9 @@ export default function AboutMe() {
 
 				</div>
 
-				<div className="md:w-1/2 flex flex-col sm:flex-row justify-end w-full">
+				<div className="md:w-1/5 flex flex-col sm:flex-row justify-center w-full">
 
-					<div className="flex mt-8 md:my-0 md:flex-col gap-2 md:justify-around justify-end w-full sm:w-auto px-4">
+					<div className="flex mt-8 md:my-0 md:flex-col gap-4 justify-center items-center w-full sm:w-auto px-4">
 						<AboutMeIcon
 							icon={FaLinkedin}
 							text="LinkedIn"
@@ -53,7 +53,7 @@ export default function AboutMe() {
 						/>
 					</div>
 
-					<div className="hidden md:flex justify-center">
+					{/* <div className="hidden md:flex justify-center">
 						<Image
 							src="/images/photo.jpg"
 							alt="Minha foto"
@@ -61,7 +61,7 @@ export default function AboutMe() {
 							width={320}
 							className="rounded-xl object-cover shadow-md max-w-full h-auto"
 						/>
-					</div>
+					</div> */}
 
 				</div>
 
